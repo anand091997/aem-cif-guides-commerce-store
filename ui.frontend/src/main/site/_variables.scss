@@ -1,6 +1,13 @@
 $color-foreground: #202020;
 $color-background: #ffffff;
 
+$font-family: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-body: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-sans: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-serif: 'miller-display', Georgia, 'Times New Roman', serif;
+$font-size: 16px;
+$font-height: 1.5;
+
 $venia-anim-bounce: cubic-bezier(0.5, 1.8, 0.9, 0.8);
 $venia-anim-in: cubic-bezier(0, 0, 0.2, 1);
 $venia-anim-out: cubic-bezier(0.4, 0, 1, 1);
@@ -8,7 +15,7 @@ $venia-anim-standard: cubic-bezier(0.4, 0, 0.2, 1);
 $venia-border: rgb(224, 224, 224);
 $venia-error: rgb(192, 18, 63);
 $venia-error-alt: rgb(255, 226, 234);
-$venia-font: Muli,
+$venia-font: 'acumin-pro-wide',
 -apple-system,
 BlinkMacSystemFont,
 sans-serif;
@@ -35,7 +42,7 @@ $venia-warning-light: rgb(254, 229, 232);
     --venia-border: 224, 224, 224;
     --venia-error: 192, 18, 63;
     --venia-error-alt: 255, 226, 234;
-    --venia-font: Muli, -apple-system, BlinkMacSystemFont, sans-serif;
+    --venia-font: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, sans-serif;
     --venia-grey: 246, 246, 246;
     --venia-grey-dark: 209, 209, 209;
     --venia-orange: 241, 99, 33;
@@ -108,8 +115,8 @@ $venia-warning-light: rgb(254, 229, 232);
     --venia-brand-color-1-800: var(--venia-global-color-blue-800);
 
     /* font family */
-    --venia-global-fontFamily-sansSerif: 'Muli', sans-serif;
-    --venia-global-fontFamily-serif: 'Source Serif Pro', serif;
+    --venia-global-fontFamily-sansSerif: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --venia-global-fontFamily-serif: 'miller-display', Georgia, 'Times New Roman', serif;
 
     /* font size */
     --venia-global-fontSize-50: 0.6875rem;

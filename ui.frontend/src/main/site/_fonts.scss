@@ -1,0 +1,219 @@
+//== Web Font Declarations (Proluxe Theme)
+// Miller Display, Acumin Pro Wide, Acumin Pro
+// Downloaded and hosted locally in clientlib-site resources
+
+//------------------------------------------------------------------------------
+// Miller Display
+//------------------------------------------------------------------------------
+
+@font-face {
+    font-display: swap;
+    font-family: 'miller-display';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../resources/fonts/miller-display/miller-display-light.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-light.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-light.woff2') format('woff2'),
+         url('resources/fonts/miller-display/miller-display-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'miller-display';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../resources/fonts/miller-display/miller-display-regular.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-regular.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-regular.woff2') format('woff2'),
+         url('resources/fonts/miller-display/miller-display-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'miller-display';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../resources/fonts/miller-display/miller-display-bold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-bold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-bold.woff2') format('woff2'),
+         url('resources/fonts/miller-display/miller-display-bold.woff2') format('woff2');
+}
+
+//------------------------------------------------------------------------------
+// Acumin Pro Wide
+//------------------------------------------------------------------------------
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 100;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-hairline.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-hairline.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-hairline.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-hairline.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-extralight.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-extralight.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-extralight.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-extralight.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-light.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-light.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-light.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-regular.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-regular.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-regular.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-medium.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-medium.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-medium.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-semibold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-semibold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-semibold.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro-wide';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../resources/fonts/acumin-pro-wide/acumin-pro-wide-bold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-bold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro-wide/acumin-pro-wide-bold.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro-wide/acumin-pro-wide-bold.woff2') format('woff2');
+}
+
+//------------------------------------------------------------------------------
+// Acumin Pro (Standard)
+//------------------------------------------------------------------------------
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-light.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-light.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-light.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-regular.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-regular.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-regular.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-medium.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-medium.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-medium.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-semibold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-semibold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-semibold.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-bold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-bold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-bold.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-extrabold.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-extrabold.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-extrabold.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-extrabold.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'acumin-pro';
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../resources/fonts/acumin-pro/acumin-pro-heavy.woff2') format('woff2'),
+         url('/apps/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-heavy.woff2') format('woff2'),
+         url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/acumin-pro/acumin-pro-heavy.woff2') format('woff2'),
+         url('resources/fonts/acumin-pro/acumin-pro-heavy.woff2') format('woff2');
+}

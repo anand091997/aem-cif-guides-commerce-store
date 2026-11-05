@@ -6,7 +6,8 @@ html {
     background-color: $color-background;
     font-size: 100%;
     font-weight: 400;
-    line-height: 1;
+    line-height: $font-height;
+    font-family: $font-family;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -14,6 +15,7 @@ html {
 body {
     background-color: $color-background;
     color: $venia-text;
+    font-family: $font-family;
     margin: 0;
     padding: 0;
 }
@@ -26,9 +28,12 @@ div.header + div.responsivegrid {
 
 body,
 input,
+optgroup,
 select,
-textarea {
-    font-family: $venia-font;
+textarea,
+button,
+.cmp-button {
+    font-family: $font-family;
 }
 
 h1,
@@ -36,10 +41,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-size: 1rem;
+h6,
+.cmp-title__text,
+.cmp-teaser__title,
+.cmp-helloworld__title {
+    font-family: $font-family;
     font-weight: 400;
     margin: 0;
+}
+
+p,
+.cmp-text,
+.cmp-teaser__description {
+    font-family: $font-family;
 }
 
 h1 {

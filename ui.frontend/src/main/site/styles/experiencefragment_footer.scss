@@ -1,36 +1,6 @@
 //== Proluxe Footer Styles (Experience Fragment)
 // Matches https://proluxelighting.com/ across the whole screen
 
-// Web Font Declarations (Proluxe Theme)
-@font-face {
-    font-display: swap;
-    font-family: 'miller-display';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 300;
-    src: url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-light.woff2') format('woff2'),
-         url('resources/fonts/miller-display/miller-display-light.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'miller-display';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 400;
-    src: url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-regular.woff2') format('woff2'),
-         url('resources/fonts/miller-display/miller-display-regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: 'miller-display';
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 700;
-    src: url('/etc.clientlibs/commerce-store/clientlibs/clientlib-site/resources/fonts/miller-display/miller-display-bold.woff2') format('woff2'),
-         url('resources/fonts/miller-display/miller-display-bold.woff2') format('woff2');
-}
 
 .experiencefragment:has(.cmp-experiencefragment--footer) {
     width: 100%;

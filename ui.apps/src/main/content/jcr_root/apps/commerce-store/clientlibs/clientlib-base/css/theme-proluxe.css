@@ -1,0 +1,714 @@
+/* =============================================================================
+   ProLuxe Theme - Complete Site-Wide Styling
+   Derived from aem-brainvire ProLuxe Lighting Theme
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   1. Root Variables & Theme Tokens
+   ----------------------------------------------------------------------------- */
+:root {
+    --plx-dark: #212322;
+    --plx-gold: #c6b682;
+    --plx-gold-hover: #b8a66f;
+    --plx-sand: #cecbbe;
+    --plx-bg-light: #ffffff;
+    --plx-text: #202020;
+    --plx-text-muted: #707070;
+    --plx-border-light: #eaeaea;
+    --plx-border-dark: rgba(255, 255, 255, 0.15);
+    --plx-font-serif: 'miller-display', Georgia, 'Times New Roman', serif;
+    --plx-font-sans: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+    /* Override CIF Venia default colors to ProLuxe palette */
+    --venia-teal: 198, 182, 130;
+    --venia-teal-dark: 33, 35, 34;
+    --venia-orange: 198, 182, 130;
+    --venia-text-spot: 198, 182, 130;
+    --venia-global-color-teal: #c6b682;
+    --venia-global-color-teal-dark: #212322;
+    --venia-global-color-orange: #c6b682;
+}
+
+/* -----------------------------------------------------------------------------
+   2. Global Typography & Base
+   ----------------------------------------------------------------------------- */
+html,
+body {
+    background-color: #ffffff;
+    color: #202020;
+    font-family: var(--plx-font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* All headings adopt Miller Display luxury editorial serif */
+h1, h2, h3, h4, h5, h6,
+.cmp-title__text,
+.cmp-teaser__title,
+.cmp-helloworld__title,
+.category__title,
+.productFullDetail__productName,
+.cartPage__heading,
+.checkoutPage__title,
+.accountInformation__title,
+.orderHistory__title,
+.addressBook__title {
+    font-family: var(--plx-font-serif) !important;
+    font-weight: 300 !important;
+    letter-spacing: -0.4px !important;
+    color: var(--plx-dark) !important;
+}
+
+p,
+.cmp-text,
+.cmp-teaser__description,
+.productFullDetail__description {
+    font-family: var(--plx-font-sans);
+    line-height: 1.65;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    color: var(--plx-gold);
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+   3. Main Container Layout (Matches aem-brainvire 1614px specification)
+   ----------------------------------------------------------------------------- */
+.aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12,
+main.container {
+    box-sizing: border-box;
+    clear: both;
+    float: none;
+    font-family: var(--plx-font-sans);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1614px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+
+/* Reset nested containers */
+main.container > .cmp-container:not(.blog-article):not(.blog-index) {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+main.container .container.responsivegrid.aem-GridColumn,
+main.container .container.responsivegrid.aem-GridColumn--default--12 {
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Ensure full screen stretch for header and footer experience fragments */
+.aem-Grid.aem-Grid--12 > header.experiencefragment.aem-GridColumn,
+.aem-Grid.aem-Grid--12 > footer.experiencefragment.aem-GridColumn,
+header.experiencefragment,
+footer.experiencefragment {
+    float: none !important;
+    clear: both !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Sticky footer layout */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.root.container.responsivegrid {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.root.container.responsivegrid > .cmp-container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.root.container.responsivegrid > .cmp-container > .aem-Grid {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+   4. Buttons & Actions (Luxury ProLuxe Aesthetic)
+   ----------------------------------------------------------------------------- */
+.cmp-button,
+.button__root,
+.button__filled,
+.cmp-teaser__action-link,
+button.primary,
+.action.primary,
+.cart__checkoutButton,
+.productFullDetail__actions button,
+.checkoutPage__submitOrder,
+.cartPage__checkoutButton {
+    background-color: var(--plx-dark) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--plx-dark) !important;
+    border-radius: 2px !important;
+    font-family: var(--plx-font-sans) !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    padding: 12px 28px !important;
+    height: auto !important;
+    min-height: 44px !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    outline: none !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+.cmp-button:hover,
+.button__root:hover,
+.button__filled:hover,
+.cmp-teaser__action-link:hover,
+button.primary:hover,
+.action.primary:hover,
+.cart__checkoutButton:hover,
+.productFullDetail__actions button:hover,
+.checkoutPage__submitOrder:hover,
+.cartPage__checkoutButton:hover {
+    background-color: var(--plx-gold) !important;
+    border-color: var(--plx-gold) !important;
+    color: var(--plx-dark) !important;
+    box-shadow: 0 4px 12px rgba(198, 182, 130, 0.3) !important;
+}
+
+/* Secondary / Outline Buttons */
+.button__root:not(.button__filled):not(.button__root_highPriority),
+.action.secondary,
+button.secondary {
+    background-color: transparent !important;
+    color: var(--plx-dark) !important;
+    border: 1px solid var(--plx-dark) !important;
+    border-radius: 2px !important;
+}
+
+.button__root:not(.button__filled):not(.button__root_highPriority):hover,
+.action.secondary:hover,
+button.secondary:hover {
+    background-color: var(--plx-dark) !important;
+    color: #ffffff !important;
+    border-color: var(--plx-dark) !important;
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="search"],
+select,
+textarea,
+.field__input {
+    border: 1px solid #d5d5d5 !important;
+    border-radius: 2px !important;
+    font-family: var(--plx-font-sans) !important;
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+    color: var(--plx-dark) !important;
+    background-color: #ffffff !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.field__input:focus {
+    border-color: var(--plx-gold) !important;
+    box-shadow: 0 0 0 1px var(--plx-gold) !important;
+}
+
+/* -----------------------------------------------------------------------------
+   5. Core Components Styling
+   ----------------------------------------------------------------------------- */
+/* Titles */
+.cmp-title {
+    margin: 28px 0 16px 0;
+}
+
+.cmp-title .cmp-title__text {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+    margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .cmp-title .cmp-title__text {
+        font-size: 34px !important;
+        letter-spacing: -0.6px !important;
+    }
+}
+
+/* Teaser / Banners */
+.cmp-teaser {
+    position: relative;
+    overflow: hidden;
+}
+
+.cmp-teaser .cmp-teaser__title {
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+}
+
+@media (min-width: 768px) {
+    .cmp-teaser .cmp-teaser__title {
+        font-size: 44px !important;
+    }
+}
+
+.cmp-teaser .cmp-teaser__description {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: #4a4a4a !important;
+    margin-bottom: 20px !important;
+}
+
+/* Breadcrumbs */
+.cmp-breadcrumb .cmp-breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 12px 0;
+    margin: 0 0 16px 0;
+}
+
+.cmp-breadcrumb .cmp-breadcrumb__item-link,
+.cmp-breadcrumb .cmp-breadcrumb__item {
+    font-family: var(--plx-font-sans);
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--plx-text-muted);
+}
+
+.cmp-breadcrumb .cmp-breadcrumb__item-link:hover {
+    color: var(--plx-gold);
+}
+
+/* Tabs */
+.cmp-tabs__tab-list {
+    border-bottom: 1px solid var(--plx-border-light);
+    display: flex;
+    gap: 28px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cmp-tabs__tab {
+    font-family: var(--plx-font-serif);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--plx-text-muted);
+    padding: 12px 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.2s ease;
+}
+
+.cmp-tabs__tab:hover,
+.cmp-tabs__tab--active {
+    color: var(--plx-dark);
+    border-bottom-color: var(--plx-gold);
+}
+
+/* Accordion */
+.cmp-accordion__header {
+    border-top: 1px solid var(--plx-border-light);
+    margin: 0;
+}
+
+.cmp-accordion__button {
+    font-family: var(--plx-font-serif);
+    font-size: 18px;
+    color: var(--plx-dark);
+    padding: 16px 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* -----------------------------------------------------------------------------
+   6. CIF Commerce: Product Catalog & Category Page
+   ----------------------------------------------------------------------------- */
+.category__header {
+    margin-bottom: 32px !important;
+    text-align: center !important;
+}
+
+.category__title {
+    font-size: 32px !important;
+    letter-spacing: -0.5px !important;
+    text-transform: uppercase !important;
+    margin: 0 auto 12px !important;
+}
+
+@media (min-width: 768px) {
+    .category__title {
+        font-size: 40px !important;
+    }
+}
+
+/* Product Grid Cards */
+.productcollection__items,
+.category__style_grid .productcollection__items {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    gap: 32px 24px !important;
+}
+
+.item__root,
+.productcollection__item,
+.productListItem {
+    background: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+    position: relative !important;
+}
+
+.item__root:hover,
+.productcollection__item:hover,
+.productListItem:hover {
+    transform: translateY(-4px) !important;
+}
+
+.item__image,
+.productListItem__image {
+    background-color: #fafafa !important;
+    border-radius: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+/* Product Title in Editorial Serif */
+.item__name,
+.productListItem__title,
+.productcollection__item-title {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: var(--plx-dark) !important;
+    margin: 12px 0 6px 0 !important;
+    line-height: 1.35 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.item__name:hover,
+.productListItem__title:hover {
+    color: var(--plx-gold) !important;
+}
+
+/* Prices */
+.item__price,
+.productListItem__price,
+.price,
+.productFullDetail__price {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: var(--plx-dark) !important;
+    margin: 4px 0 12px 0 !important;
+}
+
+.discountedPrice,
+.price .discountedPrice {
+    color: var(--plx-gold) !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+}
+
+.regularPrice,
+.price .regularPrice {
+    color: var(--plx-text-muted) !important;
+    text-decoration: line-through !important;
+    font-size: 13px !important;
+    margin-right: 6px !important;
+}
+
+/* Filter & Sort Bar */
+.filterModal__root,
+.filterSidebar__root {
+    font-family: var(--plx-font-sans);
+}
+
+.filterSidebar__title,
+.filterModal__title {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* -----------------------------------------------------------------------------
+   7. CIF Commerce: Product Detail Page (PDP)
+   ----------------------------------------------------------------------------- */
+.productFullDetail__productName {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+}
+
+@media (min-width: 992px) {
+    .productFullDetail__productName {
+        font-size: 40px !important;
+    }
+}
+
+.productFullDetail__price {
+    font-size: 26px !important;
+    margin-bottom: 20px !important;
+    color: var(--plx-dark) !important;
+}
+
+/* Swatches */
+.swatch__root_selected,
+.tileList__root_selected {
+    border-color: var(--plx-gold) !important;
+    box-shadow: 0 0 0 1px var(--plx-gold) !important;
+}
+
+/* Quantity Field */
+.quantity__input {
+    border: 1px solid #dcdcdc !important;
+    border-radius: 2px !important;
+    font-family: var(--plx-font-sans) !important;
+    text-align: center !important;
+}
+
+/* Full Width Add to Cart Button */
+.productFullDetail__cartActions .button__filled,
+.productFullDetail__actions button {
+    width: 100% !important;
+    height: 50px !important;
+    font-size: 13.5px !important;
+    letter-spacing: 1.5px !important;
+}
+
+/* -----------------------------------------------------------------------------
+   8. CIF Commerce: Cart Details Page & Mini-Cart Drawer
+   ----------------------------------------------------------------------------- */
+/* Cart Details Page Title */
+.cartPage__heading,
+.cartDetails__heading {
+    font-size: 36px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 28px !important;
+}
+
+/* Cart Table Headers */
+.cartPage__tableHeader {
+    font-family: var(--plx-font-sans) !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    color: var(--plx-text-muted) !important;
+    border-bottom: 2px solid var(--plx-dark) !important;
+    padding-bottom: 10px !important;
+}
+
+/* Cart Item Names */
+.item__name,
+.product__name,
+.cartItem__name {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: var(--plx-dark) !important;
+}
+
+/* Cart Summary Box */
+.priceSummary__root,
+.orderSummary__root {
+    background-color: #fafafa !important;
+    border: 1px solid var(--plx-border-light) !important;
+    border-radius: 2px !important;
+    padding: 24px !important;
+}
+
+.priceSummary__title,
+.orderSummary__title {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 16px !important;
+    border-bottom: 1px solid var(--plx-border-light) !important;
+    padding-bottom: 12px !important;
+}
+
+.priceSummary__total,
+.orderSummary__total {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: var(--plx-dark) !important;
+}
+
+/* Proceed to Checkout Button (Overriding bright purple button!) */
+.cartPage__checkoutButton,
+.cartPage__checkoutActions button,
+.cart__checkoutButton {
+    background-color: var(--plx-dark) !important;
+    background-image: none !important;
+    border-color: var(--plx-dark) !important;
+    color: #ffffff !important;
+    font-size: 13.5px !important;
+    letter-spacing: 1.5px !important;
+    height: 50px !important;
+    width: 100% !important;
+}
+
+.cartPage__checkoutButton:hover,
+.cartPage__checkoutActions button:hover,
+.cart__checkoutButton:hover {
+    background-color: var(--plx-gold) !important;
+    border-color: var(--plx-gold) !important;
+    color: var(--plx-dark) !important;
+}
+
+/* MiniCart Drawer */
+.miniCart__root {
+    background-color: #ffffff !important;
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+.miniCart__header {
+    border-bottom: 1px solid var(--plx-border-light) !important;
+    padding: 18px 24px !important;
+}
+
+.miniCart__title {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    color: var(--plx-dark) !important;
+}
+
+.miniCart__footer {
+    border-top: 1px solid var(--plx-border-light) !important;
+    padding: 20px 24px !important;
+    background-color: #fafafa !important;
+}
+
+/* -----------------------------------------------------------------------------
+   9. Checkout & My Account Pages
+   ----------------------------------------------------------------------------- */
+.checkoutPage__stepHeader,
+.step__header {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 20px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 1px solid var(--plx-border-light) !important;
+    padding-bottom: 12px !important;
+    margin-bottom: 20px !important;
+}
+
+.step__number {
+    background-color: var(--plx-gold) !important;
+    color: var(--plx-dark) !important;
+    font-weight: 700 !important;
+}
+
+/* Account Navigation */
+.accountMenu__root,
+.accountPage__nav {
+    font-family: var(--plx-font-sans);
+}
+
+.accountPage__navLink_active {
+    color: var(--plx-gold) !important;
+    border-left: 2px solid var(--plx-gold) !important;
+    font-weight: 600 !important;
+}
+
+/* -----------------------------------------------------------------------------
+   10. Error Pages (404 / 503)
+   ----------------------------------------------------------------------------- */
+.errorPage__code {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 80px !important;
+    font-weight: 300 !important;
+    color: var(--plx-dark) !important;
+    line-height: 1 !important;
+}
+
+.errorPage__message {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 24px !important;
+    color: var(--plx-text-muted) !important;
+    margin-bottom: 24px !important;
+}

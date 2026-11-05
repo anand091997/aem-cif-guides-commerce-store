@@ -1,0 +1,257 @@
+/* Matches https://proluxelighting.com/ .dedicated-providing (full-bleed row) */
+
+html:has(.dedicated-providing),
+body:has(.dedicated-providing) {
+    overflow-x: clip;
+}
+
+main.container:has(.dedicated-providing) {
+    flex-grow: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+body:has(.dedicated-providing) .root > .cmp-container > .aem-Grid > footer.experiencefragment,
+body:has(.dedicated-providing) footer.experiencefragment {
+    margin-top: 0 !important;
+}
+
+.cmp-container.dedicated-providing {
+    background-color: #212322;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    color: #fff;
+    float: none;
+    margin-bottom: 0 !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    margin-top: 0 !important;
+    max-width: none !important;
+    padding: 40px 0;
+    position: relative;
+    width: 100vw !important;
+}
+
+.cmp-container.dedicated-providing > .aem-Grid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 !important;
+    max-width: none !important;
+    width: 100% !important;
+}
+
+.cmp-container.dedicated-providing > .aem-Grid.aem-Grid--12 > .aem-GridColumn {
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    float: none;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.dedicated-providing .dedicated-image,
+.dedicated-providing .dedicated-image .cmp-image,
+.dedicated-providing .dedicated-image img {
+    display: block;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.cmp-container.dedicated-content {
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+.dedicated-providing .title-large,
+.dedicated-providing .title-large .cmp-title__text {
+    color: #fff;
+    font-family: "acumin-pro-wide", "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: -0.6pt;
+    line-height: 1.15;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.dedicated-providing .dedicated-content .cmp-text,
+.dedicated-providing .dedicated-content p {
+    color: #fff;
+    font-family: "acumin-pro", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.32pt;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.dedicated-providing .dedicated-content p:last-child {
+    margin-bottom: 0;
+}
+
+.dedicated-providing .dedicated-content a {
+    color: #fff;
+    display: inline-block;
+    font-family: "miller-display", Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+}
+
+.dedicated-providing .dedicated-content a::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.dedicated-providing .dedicated-content a:hover {
+    color: #c6b682;
+}
+
+.dedicated-providing .dedicated-content a:hover::after {
+    background-color: #c6b682;
+}
+
+@media (min-width: 768px) {
+    .cmp-container.dedicated-providing {
+        padding: 60px 0;
+    }
+
+    .cmp-container.dedicated-providing > .aem-Grid.aem-Grid--12 > .aem-GridColumn {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+        padding: 0 !important;
+        width: 50% !important;
+    }
+
+    .cmp-container.dedicated-content {
+        margin-top: 0;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    .dedicated-providing .title-large,
+    .dedicated-providing .title-large .cmp-title__text {
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+
+    .dedicated-providing .dedicated-content p {
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cmp-container.dedicated-content {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cmp-container.dedicated-providing {
+        padding: 90px 0;
+    }
+
+    .cmp-container.dedicated-content {
+        max-width: 830px;
+        padding-left: 50px;
+    }
+
+    .dedicated-providing .title-large,
+    .dedicated-providing .title-large .cmp-title__text {
+        font-size: 48px;
+        letter-spacing: -1.5px;
+    }
+
+    .dedicated-providing .dedicated-content a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .cmp-container.dedicated-content {
+        padding-left: 80px;
+    }
+
+    .dedicated-providing .title-large,
+    .dedicated-providing .title-large .cmp-title__text {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}
+
+/* Beat the site container rules that pin nested containers to the 1614px column. */
+.aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-providing:not(.blog-article):not(.blog-index) {
+    background-color: #212322;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-sizing: border-box;
+    color: #fff;
+    float: none;
+    margin-bottom: 0 !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+    margin-top: 0 !important;
+    max-width: none !important;
+    padding: 40px 0;
+    position: relative;
+    width: 100vw !important;
+}
+
+.aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-content:not(.blog-article):not(.blog-index) {
+    box-sizing: border-box;
+    margin-top: 40px;
+    max-width: none;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-providing:not(.blog-article):not(.blog-index) {
+        padding: 60px 0;
+    }
+
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-content:not(.blog-article):not(.blog-index) {
+        margin-top: 0;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-content:not(.blog-article):not(.blog-index) {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-providing:not(.blog-article):not(.blog-index) {
+        padding: 90px 0;
+    }
+
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-content:not(.blog-article):not(.blog-index) {
+        max-width: 830px;
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .aem-Grid.aem-Grid--12 > main.container.aem-GridColumn.aem-GridColumn--default--12 .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index) > .cmp-container.dedicated-content:not(.blog-article):not(.blog-index) {
+        padding-left: 80px;
+    }
+}

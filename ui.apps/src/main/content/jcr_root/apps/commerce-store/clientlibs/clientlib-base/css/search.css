@@ -1,0 +1,32 @@
+/* Overrides for Search Component */
+.cmp_search__info,
+.cmp-search__info {
+    height: auto;
+    font-size: .875rem;
+    font-style: italic;
+}
+
+/* Language Navigation indicator override */
+header.experiencefragment .cmp-experiencefragment--header .languagenavigation .cmp-languagenavigation .cmp-languagenavigation__item .cmp-languagenavigation__item-link:after,
+header.experiencefragment .cmp-experiencefragment--header .languagenavigation .cmp-languagenavigation .cmp-languagenavigation__item .cmp-languagenavigation__item-title:after,
+header.experiencefragment .languagenavigation .cmp-languagenavigation .cmp-languagenavigation__item .cmp-languagenavigation__item-link:after,
+header.experiencefragment .languagenavigation .cmp-languagenavigation .cmp-languagenavigation__item .cmp-languagenavigation__item-title:after {
+    display: none;
+    content: none;
+}
+
+/* Footer copyright full width override */
+footer.experiencefragment .cmp-container > :nth-child(5),
+footer.experiencefragment .text:has(.plx-footer-copyright) {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+    text-align: center;
+}
+
+footer.experiencefragment .plx-footer-copyright {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}

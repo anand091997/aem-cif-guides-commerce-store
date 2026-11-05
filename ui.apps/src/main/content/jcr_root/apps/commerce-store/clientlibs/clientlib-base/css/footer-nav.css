@@ -1,0 +1,55 @@
+/* Footer link columns become an accordion below 768px. */
+
+@media (max-width: 767px) {
+    footer.experiencefragment .text:has(.plx-footer-nav) .plx-footer-nav {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        grid-template-columns: none !important;
+    }
+
+    footer.experiencefragment .plx-footer-col {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        min-width: 0;
+        width: 100%;
+    }
+
+    footer.experiencefragment .plx-footer-col h4 {
+        cursor: pointer;
+        margin: 0 !important;
+        padding: 16px 28px 16px 0 !important;
+        position: relative;
+    }
+
+    footer.experiencefragment .plx-footer-col h4::after {
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        content: "";
+        height: 7px;
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-70%) rotate(45deg);
+        width: 7px;
+    }
+
+    footer.experiencefragment .plx-footer-col.is-open h4::after {
+        transform: translateY(-30%) rotate(-135deg);
+    }
+
+    footer.experiencefragment .plx-footer-col ul {
+        display: none;
+        margin: 0;
+        padding: 0 0 16px;
+    }
+
+    footer.experiencefragment .plx-footer-col.is-open ul {
+        display: block;
+    }
+
+    footer.experiencefragment .text:has(.plx-footer-bottom),
+    footer.experiencefragment .cmp-container > .image + .text + .text + .text,
+    footer.experiencefragment .cmp-container > :nth-child(4) {
+        border-top: none;
+    }
+}

@@ -1,0 +1,460 @@
+/* ProLuxe Header & Navigation Theme - Matches aem-brainvire aesthetic */
+
+header.experiencefragment {
+    background-color: #212322 !important;
+    border-bottom: none !important;
+    font-family: 'miller-display', Georgia, 'Times New Roman', serif;
+    position: relative;
+    z-index: 9999;
+    box-sizing: border-box;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+header.experiencefragment a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header.experiencefragment a:hover,
+header.experiencefragment a:focus {
+    color: #c6b682;
+    text-decoration: none;
+}
+
+header.experiencefragment .cmp-experiencefragment--header,
+header.experiencefragment > .cmp-experiencefragment {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header.experiencefragment .cmp-experiencefragment--header > .cmp-container,
+header.experiencefragment .cmp-experiencefragment > .cmp-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1614px;
+    padding: 20px 15px;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    header.experiencefragment .cmp-experiencefragment--header > .cmp-container,
+    header.experiencefragment .cmp-experiencefragment > .cmp-container {
+        padding: 16px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    header.experiencefragment .cmp-experiencefragment--header > .cmp-container,
+    header.experiencefragment .cmp-experiencefragment > .cmp-container {
+        padding: 14px 15px;
+    }
+}
+
+/* Header Container Grid / Flex Layout */
+header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    gap: 24px !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 992px) {
+    header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12 {
+        gap: 12px !important;
+    }
+}
+
+header.experiencefragment .aem-GridColumn {
+    float: none !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   1. Brand Logo (Left)
+   ========================================================================== */
+header.experiencefragment .logo,
+header.experiencefragment .image {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+@media (max-width: 992px) {
+    header.experiencefragment .logo,
+    header.experiencefragment .image {
+        order: 1 !important;
+    }
+}
+
+header.experiencefragment .logo__link,
+header.experiencefragment .cmp-image__link {
+    display: inline-flex !important;
+    align-items: center !important;
+    outline: none !important;
+    width: 175px !important;
+    height: 35px !important;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAAA3AQMAAAAfcZI9AAAAAXNSR0IArs4c6QAAAAZQTFRFR3BM////n5SiQwAAAAF0Uk5TAEDm2GYAAAIdSURBVEiJ5dXLkeMgEAbgVunAbRWCMhmltBEsCo0qJ8JkwJGDCrb/buThZW/tcWpUHnnAX0uoBQ3Rjz3WHN/+bnLOgejgr5Pkm8+7RHo+/aGDu00g/h1XAk/KOQq9ruPc3hqelXNr0aia7/y1+YY74UlbseUbwl3DvXC+yZY/EVVzw4jHP+X7xREtXy8i+8XxZIE+8JgnHYGH3/KFOXeV/IIb5ZwD6ySq4Qmfmq9ROD8Q3xVRNedLYzwVX5RvjrJGNdyefLk5TyRJbvjheLA1p0u48Xisge9+e8f5Wg3fAl7slKNz7bgJmDYzvk55RL6mPEz4eiFfs8wI51bDl5T+h1O+aP5W59wKt7LOKn44EQM/Ysu3e0a+4KHl3P7YMd/nHG/pyR+yPN7x5uoPWavg6RWPHT+FR3qXmZLIhyxS8NDxcOc9tfxSfs750nNODifSFvGcM+HFnCHlJ7UzsvBxRgrnWd3OdzQuvMR+vgvntyH8Xk3LzX2/moTzGtXF5784Osa1qpw760oAipCxEghH7azrDGIxfnuaOOGldj6rGGL1El0VU46bo0baUiPxDw9wrJHKcXOpwE/uJFtDBS5c67u5CzZirS/Dn3DcPDuL3UNq/54Mz49q97gazs9otFP5JlMb+T3chHMG17LzCTe6/3j5Gzm/H5KVWPgqoNpXO66793lzkPs2vHm3WHqvj27AXTHr7rx+1/6Ox1/AYeILywTe073AAAAAElFTkSuQmCC") !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+}
+
+header.experiencefragment .logo__image,
+header.experiencefragment .cmp-image__image {
+    opacity: 0 !important;
+    width: 175px !important;
+    height: 35px !important;
+}
+
+@media (max-width: 480px) {
+    header.experiencefragment .logo__link,
+    header.experiencefragment .cmp-image__link {
+        width: 135px !important;
+        height: 27px !important;
+    }
+    header.experiencefragment .logo__image,
+    header.experiencefragment .cmp-image__image {
+        width: 135px !important;
+        height: 27px !important;
+    }
+}
+
+/* ==========================================================================
+   2. Main Navigation (Center)
+   ========================================================================== */
+header.experiencefragment .navigation {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+header.experiencefragment .cmp-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+header.experiencefragment .cmp-navigation > .cmp-navigation__group {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 32px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: nowrap !important;
+}
+
+@media (max-width: 1200px) {
+    header.experiencefragment .cmp-navigation > .cmp-navigation__group {
+        gap: 20px !important;
+    }
+}
+
+header.experiencefragment .cmp-navigation__item {
+    position: relative !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 8px 0 !important;
+}
+
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item > .cmp-navigation__item-link,
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item > .cmp-navigation__item-title {
+    display: inline-flex !important;
+    align-items: center !important;
+    font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.85px !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    padding: 4px 2px !important;
+    transition: color 0.25s ease !important;
+}
+
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item > .cmp-navigation__item-link:hover,
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item > .cmp-navigation__item-title:hover,
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item.cmp-navigation__item--active > .cmp-navigation__item-link,
+header.experiencefragment .cmp-navigation > .cmp-navigation__group > .cmp-navigation__item.cmp-navigation__item--active > .cmp-navigation__item-title {
+    color: #c6b682 !important;
+}
+
+/* Remove default underline pseudo-elements */
+header.experiencefragment .cmp-navigation__item-link::before,
+header.experiencefragment .cmp-navigation__item-link::after,
+header.experiencefragment .cmp-navigation__item-title::before,
+header.experiencefragment .cmp-navigation__item-title::after {
+    background: none !important;
+    border: none !important;
+    content: none !important;
+    display: none !important;
+}
+
+/* Dropdown Submenu (Desktop) */
+@media (min-width: 993px) {
+    header.experiencefragment .cmp-navigation__item > .cmp-navigation__group {
+        display: none !important;
+        position: absolute !important;
+        top: calc(100% + 4px) !important;
+        left: 0 !important;
+        background-color: #ffffff !important;
+        border: none !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+        padding: 12px 0 !important;
+        z-index: 1001 !important;
+        min-width: 220px !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        margin: 0 !important;
+        list-style: none !important;
+    }
+
+    header.experiencefragment .cmp-navigation__item:hover > .cmp-navigation__group {
+        display: flex !important;
+    }
+
+    header.experiencefragment .cmp-navigation__item > .cmp-navigation__group .cmp-navigation__item {
+        padding: 0 !important;
+        width: 100% !important;
+        border-bottom: none !important;
+    }
+
+    header.experiencefragment .cmp-navigation__item > .cmp-navigation__group .cmp-navigation__item-link {
+        display: block !important;
+        padding: 8px 22px !important;
+        font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
+        font-size: 14px !important;
+        font-weight: 700 !important;
+        color: #1a1c1b !important;
+        text-transform: none !important;
+        letter-spacing: 0.2px !important;
+        white-space: nowrap !important;
+        transition: color 0.2s ease, background 0.2s ease !important;
+    }
+
+    header.experiencefragment .cmp-navigation__item > .cmp-navigation__group .cmp-navigation__item-link:hover,
+    header.experiencefragment .cmp-navigation__item > .cmp-navigation__group .cmp-navigation__item--active > .cmp-navigation__item-link {
+        background-color: transparent !important;
+        color: #c6b682 !important;
+    }
+}
+
+/* ==========================================================================
+   3. Searchbar, Miniaccount & Minicart (Right Controls)
+   ========================================================================== */
+header.experiencefragment .searchbar,
+header.experiencefragment .miniaccount,
+header.experiencefragment .minicart {
+    flex: 0 0 auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+@media (max-width: 992px) {
+    header.experiencefragment .searchbar,
+    header.experiencefragment .miniaccount,
+    header.experiencefragment .minicart {
+        order: 2 !important;
+    }
+}
+
+/* Searchbar Trigger & Form */
+header.experiencefragment .searchbar__trigger {
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 6px !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: color 0.2s ease !important;
+    outline: none !important;
+}
+
+header.experiencefragment .searchbar__trigger:hover {
+    color: #c6b682 !important;
+}
+
+header.experiencefragment .searchbar__trigger svg {
+    stroke: currentColor !important;
+}
+
+header.experiencefragment .searchbar__form-container {
+    background: #212322 !important;
+    border: 1px solid rgba(198, 182, 130, 0.4) !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75) !important;
+    border-radius: 0 !important;
+}
+
+header.experiencefragment .searchbar__input {
+    background: transparent !important;
+    color: #ffffff !important;
+    font-family: 'miller-display', Georgia, serif !important;
+    letter-spacing: 0.5px !important;
+    font-size: 14px !important;
+}
+
+header.experiencefragment .searchbar__input::placeholder {
+    color: #999999 !important;
+}
+
+header.experiencefragment .searchbar__search-icon svg {
+    stroke: #c6b682 !important;
+}
+
+/* Miniaccount / Sign In */
+header.experiencefragment .miniaccount button,
+header.experiencefragment .miniaccount a,
+header.experiencefragment .miniaccount__trigger,
+header.experiencefragment .miniaccount .accountTrigger__root {
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.85px !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 6px 8px !important;
+    transition: color 0.2s ease !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+header.experiencefragment .miniaccount button:hover,
+header.experiencefragment .miniaccount a:hover,
+header.experiencefragment .miniaccount__trigger:hover,
+header.experiencefragment .miniaccount .accountTrigger__root:hover {
+    color: #c6b682 !important;
+}
+
+header.experiencefragment .miniaccount svg {
+    stroke: currentColor !important;
+}
+
+/* Minicart */
+header.experiencefragment .minicart .cartTrigger__root,
+header.experiencefragment .minicart .minicart__trigger button,
+header.experiencefragment .minicart button {
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 6px 8px !important;
+    position: relative !important;
+    transition: color 0.2s ease !important;
+    outline: none !important;
+}
+
+header.experiencefragment .minicart button:hover,
+header.experiencefragment .minicart .cartTrigger__root:hover {
+    color: #c6b682 !important;
+}
+
+header.experiencefragment .minicart svg {
+    stroke: currentColor !important;
+}
+
+/* Cart Counter Badge - Champagne Gold */
+header.experiencefragment .minicart .cartCounter__root,
+header.experiencefragment .minicart .cartTrigger__counter,
+header.experiencefragment .cartCounter__root {
+    background-color: #c6b682 !important;
+    color: #212322 !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    min-width: 18px !important;
+    height: 18px !important;
+    line-height: 18px !important;
+    border-radius: 9px !important;
+    text-align: center !important;
+    padding: 0 4px !important;
+    display: inline-block !important;
+    margin-left: 4px !important;
+}
+
+/* ==========================================================================
+   4. Mobile Header & Navigation Drawer (<= 992px)
+   ========================================================================== */
+@media (max-width: 992px) {
+    header.experiencefragment .navigation {
+        display: none !important;
+    }
+
+    header.experiencefragment.is-open .navigation,
+    header.experiencefragment .navigation.is-open {
+        display: block !important;
+        background-color: #212322 !important;
+        border: none !important;
+        bottom: 0 !important;
+        box-shadow: none !important;
+        box-sizing: border-box !important;
+        height: 100vh !important;
+        left: 0 !important;
+        max-height: none !important;
+        min-height: 100vh !important;
+        opacity: 1 !important;
+        overflow-y: auto !important;
+        padding: 74px 28px 28px !important;
+        position: fixed !important;
+        right: 0 !important;
+        top: 0 !important;
+        visibility: visible !important;
+        width: 100% !important;
+        z-index: 10001 !important;
+    }
+
+    header.experiencefragment.is-open .cmp-navigation > .cmp-navigation__group {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+    header.experiencefragment.is-open .cmp-navigation__item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    header.experiencefragment.is-open .cmp-navigation__item-link {
+        display: flex !important;
+        width: 100% !important;
+        padding: 16px 0 !important;
+        font-size: 15px !important;
+        letter-spacing: 1px !important;
+        color: #ffffff !important;
+    }
+
+    header.experiencefragment.is-open .cmp-navigation__item-link:hover,
+    header.experiencefragment.is-open .cmp-navigation__item.cmp-navigation__item--active > .cmp-navigation__item-link {
+        color: #c6b682 !important;
+    }
+}

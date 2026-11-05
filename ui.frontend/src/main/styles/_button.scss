@@ -1,4 +1,31 @@
-.cmp-button {}
-.cmp-button__text {}
-.cmp-button__icon {}
-//.cmp-button__icon--myIcon {}
+.cmp-button {
+    background-color: #212322;
+    color: #ffffff;
+    border: 1px solid #212322;
+    border-radius: 2px;
+    font-family: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 12px 28px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #c6b682;
+        border-color: #c6b682;
+        color: #212322;
+        box-shadow: 0 4px 12px rgba(198, 182, 130, 0.3);
+    }
+}
+
+.cmp-button__text {
+    font-family: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+}

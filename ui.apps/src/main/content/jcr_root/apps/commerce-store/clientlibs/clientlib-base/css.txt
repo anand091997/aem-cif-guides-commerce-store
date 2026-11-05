@@ -16,4 +16,9 @@
 
 #base=css
 fonts.css
+header-nav.css
+footer-nav.css
+search.css
+dedicated-providing.css
 static-page.css
+theme-proluxe.css

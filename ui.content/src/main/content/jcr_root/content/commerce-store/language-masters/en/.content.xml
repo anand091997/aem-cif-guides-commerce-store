@@ -30,7 +30,7 @@
                         sling:resourceType="commerce-store/components/heroimage" 
                         fileReference="/content/dam/commerce-store/landing_page_hero.jpg" 
                         heading="All-new reference storefront" 
-                        title="venia" />
+                        title="commerce-store" />
                 </container>
             </container>
         </root>

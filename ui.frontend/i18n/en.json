@@ -485,10 +485,34 @@
       "value": "Fetching Cart..."
     }
   ],
+  "toast.cart.error": [
+    {
+      "type": 0,
+      "value": "Product could not be added to your cart."
+    }
+  ],
+  "toast.cart.outOfStock": [
+    {
+      "type": 0,
+      "value": "This product is currently out of stock."
+    }
+  ],
+  "toast.cart.success": [
+    {
+      "type": 0,
+      "value": "Product was added to your cart."
+    }
+  ],
   "toast.wishlist.error": [
     {
       "type": 0,
       "value": "Product could not be added to wishlist."
+    }
+  ],
+  "toast.wishlist.signInRequired": [
+    {
+      "type": 0,
+      "value": "Sign in to add items to your wish list."
     }
   ],
   "toast.wishlist.success": [

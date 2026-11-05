@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,9 +30,9 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-cif-guides-venia.all</artifactId>
+    <artifactId>aem-cif-guides-commerce-store.all</artifactId>
     <packaging>content-package</packaging>
-    <name>Venia - All</name>
+    <name>Commerce Store - All</name>
     <description>All content package for Venia</description>
 
     <!-- ====================================================================== -->
@@ -49,7 +49,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>com.adobe.aem.guides</group>
-                    <name>aem-cif-guides-venia.all</name>
+                    <name>aem-cif-guides-commerce-store.all</name>
                     <packageType>mixed</packageType>
                     <allowIndexDefinitions>true</allowIndexDefinitions>
                     <properties>
@@ -58,65 +58,65 @@
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.ui.apps.structure</artifactId>
+                            <artifactId>aem-cif-guides-commerce-store.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
                     <embeddeds>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.ui.apps</artifactId>
+                            <artifactId>aem-cif-guides-commerce-store.ui.apps</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-packages/application/install</target>
+                            <target>/apps/commerce-store-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.core</artifactId>
-                            <target>/apps/venia-packages/application/install</target>
+                            <artifactId>aem-cif-guides-commerce-store.core</artifactId>
+                            <target>/apps/commerce-store-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.ui.content</artifactId>
+                            <artifactId>aem-cif-guides-commerce-store.ui.content</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-packages/content/install</target>
+                            <target>/apps/commerce-store-packages/content/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.ui.config</artifactId>
+                            <artifactId>aem-cif-guides-commerce-store.ui.config</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-packages/application/install</target>
+                            <target>/apps/commerce-store-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-apps</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-extensions-product-recs-content</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-config</artifactId>
                             <type>zip</type>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-core</artifactId>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>core-cif-components-extensions-product-recs-bundle</artifactId>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                         <embedded>
                             <groupId>com.adobe.commerce.cif</groupId>
                             <artifactId>magento-graphql</artifactId>
-                            <target>/apps/venia-vendor-packages/application/install</target>
+                            <target>/apps/commerce-store-vendor-packages/application/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -225,25 +225,25 @@
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
-            <artifactId>aem-cif-guides-venia.ui.apps</artifactId>
+            <artifactId>aem-cif-guides-commerce-store.ui.apps</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
-            <artifactId>aem-cif-guides-venia.ui.apps.structure</artifactId>
+            <artifactId>aem-cif-guides-commerce-store.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
-            <artifactId>aem-cif-guides-venia.ui.content</artifactId>
+            <artifactId>aem-cif-guides-commerce-store.ui.content</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
-            <artifactId>aem-cif-guides-venia.ui.config</artifactId>
+            <artifactId>aem-cif-guides-commerce-store.ui.config</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

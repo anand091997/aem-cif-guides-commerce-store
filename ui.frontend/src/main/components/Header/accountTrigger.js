@@ -19,9 +19,6 @@ import { useAccountTrigger } from '@magento/peregrine/lib/talons/Header/useAccou
 import { useStyle } from '@magento/venia-ui/lib/classify';
 
 import AccountChip from '@magento/venia-ui/lib/components/AccountChip';
-import { useAddToWishlistEvent } from '@adobe/aem-core-cif-react-components';
-import useToastEvents from '../Peregrine/useToastEvents';
-
 import defaultClasses from './accountTrigger.css';
 
 const AccountMenu = React.lazy(() => import('../AccountMenu'));
@@ -41,11 +38,6 @@ const AccountTrigger = props => {
     const rootClassName = accountMenuIsOpen ? classes.root_open : classes.root;
     const { formatMessage } = useIntl();
     const { showWishList } = props;
-
-    if (showWishList) {
-        useAddToWishlistEvent();
-    }
-    useToastEvents();
 
     return (
         <Fragment>

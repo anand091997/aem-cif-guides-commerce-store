@@ -17,18 +17,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.adobe.aem.guides</groupId>
-    <artifactId>aem-cif-guides-venia</artifactId>
+    <artifactId>aem-cif-guides-commerce-store</artifactId>
     <packaging>pom</packaging>
     <version>2026.10.06-SNAPSHOT</version>
-    <name>Venia CIF Project - Reactor Project</name>
-    <description>Venia CIF Project</description>
-    <url>https://github.com/adobe/aem-cif-guides-venia</url>
+    <name>Commerce Store CIF Project - Reactor Project</name>
+    <description>Commerce Store CIF Project</description>
+    <url>https://github.com/adobe/aem-cif-guides-commerce-store</url>
     <inceptionYear>2020</inceptionYear>
 
     <scm>
-        <connection>scm:git:https://github.com/adobe/aem-cif-guides-venia.git</connection>
-        <developerConnection>scm:git:https://github.com/adobe/aem-cif-guides-venia.git</developerConnection>
-        <url>https://github.com/adobe/aem-cif-guides-venia/tree/main/</url>
+        <connection>scm:git:https://github.com/adobe/aem-cif-guides-commerce-store.git</connection>
+        <developerConnection>scm:git:https://github.com/adobe/aem-cif-guides-commerce-store.git</developerConnection>
+        <url>https://github.com/adobe/aem-cif-guides-commerce-store/tree/main/</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -39,7 +39,7 @@
 
     <developers>
         <developer>
-            <id>aem-cif-guides-venia</id>
+            <id>aem-cif-guides-commerce-store</id>
             <organization>Adobe</organization>
             <organizationUrl>https://www.adobe.com</organizationUrl>
             <url>https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html</url>
@@ -97,7 +97,7 @@
         <jacoco.version>0.8.7</jacoco.version>
         <aem.sdk.api>2020.9.4277.20200929T030741Z-200924</aem.sdk.api>
         <aem.cif.sdk.api>2026.09.28.00</aem.cif.sdk.api>
-        <componentGroupName>Venia</componentGroupName>
+        <componentGroupName>Commerce Store</componentGroupName>
     </properties>
 
     <build>

@@ -162,6 +162,15 @@
     color: white;
 }
 
+.product__card-button--out-of-stock {
+    background-color: rgb(229, 231, 235);
+    border-color: rgb(209, 213, 219);
+    min-width: 6.3rem;
+    color: rgb(107, 114, 128);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .productcarousel__btn {
     background: transparent;
     border: 0;

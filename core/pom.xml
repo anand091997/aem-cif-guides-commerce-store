@@ -18,12 +18,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>aem-cif-guides-venia.core</artifactId>
-    <name>Venia - Core</name>
+    <artifactId>aem-cif-guides-commerce-store.core</artifactId>
+    <name>Commerce Store - Core</name>
     <description>Core bundle for Venia</description>
 
     <properties>

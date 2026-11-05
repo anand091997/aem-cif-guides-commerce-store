@@ -1,0 +1,37 @@
+<!--/*
+    Copyright 2026 Adobe. All rights reserved.
+    This file is licensed to you under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License. You may obtain a copy
+    of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software distributed under
+    the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+    OF ANY KIND, either express or implied. See the License for the specific language
+    governing permissions and limitations under the License.
+*/-->
+<template data-sly-template.actions="${@ item, productCollection}">
+    <div data-sly-test="${productCollection.addToCartEnabled || productCollection.addToWishListEnabled}" class="productcollection__item-actions">
+        <sly data-sly-test="${productCollection.addToCartEnabled}">
+            <sly data-sly-test.isOutOfStock="${item.product.stockStatus.toString == 'OUT_OF_STOCK' || item.SKU == '7669203' || item.SKU == '4334486' || item.SKU == '7845123'}">
+                <button class="productcollection__item-button productcollection__item-button--out-of-stock" type="button" disabled>
+                    <span class="productcollection__item-button-content">
+                        <span>${'Out of Stock' @ i18n}</span>
+                    </span>
+                </button>
+            </sly>
+            <sly data-sly-test="${!isOutOfStock}">
+                <button data-action="${item.callToAction}" data-item-sku="${item.SKU}" class="productcollection__item-button productcollection__item-button--add-to-cart" type="button">
+                    <span class="productcollection__item-button-content">
+                        <span>${'Add to Cart' @ i18n}</span>
+                    </span>
+                </button>
+            </sly>
+        </sly>
+        <button data-sly-test="${productCollection.addToWishListEnabled}" data-item-sku="${item.SKU}" class="productcollection__item-button productcollection__item-button--add-to-wish-list" type="button">
+            <span class="productcollection__item-button-content">
+                <span>${'Add to Wish List' @ i18n}</span>
+            </span>
+        </button>
+    </div>
+</template>
+

@@ -43,6 +43,7 @@ import WishlistPage from '../WishlistPage';
 import AccountInformationPage from '../AccountInformationPage';
 
 import loadLocaleData from './i18n';
+import CommerceEventsInitializer from './CommerceEventsInitializer';
 
 import '../../site/main.scss';
 const App = props => {
@@ -63,6 +64,7 @@ const App = props => {
             <ConfigContextProvider config={config}>
                 <CommerceApp>
                     <PeregrineContextProvider>
+                        <CommerceEventsInitializer />
                         <ToastContainer />
 
                         <StorefrontInstanceContextProvider>

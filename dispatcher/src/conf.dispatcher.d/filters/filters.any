@@ -12,12 +12,12 @@ $include "./default_filters.any"
 #
 # Venia specific filter for category pages and header
 #
-/0200 { /type "allow" /method "GET" /path "/content/venia/*" /selectors '[0-9-]+' /extension "html" }
-/0201 { /type "allow" /method "GET" /path "/conf/venia/settings/wcm/templates/*" /extension "svg" }
+/0200 { /type "allow" /method "GET" /path "/content/commerce-store/*" /selectors '[0-9-]+' /extension "html" }
+/0201 { /type "allow" /method "GET" /path "/conf/commerce-store/settings/wcm/templates/*" /extension "svg" }
 
 #
 # Sling Sitemap filter
 #
-/0300 { /type "allow" /method "GET" /path "/content/venia/*" /selectors "sitemap-index" /extension "xml" }
-/0301 { /type "allow" /method "GET" /path "/content/venia/*" /selectors "sitemap" /extension "xml" }
-/0302 { /type "allow" /method "GET" /path "/content/venia/*" /selectors "sitemap\.[^\.\/]+-sitemap" /extension "xml" }
+/0300 { /type "allow" /method "GET" /path "/content/commerce-store/*" /selectors "sitemap-index" /extension "xml" }
+/0301 { /type "allow" /method "GET" /path "/content/commerce-store/*" /selectors "sitemap" /extension "xml" }
+/0302 { /type "allow" /method "GET" /path "/content/commerce-store/*" /selectors "sitemap\.[^\.\/]+-sitemap" /extension "xml" }

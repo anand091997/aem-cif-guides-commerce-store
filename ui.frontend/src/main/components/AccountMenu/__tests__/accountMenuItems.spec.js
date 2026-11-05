@@ -18,11 +18,11 @@ import { ConfigContextProvider } from '@adobe/aem-core-cif-react-components';
 import AccountMenuItems from '../accountMenuItems';
 const config = {
     pagePaths: {
-        addressBook: '/content/venia/us/en/my-account/address-book.html',
-        accountDetails: '/content/venia/us/en/my-account/account-details.html',
-        cartDetails: '/content/venia/us/en/cart-details.html',
-        checkoutPage: '/content/venia/us/en/checkout.html',
-        orderHistory: '/content/venia/us/en/my-account/order-history.html'
+        addressBook: '/content/commerce-store/us/en/my-account/address-book.html',
+        accountDetails: '/content/commerce-store/us/en/my-account/account-details.html',
+        cartDetails: '/content/commerce-store/us/en/cart-details.html',
+        checkoutPage: '/content/commerce-store/us/en/checkout.html',
+        orderHistory: '/content/commerce-store/us/en/my-account/order-history.html'
     }
 };
 

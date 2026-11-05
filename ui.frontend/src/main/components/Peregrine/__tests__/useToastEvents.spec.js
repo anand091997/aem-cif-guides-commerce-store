@@ -68,4 +68,24 @@ describe('useToastEvents', () => {
             icon: ErrorIcon
         });
     });
+
+    it('displays a sign-in message for wishlist authorization errors', () => {
+        renderHook(() => useToastEvents(), { wrapper });
+
+        document.dispatchEvent(
+            new CustomEvent('aem.cif.add-to-wishlist.error', {
+                detail: {
+                    error: {
+                        graphQLErrors: [{ message: 'The current user cannot perform operations on wishlist' }]
+                    }
+                }
+            })
+        );
+
+        expect(mockAddToast).toHaveBeenCalledWith({
+            message: 'Sign in to add items to your wish list.',
+            type: 'error',
+            icon: ErrorIcon
+        });
+    });
 });

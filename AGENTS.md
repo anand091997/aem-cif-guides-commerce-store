@@ -49,8 +49,8 @@ JDK 11, Maven 3.3.9+. Node 12.14.1 / npm 6.14.6 auto-installed by frontend-maven
 
 ## Architecture
 
-- **Backend**: Sling Models under `com.venia.core.models` extending CIF Core Component models. OSGi + BND for bundle metadata.
+- **Backend**: Sling Models under `com.commercestore.core.models` extending CIF Core Component models. OSGi + BND for bundle metadata.
 - **Frontend**: React 17 + Webpack 4. Extends `@adobe/aem-core-cif-react-components` with custom components/talons. Output packaged as AEM clientlibs via `aem-clientlib-generator`.
 - **Commerce**: GraphQL to Adobe Commerce via CIF GraphQL client (`magento-graphql` bindings). Apollo Client on frontend.
-- **AEM Components**: HTL templates in `ui.apps` delegate to Sling Models. Proxy pattern extending CIF Core and WCM Core components under `venia/components/`.
+- **AEM Components**: HTL templates in `ui.apps` delegate to Sling Models. Proxy pattern extending CIF Core and WCM Core components under `commerce-store/components/`.
 - **Deployment**: AEM as a Cloud Service (primary), AEM 6.5 (classic profile). `aemanalyser-maven-plugin` validates Cloud Service compatibility.

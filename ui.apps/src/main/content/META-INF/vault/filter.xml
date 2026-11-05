@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/venia/clientlibs"/>
-    <filter root="/apps/venia/components"/>
-    <filter root="/apps/venia/i18n"/>
+    <filter root="/apps/commerce-store/clientlibs"/>
+    <filter root="/apps/commerce-store/components"/>
+    <filter root="/apps/commerce-store/i18n"/>
 
     <!-- Index for cif cache -->
     <filter root="/oak:index/cifCacheInvalidationSupport" />

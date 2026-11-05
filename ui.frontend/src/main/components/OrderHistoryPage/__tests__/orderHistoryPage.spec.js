@@ -71,7 +71,7 @@ jest.mock('../orderRow', () => 'OrderRow');
 jest.mock('@adobe/aem-core-cif-react-components', () => ({
     useConfigContext: () => ({
         pagePaths: {
-            baseUrl: '/content/venia/us/en.html'
+            baseUrl: '/content/commerce-store/us/en.html'
         }
     })
 }));

@@ -55,6 +55,14 @@
 }
 .button__root_highPriority {
 }
+.button__root_disabled,
+.button__root:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #d1d5db;
+    border-color: #d1d5db;
+    color: #6b7280;
+}
 
 .field__root {
     color: $venia-text;

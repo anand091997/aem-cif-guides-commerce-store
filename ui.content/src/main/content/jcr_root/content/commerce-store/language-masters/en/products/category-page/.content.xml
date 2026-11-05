@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0" 
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/commerce-store/settings/wcm/templates/category-page]"
+        cq:template="/conf/commerce-store/settings/wcm/templates/category-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Commerce Store - Category page"
+        sling:resourceType="commerce-store/components/page">
+        <root jcr:primaryType="nt:unstructured" 
+            sling:resourceType="commerce-store/components/container" 
+            layout="responsiveGrid">
+            <container jcr:primaryType="nt:unstructured" 
+                sling:resourceType="commerce-store/components/container">
+                <container jcr:primaryType="nt:unstructured" 
+                    sling:resourceType="commerce-store/components/container" 
+                    layout="responsiveGrid">
+                    <productlist cq:styleIds="[1570700958199]" 
+                        jcr:primaryType="nt:unstructured" 
+                        sling:resourceType="commerce-store/components/commerce/productlist">
+                        <fragments jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured"
+                                fragmentLocation="grid"
+                                fragmentPage="1"
+                                fragmentCssClass="marketing-content__row-2"/>
+                        </fragments>
+                    </productlist>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+    <shop-the-look />
+</jcr:root>

@@ -63,7 +63,7 @@ const talonProps = {
 
 const config = {
     pagePaths: {
-        baseUrl: '/content/venia/us/en.html'
+        baseUrl: '/content/commerce-store/us/en.html'
     }
 };
 

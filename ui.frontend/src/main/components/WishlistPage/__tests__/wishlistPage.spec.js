@@ -25,7 +25,7 @@ jest.mock('@magento/venia-ui/lib/components/WishlistPage/createWishlist', () => 
 jest.mock('@adobe/aem-core-cif-react-components', () => ({
     useConfigContext: jest.fn(() => ({
         pagePaths: {
-            checkoutPage: '/content/venia/us/en/checkout.html'
+            checkoutPage: '/content/commerce-store/us/en/checkout.html'
         }
     }))
 }));

@@ -13,6 +13,6 @@
         "xdm:currencyCode": "USD",
         "dc:description": "<p>Product description, can include <strong>html</strong> tags.</p>",
         "dc:title": "Product name",
-        "@type": "venia/components/commerce/product"
+        "@type": "commerce-store/components/commerce/product"
     }
 }

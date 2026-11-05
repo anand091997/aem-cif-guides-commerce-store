@@ -21,7 +21,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
@@ -29,8 +29,8 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-cif-guides-venia.dispatcher.classic</artifactId>
-    <name>Venia - Dispatcher (AMS)</name>
+    <artifactId>aem-cif-guides-commerce-store.dispatcher.classic</artifactId>
+    <name>Commerce Store - Dispatcher (AMS)</name>
     <packaging>pom</packaging>
     <description>HTTP &amp; Dispatcher configurations for Venia</description>
 

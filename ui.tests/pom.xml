@@ -23,13 +23,13 @@
 
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aem-cif-guides-venia.ui.tests</artifactId>
-    <name>Venia - UI Tests</name>
+    <artifactId>aem-cif-guides-commerce-store.ui.tests</artifactId>
+    <name>Commerce Store - UI Tests</name>
     <description>UI Tests for Venia</description>
     <packaging>pom</packaging>
 
@@ -90,7 +90,7 @@
                     <descriptors>
                         <descriptor>${project.basedir}/assembly-ui-test-docker-context.xml</descriptor>
                     </descriptors>
-                    <tarLongFileMode>gnu</tarLongFileMode>
+                    <tarLongFileMode>posix</tarLongFileMode>
                 </configuration>
                 <executions>
                     <execution>

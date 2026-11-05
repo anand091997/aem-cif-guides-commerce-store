@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/venia/settings/cloudconfigs/commerce" mode="update"/>
-    <filter root="/var/commerce/products/venia-default" mode="merge"/>
+    <filter root="/conf/commerce-store/settings/cloudconfigs/commerce" mode="update"/>
+    <filter root="/var/commerce/products/commerce-store-default" mode="merge"/>
 </workspaceFilter>

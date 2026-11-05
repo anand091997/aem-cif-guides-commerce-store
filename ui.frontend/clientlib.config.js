@@ -24,7 +24,7 @@ const CLIENTLIB_DIR = path.join(
   'content',
   'jcr_root',
   'apps',
-  'venia',
+  'commerce-store',
   'clientlibs'
 );
 
@@ -43,8 +43,8 @@ module.exports = {
         {
             ...libsBaseConfig,
             name: 'clientlib-site',
-            categories: ['venia.site'],
-            dependencies: ['venia.dependencies', 'aem-core-cif-react-components'],
+            categories: ['commerce-store.site'],
+            dependencies: ['commerce-store.dependencies', 'aem-core-cif-react-components'],
             assets: {
                 // Copy entrypoint scripts and stylesheets into the respective ClientLib
                 // directories

@@ -25,7 +25,7 @@ import DEFAULT_OPERATIONS from '@magento/peregrine/lib/talons/OrderHistoryPage/o
 
 const PAGE_SIZE = 10;
 
-export const useOrderHistoryPage = (props = { baseUrl: '/content/venia/us/en.html' }) => {
+export const useOrderHistoryPage = (props = { baseUrl: '/content/commerce-store/us/en.html' }) => {
     const { baseUrl } = props;
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);
     const { getCustomerOrdersQuery } = operations;

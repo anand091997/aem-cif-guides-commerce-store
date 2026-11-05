@@ -15,6 +15,6 @@
   ~ limitations under the License.
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <workspaceFilter version="1.0">
-    <filter root="/apps/venia-packages"/>
-    <filter root="/apps/venia-vendor-packages"/>
+    <filter root="/apps/commerce-store-packages"/>
+    <filter root="/apps/commerce-store-vendor-packages"/>
 </workspaceFilter>

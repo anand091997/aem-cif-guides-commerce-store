@@ -3,7 +3,7 @@
 exports[`it renders correctly (with wishlist) 1`] = `
 <div>
   <a
-    href="/content/venia/us/en/my-account/order-history.html"
+    href="/content/commerce-store/us/en/my-account/order-history.html"
   >
     Order History
   </a>
@@ -11,12 +11,12 @@ exports[`it renders correctly (with wishlist) 1`] = `
     Favorites Lists
   </a>
   <a
-    href="/content/venia/us/en/my-account/address-book.html"
+    href="/content/commerce-store/us/en/my-account/address-book.html"
   >
     Address Book
   </a>
   <a
-    href="/content/venia/us/en/my-account/account-details.html"
+    href="/content/commerce-store/us/en/my-account/account-details.html"
   >
     Account Information
   </a>
@@ -32,17 +32,17 @@ exports[`it renders correctly (with wishlist) 1`] = `
 exports[`it renders correctly (without wishlist) 1`] = `
 <div>
   <a
-    href="/content/venia/us/en/my-account/order-history.html"
+    href="/content/commerce-store/us/en/my-account/order-history.html"
   >
     Order History
   </a>
   <a
-    href="/content/venia/us/en/my-account/address-book.html"
+    href="/content/commerce-store/us/en/my-account/address-book.html"
   >
     Address Book
   </a>
   <a
-    href="/content/venia/us/en/my-account/account-details.html"
+    href="/content/commerce-store/us/en/my-account/account-details.html"
   >
     Account Information
   </a>

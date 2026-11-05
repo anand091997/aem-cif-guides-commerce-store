@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/adobe/aem-cif-guides-venia.svg)
+![GitHub](https://img.shields.io/github/license/adobe/aem-cif-guides-commerce-store.svg)
 
 # AEM Guides - CIF Venia Project
 
@@ -53,9 +53,9 @@ The Venia reference project code demonstrates how CIF core component can be adop
 
 ### Individual product and category page URLs
 
-This project includes sample configurations to demonstrate the usage of custom URLs for product and category pages. This allows each project to setup individual URL patterns for product and category pages according to their SEO needs. A combination of [UrlProvider](ui.apps/src/main/content/jcr_root/apps/venia/config.publish/com.adobe.cq.commerce.core.components.internal.services.UrlProviderImpl.config) config with [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) is used.
+This project includes sample configurations to demonstrate the usage of custom URLs for product and category pages. This allows each project to setup individual URL patterns for product and category pages according to their SEO needs. A combination of [UrlProvider](ui.apps/src/main/content/jcr_root/apps/commerce-store/config.publish/com.adobe.cq.commerce.core.components.internal.services.UrlProviderImpl.config) config with [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) is used.
 
-This configuration must be adjusted with the external domain used by the project. The Sling Mappings are working based on the hostname and domain. Therefore this configuration is disabled by default and must be enabled before deployment. To do so rename the Sling Mapping `hostname.adobeaemcloud.com` folder in `ui.content/src/main/content/jcr_root/etc/map.publish/https` according to the used domain name and enable this config by adding `resource.resolver.map.location="/etc/map.publish"` to the [JcrResourceResolver](ui.apps/src/main/content/jcr_root/apps/venia/config.publish/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.xml) config.
+This configuration must be adjusted with the external domain used by the project. The Sling Mappings are working based on the hostname and domain. Therefore this configuration is disabled by default and must be enabled before deployment. To do so rename the Sling Mapping `hostname.adobeaemcloud.com` folder in `ui.content/src/main/content/jcr_root/etc/map.publish/https` according to the used domain name and enable this config by adding `resource.resolver.map.location="/etc/map.publish"` to the [JcrResourceResolver](ui.apps/src/main/content/jcr_root/apps/commerce-store/config.publish/org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl.xml) config.
 
 For detailed configuration options see [Configuring and customizing product and category pages URLs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/administering/advanced-url-configuration.html) in the AEM Content & Commerce and the [AEM Resource Mapping](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html) documentation.
 

@@ -146,7 +146,7 @@ try {
 
             // The core components are already installed in the Cloud SDK
             extras += ` --bundle com.adobe.cq:core.wcm.components.all:${wcmVersion}:zip`;
-            extras += ` --install-file ${buildPath}/classic/all/target/aem-cif-guides-venia.all-classic-${veniaVersion}.zip`
+            extras += ` --install-file ${buildPath}/classic/all/target/aem-cif-guides-commerce-store.all-classic-${veniaVersion}.zip`
 
         } else if (classifier == 'lts') {
             // Download latest add-on for AEM 6.5 LTS release from artifactory
@@ -155,13 +155,13 @@ try {
 
             // The core components are already installed in the Cloud SDK
             extras += ` --bundle com.adobe.cq:core.wcm.components.all:${wcmVersion}:zip`;
-            extras += ` --install-file ${buildPath}/classic/all/target/aem-cif-guides-venia.all-classic-${veniaVersion}.zip`
+            extras += ` --install-file ${buildPath}/classic/all/target/aem-cif-guides-commerce-store.all-classic-${veniaVersion}.zip`
 
         } else if (classifier == 'cloud') {
             // Download latest add-on release from artifactory
             ci.sh(`mvn -s ${buildPath}/.github/ci/settings.xml com.googlecode.maven-download-plugin:download-maven-plugin:1.6.3:artifact -Partifactory-cloud -DgroupId=com.adobe.cq.cif -DartifactId=cif-cloud-ready-feature-pkg -Dversion=LATEST -Dtype=far -Dclassifier=cq-commerce-addon-authorfar -DoutputDirectory=${buildPath}/dependencies -DoutputFileName=addon.far`);
             extras = ` --install-file ${buildPath}/dependencies/addon.far`;
-            extras += ` --install-file ${buildPath}/all/target/aem-cif-guides-venia.all-${veniaVersion}.zip`
+            extras += ` --install-file ${buildPath}/all/target/aem-cif-guides-commerce-store.all-${veniaVersion}.zip`
         }
 
         // Install SNAPSHOT or current version of CIF examples bundle
@@ -203,11 +203,11 @@ try {
     if (TYPE === 'integration') {
         let excludedCategory;
         if (classifier === 'classic') {
-            excludedCategory = 'com.venia.it.category.IgnoreOn65';
+            excludedCategory = 'com.commercestore.it.category.IgnoreOn65';
         } else if (classifier === 'lts') {
-            excludedCategory = 'com.venia.it.category.IgnoreOnLts';
+            excludedCategory = 'com.commercestore.it.category.IgnoreOnLts';
         } else {
-            excludedCategory = 'com.venia.it.category.IgnoreOnCloud';
+            excludedCategory = 'com.commercestore.it.category.IgnoreOnCloud';
         }
         ci.dir('it.tests', () => {
             ci.sh(`mvn clean verify -U -B -Plocal -Dexclude.category=${excludedCategory} -Dit.author.url="http://${qpServerHostname}:4502" -Dit.publish.url="http://${qpServerHostname}:4503" -DCOMMERCE_ENDPOINT="${COMMERCE_ENDPOINT}" -DCOMMERCE_INTEGRATION_TOKEN="${COMMERCE_INTEGRATION_TOKEN}"`); // The -Plocal profile comes from the AEM archetype

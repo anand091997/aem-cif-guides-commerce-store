@@ -30,8 +30,24 @@ const messages = defineMessages({
     wishlistError: {
         id: 'toast.wishlist.error',
         defaultMessage: 'Product could not be added to wishlist.'
+    },
+    wishlistSignInRequired: {
+        id: 'toast.wishlist.signInRequired',
+        defaultMessage: 'Sign in to add items to your wish list.'
     }
 });
+
+const wishlistErrorMessage = (event, formatMessage) => {
+    const error = event.detail?.error;
+    const graphQLError = error?.graphQLErrors?.[0]?.message || error?.message;
+    if (
+        graphQLError &&
+        /cannot perform operations on wishlist|authorization|not authorized|sign in/i.test(graphQLError)
+    ) {
+        return formatMessage(messages.wishlistSignInRequired);
+    }
+    return graphQLError || formatMessage(messages.wishlistError);
+};
 
 const toastEvents = {
     'aem.cif.add-to-wishlist.success': {
@@ -40,7 +56,6 @@ const toastEvents = {
         icon: CheckIcon
     },
     'aem.cif.add-to-wishlist.error': {
-        message: messages.wishlistError,
         type: 'error',
         icon: ErrorIcon
     }
@@ -59,11 +74,15 @@ const useToastEvents = () => {
         }
 
         const { type, icon, message } = toastEvents[eventType];
+        const toastMessage =
+            eventType === 'aem.cif.add-to-wishlist.error'
+                ? wishlistErrorMessage(event, formatMessage)
+                : formatMessage(message);
 
         addToast({
             type: type,
             icon: icon,
-            message: formatMessage(message)
+            message: toastMessage
         });
     };
 

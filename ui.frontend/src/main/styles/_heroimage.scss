@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-.venia-HeroImage {
+.commerce-store-HeroImage {
     min-height: 460px;
 
     padding: $jumbotron-padding 0;
@@ -72,7 +72,7 @@
 }
 
 @media (min-width: $screen-md-min) {
-    .venia-HeroImage {
+    .commerce-store-HeroImage {
         text-align: left;
 
         .container {
@@ -99,7 +99,7 @@
 }
 
 @media (max-width: $screen-sm-max) {
-    .venia-HeroImage {
+    .commerce-store-HeroImage {
         &.width-full {
             padding: 180px 0 70px;
         }

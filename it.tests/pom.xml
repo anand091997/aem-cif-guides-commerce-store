@@ -19,13 +19,13 @@
 
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>aem-cif-guides-venia.it.tests</artifactId>
-    <name>Venia - Integration Tests</name>
+    <artifactId>aem-cif-guides-commerce-store.it.tests</artifactId>
+    <name>Commerce Store - Integration Tests</name>
     <description>Integration Tests for Venia</description>
 
     <properties>

@@ -34,7 +34,7 @@ import defaultOperations from '@magento/peregrine/lib/talons/AddressBookPage/add
  * @example <caption>Importing into your project</caption>
  * import { useAddressBookPage } from '@magento/peregrine/lib/talons/AddressBookPage/useAddressBookPage';
  */
-export const useAddressBookPage = (props = { baseUrl: '/content/venia/us/en.html' }) => {
+export const useAddressBookPage = (props = { baseUrl: '/content/commerce-store/us/en.html' }) => {
     const { baseUrl } = props;
     const operations = mergeOperations(defaultOperations, props.operations);
     const {

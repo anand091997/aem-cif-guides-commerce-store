@@ -26,4 +26,4 @@ Please follow the [feature template](ISSUE_TEMPLATE/FEATURE_REQUEST.md) to open 
 
 ## Issues
 
-Please follow the [issue template](ISSUE_TEMPLATE/BUG_REPORT.md) to open new [issues](https://github.com/adobe/aem-cif-guides-venia/issues) and join the conversations to provide feedback. 
+Please follow the [issue template](ISSUE_TEMPLATE/BUG_REPORT.md) to open new [issues](https://github.com/adobe/aem-cif-guides-commerce-store/issues) and join the conversations to provide feedback. 

@@ -22,7 +22,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
-        <artifactId>aem-cif-guides-venia</artifactId>
+        <artifactId>aem-cif-guides-commerce-store</artifactId>
         <version>2026.10.06-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
@@ -30,9 +30,9 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-cif-guides-venia.ui.config-classic</artifactId>
+    <artifactId>aem-cif-guides-commerce-store.ui.config-classic</artifactId>
     <packaging>content-package</packaging>
-    <name>Venia - UI config (classic)</name>
+    <name>Commerce Store - UI config (classic)</name>
     <description>Overlay of UI config package for Venia for classic</description>
 
     <!-- ====================================================================== -->
@@ -47,13 +47,13 @@
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <configuration>
                     <group>com.adobe.aem.guides</group>
-                    <name>aem-cif-guides-venia.ui.config-classic</name>
+                    <name>aem-cif-guides-commerce-store.ui.config-classic</name>
                     <packageType>container</packageType>
                     <showImportPackageReport>false</showImportPackageReport>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.adobe.aem.guides</groupId>
-                            <artifactId>aem-cif-guides-venia.ui.apps.structure</artifactId>
+                            <artifactId>aem-cif-guides-commerce-store.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
                 </configuration>
@@ -68,7 +68,7 @@
     <dependencies>
         <dependency>
             <groupId>com.adobe.aem.guides</groupId>
-            <artifactId>aem-cif-guides-venia.ui.apps.structure</artifactId>
+            <artifactId>aem-cif-guides-commerce-store.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>

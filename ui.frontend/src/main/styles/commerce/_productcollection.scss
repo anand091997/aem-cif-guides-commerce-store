@@ -193,6 +193,14 @@
   color: white;
 }
 
+.productcollection__item-button--out-of-stock {
+  background-color: rgb(229, 231, 235);
+  border-color: rgb(209, 213, 219);
+  color: rgb(107, 114, 128);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .productcollection__sort-title {
   font-size: 0.8rem;
   font-weight: bold;

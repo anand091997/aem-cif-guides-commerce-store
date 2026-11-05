@@ -26,6 +26,7 @@
                 sling:resourceType="commerce-store/components/commerce/navigation"
                 collectAllPages="true"
                 disableShadowing="false"
+                excludedCategories="[183,gift-cards]"
                 navigationRoot="/content/commerce-store/us/en"
                 skipNavigationRoot="false"
                 structureDepth="2"

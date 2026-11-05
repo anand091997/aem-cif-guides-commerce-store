@@ -1,8 +1,8 @@
 ![GitHub](https://img.shields.io/github/license/adobe/aem-cif-guides-commerce-store.svg)
 
-# AEM Guides - CIF Venia Project
+# AEM Guides - CIF Commerce Store Project
 
-This project contains the AEM CIF Venia reference site. It demonstrates the usage of [CIF Core Components](https://github.com/adobe/aem-core-cif-components) for Adobe Experience Manager (AEM). It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This project contains the AEM CIF Commerce Store reference site. It demonstrates the usage of [CIF Core Components](https://github.com/adobe/aem-core-cif-components) for Adobe Experience Manager (AEM). It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
 
 The project can be used in two variants:
 
@@ -49,7 +49,7 @@ The main parts of the template are:
 
 ### Component Customization
 
-The Venia reference project code demonstrates how CIF core component can be adopted, customized, and extended for a project. The project includes an extended product teaser component example called `MyProductTeaser`. It demonstrates the [CIF core components customization](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html) options by using an extended Sling `MyProductTeaser` model and a proxy component overlay.
+The Commerce Store reference project code demonstrates how CIF core component can be adopted, customized, and extended for a project. The project includes an extended product teaser component example called `MyProductTeaser`. It demonstrates the [CIF core components customization](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/customize-cif-components.html) options by using an extended Sling `MyProductTeaser` model and a proxy component overlay.
 
 ### Individual product and category page URLs
 
@@ -166,7 +166,7 @@ The project comes with the auto-public repository configured. To set up the repo
 
 ## Releases
 
-The Venia demo is only released on Github but not on Maven Central like other projects like the CIF components. To perform a release, we use a dedicated profile to make sure all modules versions are updated:
+The Commerce Store demo is only released on Github but not on Maven Central like other projects like the CIF components. To perform a release, we use a dedicated profile to make sure all modules versions are updated:
 
 `mvn release:prepare release:clean -Pclassic`
 

@@ -10,7 +10,7 @@ $include "./default_filters.any"
 /0101 { /type "allow" /extension "json" /selectors "model" /path "/content/*" }
 
 #
-# Venia specific filter for category pages and header
+# Commerce Store specific filter for category pages and header
 #
 /0200 { /type "allow" /method "GET" /path "/content/commerce-store/*" /selectors '[0-9-]+' /extension "html" }
 /0201 { /type "allow" /method "GET" /path "/conf/commerce-store/settings/wcm/templates/*" /extension "svg" }

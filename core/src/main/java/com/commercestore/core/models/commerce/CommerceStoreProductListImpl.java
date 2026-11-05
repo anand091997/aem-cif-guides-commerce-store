@@ -37,7 +37,7 @@ import com.adobe.cq.wcm.core.components.models.Component;
 import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 
 /**
- * Venia Product List Sling Model extending CIF ProductList to include stock status in category queries.
+ * Commerce Store Product List Sling Model extending CIF ProductList to include stock status in category queries.
  */
 @Model(
     adaptables = SlingHttpServletRequest.class,

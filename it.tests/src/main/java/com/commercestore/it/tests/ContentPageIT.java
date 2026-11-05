@@ -12,7 +12,7 @@ public class ContentPageIT extends CommerceTestBase {
 
     @Test
     public void testPageNotFound() throws ClientException {
-        String pagePath = VENIA_CONTENT_US_EN + "/unknown-page.html";
+        String pagePath = COMMERCE_STORE_CONTENT_US_EN + "/unknown-page.html";
         List<NameValuePair> params = Collections.singletonList(new BasicNameValuePair("wcmmode","disabled"));
 
         adminAuthor.doGet(pagePath, params, 404);

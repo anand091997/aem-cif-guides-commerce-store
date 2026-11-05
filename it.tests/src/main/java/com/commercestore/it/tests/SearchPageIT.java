@@ -44,7 +44,7 @@ public class SearchPageIT extends CommerceTestBase {
             new BasicNameValuePair("search_query", "pants"),
             new BasicNameValuePair("sort_key", "name"),
             new BasicNameValuePair("sort_order", "asc"));
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN_SEARCH_PAGE + ".html", parameters, 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN_SEARCH_PAGE + ".html", parameters, 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Check that search filters are displayed
@@ -81,7 +81,7 @@ public class SearchPageIT extends CommerceTestBase {
 
     @Test
     public void testSearchResultsWithoutSearchQuery() throws ClientException, IOException {
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN_SEARCH_PAGE + ".html", 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN_SEARCH_PAGE + ".html", 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Check that the search doesn't display any product

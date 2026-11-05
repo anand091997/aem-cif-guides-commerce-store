@@ -30,7 +30,7 @@
 
     <artifactId>aem-cif-guides-commerce-store.ui.tests</artifactId>
     <name>Commerce Store - UI Tests</name>
-    <description>UI Tests for Venia</description>
+    <description>UI Tests for Commerce Store</description>
     <packaging>pom</packaging>
 
     <properties>
@@ -45,8 +45,8 @@
         <AEM_PUBLISH_PASSWORD>admin</AEM_PUBLISH_PASSWORD>
         <AEM_VERSION>cloud</AEM_VERSION>
         <SELENIUM_BROWSER>chrome</SELENIUM_BROWSER>
-        <VENIA_ACCOUNT_EMAIL />
-        <VENIA_ACCOUNT_PASSWORD />
+        <COMMERCE_STORE_ACCOUNT_EMAIL />
+        <COMMERCE_STORE_ACCOUNT_PASSWORD />
     </properties>
 
     <build>
@@ -153,8 +153,8 @@
                                 <AEM_PUBLISH_USERNAME>${AEM_PUBLISH_USERNAME}</AEM_PUBLISH_USERNAME>
                                 <AEM_PUBLISH_PASSWORD>${AEM_PUBLISH_PASSWORD}</AEM_PUBLISH_PASSWORD>
                                 <AEM_VERSION>${AEM_VERSION}</AEM_VERSION>
-                                <VENIA_ACCOUNT_EMAIL>${VENIA_ACCOUNT_EMAIL}</VENIA_ACCOUNT_EMAIL>
-                                <VENIA_ACCOUNT_PASSWORD>${VENIA_ACCOUNT_PASSWORD}</VENIA_ACCOUNT_PASSWORD>
+                                <COMMERCE_STORE_ACCOUNT_EMAIL>${COMMERCE_STORE_ACCOUNT_EMAIL}</COMMERCE_STORE_ACCOUNT_EMAIL>
+                                <COMMERCE_STORE_ACCOUNT_PASSWORD>${COMMERCE_STORE_ACCOUNT_PASSWORD}</COMMERCE_STORE_ACCOUNT_PASSWORD>
                                 <SELENIUM_BROWSER>${SELENIUM_BROWSER}</SELENIUM_BROWSER>
                                 <HEADLESS_BROWSER>${HEADLESS_BROWSER}</HEADLESS_BROWSER>
                             </environmentVariables>
@@ -244,8 +244,8 @@
                                         <AEM_PUBLISH_USERNAME>${AEM_PUBLISH_USERNAME}</AEM_PUBLISH_USERNAME>
                                         <AEM_PUBLISH_PASSWORD>${AEM_PUBLISH_PASSWORD}</AEM_PUBLISH_PASSWORD>
                                         <AEM_VERSION>${AEM_VERSION}</AEM_VERSION>
-                                        <VENIA_ACCOUNT_EMAIL>${VENIA_ACCOUNT_EMAIL}</VENIA_ACCOUNT_EMAIL>
-                                        <VENIA_ACCOUNT_PASSWORD>${VENIA_ACCOUNT_PASSWORD}</VENIA_ACCOUNT_PASSWORD>
+                                        <COMMERCE_STORE_ACCOUNT_EMAIL>${COMMERCE_STORE_ACCOUNT_EMAIL}</COMMERCE_STORE_ACCOUNT_EMAIL>
+                                        <COMMERCE_STORE_ACCOUNT_PASSWORD>${COMMERCE_STORE_ACCOUNT_PASSWORD}</COMMERCE_STORE_ACCOUNT_PASSWORD>
                                         <SELENIUM_BROWSER>${SELENIUM_BROWSER}</SELENIUM_BROWSER>
                                         <HEADLESS_BROWSER>${HEADLESS_BROWSER}</HEADLESS_BROWSER>
                                     </environmentVariables>

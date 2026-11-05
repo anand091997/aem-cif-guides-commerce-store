@@ -51,7 +51,7 @@ describe('Catalog Page Status', function () {
         browser.url(`${editor_page}${product_page}.html`);
         browser.AEMEditorLoaded();
 
-        expect($('coral-alert-header=Venia Demo Store - Product page')).toBeDisplayed();
+        expect($('coral-alert-header=Commerce Store Demo Store - Product page')).toBeDisplayed();
 
         if (isCloud) {
             // actions are not available on 6.5 in general

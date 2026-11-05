@@ -18,8 +18,8 @@ const config = require('../../lib/config');
 
 const describeif = condition => (condition ? describe : describe.skip);
 
-describe('Venia React Components', () => {
-    const venia_homepage = `${config.aem.author.base_url}/content/commerce-store/us/en.html`;
+describe('Commerce Store React Components', () => {
+    const commerce_store_homepage = `${config.aem.author.base_url}/content/commerce-store/us/en.html`;
 
     before(() => {
         // AEM Login
@@ -34,8 +34,8 @@ describe('Venia React Components', () => {
     });
 
     it('should render the minicart component', () => {
-        // Go to the Venia homepage
-        browser.url(venia_homepage);
+        // Go to the Commerce Store homepage
+        browser.url(commerce_store_homepage);
 
         // Check that cart trigger button is displayed
         const cartTrigger = $('.cmp-VeniaHeader__cartTrigger__trigger');
@@ -50,7 +50,7 @@ describe('Venia React Components', () => {
     it('should redirect to homepage from address book page without login', () => {
         // Go to address book page
         browser.url(`${config.aem.author.base_url}/content/commerce-store/us/en/my-account/address-book.html`);
-        browser.waitUntil(() => browser.getUrl() === venia_homepage, {
+        browser.waitUntil(() => browser.getUrl() === commerce_store_homepage, {
             timeout: 5000,
             timeoutMsg: 'expected browser to navigate to homepage after 5s'
         });
@@ -59,7 +59,7 @@ describe('Venia React Components', () => {
     it('should redirect to homepage from account info page without login', () => {
         // Go to address book page
         browser.url(`${config.aem.author.base_url}/content/commerce-store/us/en/my-account/account-details.html`);
-        browser.waitUntil(() => browser.getUrl() === venia_homepage, {
+        browser.waitUntil(() => browser.getUrl() === commerce_store_homepage, {
             timeout: 5000,
             timeoutMsg: 'expected browser to navigate to homepage after 5s'
         });
@@ -68,16 +68,16 @@ describe('Venia React Components', () => {
     it('should redirect to homepage from order history page without login', () => {
         // Go to address book page
         browser.url(`${config.aem.author.base_url}/content/commerce-store/us/en/my-account/order-history.html`);
-        browser.waitUntil(() => browser.getUrl() === venia_homepage, {
+        browser.waitUntil(() => browser.getUrl() === commerce_store_homepage, {
             timeout: 5000,
             timeoutMsg: 'expected browser to navigate to homepage after 5s'
         });
     });
 
-    describeif(config.venia && config.venia.email && config.venia.password)('for signed in users', () => {
+    describeif(config.commerce_store && config.commerce_store.email && config.commerce_store.password)('for signed in users', () => {
         it('should render the sign in component in the header', () => {
-            // Go to the Venia homepage
-            browser.url(venia_homepage);
+            // Go to the Commerce Store homepage
+            browser.url(commerce_store_homepage);
 
             // Check sign in button
             const signInTrigger = $('.cmp-VeniaHeader__accountTrigger__trigger');

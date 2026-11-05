@@ -25,11 +25,11 @@ import com.adobe.cq.testing.junit.rules.CQRule;
 
 public class CommerceTestBase {
 
-    protected static final String VENIA_CONTENT_US_EN = "/content/commerce-store/us/en";
-    protected static final String VENIA_CONTENT_US_EN_PRODUCTS = VENIA_CONTENT_US_EN + "/products";
-    protected static final String VENIA_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE = VENIA_CONTENT_US_EN_PRODUCTS + "/product-page";
-    protected static final String VENIA_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE = VENIA_CONTENT_US_EN_PRODUCTS + "/category-page";
-    protected static final String VENIA_CONTENT_US_EN_SEARCH_PAGE = VENIA_CONTENT_US_EN + "/search";
+    protected static final String COMMERCE_STORE_CONTENT_US_EN = "/content/commerce-store/us/en";
+    protected static final String COMMERCE_STORE_CONTENT_US_EN_PRODUCTS = COMMERCE_STORE_CONTENT_US_EN + "/products";
+    protected static final String COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS + "/product-page";
+    protected static final String COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS + "/category-page";
+    protected static final String COMMERCE_STORE_CONTENT_US_EN_SEARCH_PAGE = COMMERCE_STORE_CONTENT_US_EN + "/search";
 
     protected static final String BREADCRUMB_ITEMS_SELECTOR = ".breadcrumb .cmp-breadcrumb__item";
     protected static final String SEARCH_FILTERS_SELECTOR = ".productcollection__filters";

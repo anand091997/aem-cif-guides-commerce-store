@@ -26,7 +26,7 @@
 
     <artifactId>aem-cif-guides-commerce-store.it.tests</artifactId>
     <name>Commerce Store - Integration Tests</name>
-    <description>Integration Tests for Venia</description>
+    <description>Integration Tests for Commerce Store</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

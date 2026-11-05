@@ -218,7 +218,7 @@ describe('Commerce Teaser Component Dialog', function () {
         const actionFields = actionsMultiField.$$('coral-multifield-item-content .coral-Form-fieldwrapper');
         expect(actionFields.length).toEqual(5);
 
-        browser.GraniteSelectPath(actionFields[0].$('foundation-autocomplete'), 'Venia Demo Store');
+        browser.GraniteSelectPath(actionFields[0].$('foundation-autocomplete'), 'Commerce Store Demo Store');
         expect(actionFields[0].$('input[name="./actions/item0/link"')).toHaveValue('/content/commerce-store');
 
         browser.CIFSelectProduct(actionFields[2].$('product-field'), 'Agatha Skirt');
@@ -229,7 +229,7 @@ describe('Commerce Teaser Component Dialog', function () {
         expect(actionFields[3].$('input[name="./actions/item0/categoryId"')).toHaveValue('MjA=');
         expect(actionFields[2].$('input[name="./actions/item0/productSku"')).toHaveValue('');
 
-        browser.GraniteSelectPath(actionFields[0].$('foundation-autocomplete'), 'Venia Demo Store');
+        browser.GraniteSelectPath(actionFields[0].$('foundation-autocomplete'), 'Commerce Store Demo Store');
         expect(actionFields[0].$('input[name="./actions/item0/link"')).toHaveValue('/content/commerce-store');
         expect(actionFields[3].$('input[name="./actions/item0/categoryId"')).toHaveValue('');
     });

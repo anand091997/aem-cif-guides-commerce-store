@@ -39,7 +39,7 @@ import com.adobe.cq.wcm.core.components.models.Component;
 import com.adobe.cq.wcm.core.components.models.datalayer.ComponentData;
 
 /**
- * Venia Product Sling Model extending CIF Product to handle stock validation and out-of-stock SKUs.
+ * Commerce Store Product Sling Model extending CIF Product to handle stock validation and out-of-stock SKUs.
  */
 @Model(
     adaptables = SlingHttpServletRequest.class,

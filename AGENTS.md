@@ -1,4 +1,4 @@
-# Venia CIF Reference Storefront
+# Commerce Store CIF Reference Storefront
 
 AEM CIF reference storefront for AEM as a Cloud Service with React frontend.
 

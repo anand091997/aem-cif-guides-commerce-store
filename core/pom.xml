@@ -24,7 +24,7 @@
     </parent>
     <artifactId>aem-cif-guides-commerce-store.core</artifactId>
     <name>Commerce Store - Core</name>
-    <description>Core bundle for Venia</description>
+    <description>Core bundle for Commerce Store</description>
 
     <properties>
         <jacoco.data.file>${project.build.directory}/jacoco.exec</jacoco.data.file>

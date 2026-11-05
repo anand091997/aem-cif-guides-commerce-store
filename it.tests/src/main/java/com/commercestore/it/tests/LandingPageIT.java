@@ -28,7 +28,7 @@ public class LandingPageIT extends CommerceTestBase {
 
     @Test
     public void testLandingPage() throws ClientException {
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN + ".html", 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN + ".html", 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Test hero image

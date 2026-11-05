@@ -16,8 +16,8 @@
 
 const config = require('../../lib/config');
 
-describe('Venia Searchbar Component', () => {
-    const venia_homepage = `${config.aem.author.base_url}/content/commerce-store/us/en.html`;
+describe('Commerce Store Searchbar Component', () => {
+    const commerce_store_homepage = `${config.aem.author.base_url}/content/commerce-store/us/en.html`;
 
     before(() => {
         // AEM Login
@@ -32,8 +32,8 @@ describe('Venia Searchbar Component', () => {
     });
 
     it('should render the searchbar', () => {
-        // Go to the Venia homepage
-        browser.url(venia_homepage);
+        // Go to the Commerce Store homepage
+        browser.url(commerce_store_homepage);
 
         // Check that searchbar trigger button is displayed
         const searchBarTrigger = $('.searchbar__trigger');
@@ -50,8 +50,8 @@ describe('Venia Searchbar Component', () => {
     });
 
     it('should display the reset button', () => {
-        // Go to the Venia homepage
-        browser.url(venia_homepage);
+        // Go to the Commerce Store homepage
+        browser.url(commerce_store_homepage);
 
         // Check that search trigger button is displayed
         const searchBarTrigger = $('.searchbar__trigger');
@@ -69,7 +69,7 @@ describe('Venia Searchbar Component', () => {
     });
 
     it('honors the placeholder property', () => {
-        // Open Venia header in the XF editor
+        // Open Commerce Store header in the XF editor
         let xfPath = `${config.aem.author.base_url}/editor.html/content/experience-fragments/commerce-store/us/en/site/header/master.html`;
         browser.url(xfPath);
         let searchBar = $(
@@ -91,8 +91,8 @@ describe('Venia Searchbar Component', () => {
         expect(doneButton).toBeDisplayed();
         doneButton.click();
 
-        // Go to the Venia homepage
-        browser.url(venia_homepage);
+        // Go to the Commerce Store homepage
+        browser.url(commerce_store_homepage);
         browser.refresh();
 
         // check the new placeholder in the trigger title and in the input field

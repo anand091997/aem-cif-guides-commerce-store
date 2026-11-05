@@ -17,7 +17,7 @@
     <artifactId>aem-cif-guides-commerce-store.dispatcher.cloud</artifactId>
     <packaging>pom</packaging>
     <name>Commerce Store - Dispatcher</name>
-    <description>HTTP &amp; Dispatcher configurations for Venia</description>
+    <description>HTTP &amp; Dispatcher configurations for Commerce Store</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->

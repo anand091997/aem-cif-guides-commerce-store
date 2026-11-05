@@ -61,7 +61,7 @@ public class ProductPageIT extends CommerceTestBase {
     }
 
     public void testProductPageWithSampleData(String jsonFile) throws ClientException, IOException {
-        String pagePath = VENIA_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/honora-wide-leg-pants.html";
+        String pagePath = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/honora-wide-leg-pants.html";
         SlingHttpResponse response = adminAuthor.doGet(pagePath, 200);
         Document doc = Jsoup.parse(response.getContent());
 
@@ -111,7 +111,7 @@ public class ProductPageIT extends CommerceTestBase {
     }
 
     public void testProductPageWithSampleDataForGroupedProduct(String jsonFile) throws ClientException, IOException {
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/augusta-trio.html", 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/augusta-trio.html", 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Verify product name
@@ -135,7 +135,7 @@ public class ProductPageIT extends CommerceTestBase {
 
     @Test
     public void testProductPageWithPlaceholderData() throws ClientException, IOException {
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html", 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html", 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Verify product name
@@ -155,7 +155,7 @@ public class ProductPageIT extends CommerceTestBase {
 
     @Test
     public void testProductNotFoundPage() throws ClientException {
-        String pagePath = VENIA_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/unknown-product.html";
+        String pagePath = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_PRODUCT_PAGE + ".html/unknown-product.html";
         List<NameValuePair> params = Collections.singletonList(new BasicNameValuePair("wcmmode","disabled"));
 
         adminAuthor.doGet(pagePath, params, 404);

@@ -44,7 +44,7 @@ public class CategoryPageIT extends CommerceTestBase {
 
     @Test
     public void testProductListPageWithSampleData() throws ClientException, IOException {
-        String pagePath = VENIA_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html/venia-bottoms/venia-pants.html";
+        String pagePath = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html/venia-bottoms/venia-pants.html";
         SlingHttpResponse response = adminAuthor.doGet(pagePath, 200);
         Document doc = Jsoup.parse(response.getContent());
 
@@ -92,7 +92,7 @@ public class CategoryPageIT extends CommerceTestBase {
 
     @Test
     public void testProductListPageWithPlaceholderData() throws ClientException, IOException {
-        SlingHttpResponse response = adminAuthor.doGet(VENIA_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html", 200);
+        SlingHttpResponse response = adminAuthor.doGet(COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html", 200);
         Document doc = Jsoup.parse(response.getContent());
 
         // Verify category name
@@ -129,7 +129,7 @@ public class CategoryPageIT extends CommerceTestBase {
 
     @Test
     public void testCategoryNotFoundPage() throws ClientException {
-        String pagePath = VENIA_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html/unknown-category.html";
+        String pagePath = COMMERCE_STORE_CONTENT_US_EN_PRODUCTS_CATEGORY_PAGE + ".html/unknown-category.html";
         List<NameValuePair> params = Collections.singletonList(new BasicNameValuePair("wcmmode", "disabled"));
 
         adminAuthor.doGet(pagePath, params, 404);

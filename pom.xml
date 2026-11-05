@@ -114,7 +114,7 @@
                     <releaseProfiles>release,classic</releaseProfiles>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <pushChanges>false</pushChanges>
-                    <tagNameFormat>venia-@{project.version}</tagNameFormat>
+                    <tagNameFormat>commerce-store-@{project.version}</tagNameFormat>
                 </configuration>
             </plugin>
             <!-- Maven Source Plugin -->

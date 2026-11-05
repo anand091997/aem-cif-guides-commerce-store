@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/commerce-store/settings/wcm/templates/page-content"
+        hideInNav="{Boolean}false"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="About Us"
+        pageTitle="About Us"
+        sling:resourceType="commerce-store/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            layout="responsiveGrid"
+            sling:resourceType="commerce-store/components/container">
+            <container
+                jcr:primaryType="nt:unstructured"
+                cssClass="plx-static-page"
+                layout="responsiveGrid"
+                sling:resourceType="commerce-store/components/container">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="About Us"
+                    type="h1"
+                    sling:resourceType="commerce-store/components/title"/>
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="commerce-store/components/text"
+                    text="&lt;h3>LIGHTING SOLUTIONS TO CREATE UNIQUE EXPERIENCES&lt;/h3>&lt;p>The Proluxe brand was created in 2019 out of a passion for unique and one-of-a-kind lighting solutions that integrate directly into people’s lives. Building on the foundation of tried-and-true products from the American Lighting showroom line, Proluxe has formed lasting relationships with home integration companies throughout the country. By working directly with integrators, Proluxe has been able to deliver first class, people-focused customer service, partnering on projects from the design phase all the way through to installation and beyond.&lt;/p>&lt;p>Simply put, Proluxe exists to help people. We exist to help integrators make the best choices for their lighting designs. We exist to support the people using our products after they’ve been installed. We exist to help people understand that beautiful lighting can change the way people see the world.&lt;/p>&lt;p>Our product includes a wide range of LED lighting products, from flexible LED strips to high-end tape light and mounting channels, the Proluxe product line has something for every home integration lighting need. Proluxe products are perfect for matching innovative profiles, interior lighting and exterior lighting for high-end residential spaces, retail, hotels, restaurants, etc. Our product portfolio is rounded off by a large number of intelligent lighting controls for modern and comfortable light management. Our extensive range of products, fast delivery times, outstanding price-to-performance ratio, and the option of manufacturing and packaging according to your requirements make Proluxe an ideal partner for any home integration firm.&lt;/p>&lt;p>&lt;img src=&quot;https://proluxelighting.com/media/wysiwyg/CEDIA_Member_2l_2.png&quot; alt=&quot;CEDIA member&quot;>&lt;/p>"
+                    textIsRich="true"/>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

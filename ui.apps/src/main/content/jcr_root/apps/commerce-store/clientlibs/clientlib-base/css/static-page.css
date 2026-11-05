@@ -1,0 +1,175 @@
+.plx-static-page {
+    box-sizing: border-box;
+    color: #202322;
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 28px 20px 0;
+    width: 100%;
+}
+
+main.container:has(.plx-static-page) {
+    flex: 0 0 auto;
+    padding-bottom: 0 !important;
+}
+
+body:has(.aem-Grid-newComponent),
+body:has(.newpar) {
+    min-height: 0;
+}
+
+body:has(.aem-Grid-newComponent) .root.container.responsivegrid,
+body:has(.newpar) .root.container.responsivegrid,
+body:has(.aem-Grid-newComponent) .root.container.responsivegrid > .cmp-container,
+body:has(.newpar) .root.container.responsivegrid > .cmp-container,
+body:has(.aem-Grid-newComponent) .root.container.responsivegrid > .cmp-container > .aem-Grid,
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid {
+    flex: 0 0 auto;
+    min-height: 0;
+}
+
+body:has(.aem-Grid-newComponent) .root.container.responsivegrid > .cmp-container > .aem-Grid > main.container,
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid > main.container {
+    flex: 0 0 auto;
+    padding-bottom: 0;
+}
+
+body:has(.aem-Grid-newComponent) .root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment,
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment {
+    margin-top: 0;
+}
+
+body:has(.aem-Grid-newComponent) main.container,
+body:has(.newpar) main.container {
+    padding-bottom: 0 !important;
+}
+
+body:has(.aem-Grid-newComponent) .blog-index,
+body:has(.newpar) .blog-index,
+body:has(.aem-Grid-newComponent) .plx-static-page,
+body:has(.newpar) .plx-static-page {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+body:has(.aem-Grid-newComponent) .newpar,
+body:has(.newpar) .newpar,
+body:has(.aem-Grid-newComponent) .aem-Grid-newComponent,
+body:has(.newpar) .aem-Grid-newComponent {
+    margin: 0;
+}
+
+.plx-static-page .cmp-title {
+    margin: 0 0 18px;
+}
+
+.plx-static-page .cmp-title__text {
+    color: #1a1c1b;
+    font-family: "miller-display", Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.15;
+}
+
+.plx-static-page .cmp-text {
+    font-family: "acumin-pro", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.plx-static-page .cmp-text h1,
+.plx-static-page .cmp-text h2,
+.plx-static-page .cmp-text h3,
+.plx-static-page .cmp-text h4 {
+    color: #1a1c1b;
+    font-family: "miller-display", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.25;
+}
+
+.plx-static-page .cmp-text h1,
+.plx-static-page .cmp-text h2 {
+    font-size: 22px;
+    margin: 28px 0 12px;
+}
+
+.plx-static-page .cmp-text h3 {
+    font-size: 18px;
+    margin: 22px 0 10px;
+}
+
+.plx-static-page .cmp-text h4 {
+    font-size: 16px;
+    margin: 18px 0 8px;
+}
+
+.plx-static-page .cmp-text p,
+.plx-static-page .cmp-text li {
+    margin: 0 0 12px;
+}
+
+.plx-static-page .cmp-text ul,
+.plx-static-page .cmp-text ol {
+    margin: 0 0 16px;
+    padding-left: 1.25em;
+}
+
+.plx-static-page .cmp-text a {
+    color: #6f6240;
+    text-underline-offset: 3px;
+}
+
+.plx-static-page .cmp-text img {
+    display: block;
+    height: auto;
+    margin-top: 12px;
+    max-width: 180px;
+}
+
+.plx-static-page .cmp-text table {
+    border-collapse: collapse;
+    display: block;
+    font-size: 14px;
+    margin: 8px 0 20px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.plx-static-page .cmp-text th,
+.plx-static-page .cmp-text td {
+    border: 1px solid rgba(26, 28, 27, 0.15);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.plx-static-page .cmp-text th {
+    background: #1a1c1b;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .plx-static-page {
+        padding: 40px 24px 0;
+    }
+
+    .plx-static-page .cmp-title__text {
+        font-size: 40px;
+    }
+
+    .plx-static-page .cmp-text {
+        font-size: 16px;
+    }
+
+    .plx-static-page .cmp-text h1,
+    .plx-static-page .cmp-text h2 {
+        font-size: 26px;
+    }
+
+    .plx-static-page .cmp-text table {
+        display: table;
+    }
+}

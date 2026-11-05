@@ -16,3 +16,4 @@
 
 #base=css
 fonts.css
+static-page.css

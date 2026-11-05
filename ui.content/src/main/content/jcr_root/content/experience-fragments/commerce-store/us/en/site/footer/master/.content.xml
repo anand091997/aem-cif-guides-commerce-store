@@ -2,8 +2,6 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-02-24T15:59:33.287+02:00"
-        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/commerce-store/settings/wcm/templates/xf-web-variation"
         cq:xfMasterVariation="{Boolean}true"
@@ -13,89 +11,34 @@
         sling:resourceType="commerce-store/components/xfpage">
         <root
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="commerce-store/components/container"
-            layout="responsiveGrid">
-            <container
-                cq:styleIds="[1597902980391,1597907315954]"
+            layout="simple"
+            sling:resourceType="commerce-store/components/container">
+            <image
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="commerce-store/components/container"
-                layout="responsiveGrid">
-                <text_197302128_copy
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/text"
-                    text="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Account&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Sign In&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Register&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Order Status&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Returns&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                        <phone
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="11"/>
-                    </cq:responsive>
-                </text_197302128_copy>
-                <text_197302128_copy_631702609
-                    jcr:lastModified="{Date}2021-02-24T15:59:33.206+02:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/text"
-                    text="&lt;p> &lt;/p>&#xd;&#xa;&lt;p>&lt;b>About Us&lt;/b>&lt;/p>&#xd;&#xa;&lt;p> &lt;/p>&#xd;&#xa;&lt;p>Our Story&lt;/p>&#xd;&#xa;&lt;p> &lt;/p>&#xd;&#xa;&lt;p>Email Signup&lt;/p>&#xd;&#xa;&lt;p> &lt;/p>&#xd;&#xa;&lt;p>Give Back&lt;/p>&#xd;&#xa;&lt;p> &lt;/p>&#xd;&#xa;&lt;p> &lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                        <phone
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="11"/>
-                    </cq:responsive>
-                </text_197302128_copy_631702609>
-                <text_197302128_copy_1685680670
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/text"
-                    text="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Help&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Live Chat&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Contact Us&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Order Status&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Returns&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                        <phone
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="11"/>
-                    </cq:responsive>
-                </text_197302128_copy_1685680670>
-                <text_197302128
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/text"
-                    text="&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Follow Us!&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Lorem ipsum dolor sit amet, consectetur adipsicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;"
-                    textIsRich="true">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
-                            jcr:primaryType="nt:unstructured"
-                            offset="0"
-                            width="3"/>
-                        <phone
-                            jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="11"/>
-                    </cq:responsive>
-                </text_197302128>
-                <separator
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/separator"/>
-                <text
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="commerce-store/components/text"
-                    id="footerCopyright"
-                    text="&lt;p>Copyright 2020, Commerce Store.&amp;nbsp;All rights reserved.&lt;/p>&#xd;&#xa;&lt;p>345 Park Avenue,&amp;nbsp;San Jose, CA 95110-2704, USA&lt;/p>&#xd;&#xa;"
-                    textIsRich="true"/>
-            </container>
+                alt="Proluxe Lighting"
+                fileReference="/content/dam/brainvire/PLX_Logo_White.png"
+                linkURL="/content/commerce-store/us/en.html"
+                sling:resourceType="commerce-store/components/image"/>
+            <address
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce-store/components/text"
+                text="&lt;div class=&quot;plx-footer-address&quot;>&lt;p>Proluxe™ is a division of American Lighting Inc.&lt;br/>11775 EAST 45TH AVENUE.&lt;br/>DENVER, COLORADO 80239&lt;br/>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;tel:866-700-5648&quot;>866-700-5648&lt;/a>&lt;/p>&lt;/div>"
+                textIsRich="true"/>
+            <links
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce-store/components/text"
+                text="&lt;div class=&quot;plx-footer-nav&quot;>&lt;div class=&quot;plx-footer-col&quot;>&lt;h4>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Products&lt;/a>&lt;/h4>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Tape Light&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Extrusion &amp;amp; Channel&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Undercabinets&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Puck Lights&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Downlighting&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Flexible Linear&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Light String&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Rigid Linear&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Flood &amp;amp; Graze&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Dynamic Pixel&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Controls&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Drivers&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;div class=&quot;plx-footer-col&quot;>&lt;h4>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Applications&lt;/a>&lt;/h4>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Accent&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Ambient&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Task&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;div class=&quot;plx-footer-col&quot;>&lt;h4>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Resources&lt;/a>&lt;/h4>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Literature &amp;amp; Media&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Tutorial Videos&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Software Drivers&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;div class=&quot;plx-footer-col&quot;>&lt;h4>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Services&lt;/a>&lt;/h4>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Enlightenment Services&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Custom Cut&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;div class=&quot;plx-footer-col&quot;>&lt;h4>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Contact Us&lt;/a>&lt;/h4>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Where To Buy&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Support &amp;amp; Forms&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot;>Contact Us&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;/content/commerce-store/us/en/about-us.html&quot;>About Us&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;/content/commerce-store/us/en/terms-conditions.html&quot;>Terms &amp;amp; Conditions&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;/content/commerce-store/us/en/privacy-policy.html&quot;>Privacy Policy&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;/div>"
+                textIsRich="true"/>
+            <services
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce-store/components/text"
+                text="&lt;div class=&quot;plx-footer-bottom&quot;>&lt;div class=&quot;plx-footer-service&quot;>&lt;div class=&quot;plx-service-col&quot;>&lt;strong>TECHNICAL SUPPORT &amp;amp; LAYOUTS:&lt;/strong>&lt;br/>Monday - Friday. 8am - 5pm MT&lt;br/>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;tel:866-700-5648&quot;>866-700-5648&lt;/a>&lt;br/>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;mailto:quotes@proluxelighting.com&quot;>Quotes@proluxelighting.com&lt;/a>&lt;/div>&lt;div class=&quot;plx-service-col&quot;>&lt;strong>CUSTOMER SERVICE:&lt;/strong>&lt;br/>Monday - Friday. 8am - 5pm MT&lt;br/>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;tel:866-700-5648&quot;>866-700-5648&lt;/a>&lt;br/>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;mailto:orders@proluxelighting.com&quot;>Orders@proluxelighting.com&lt;/a>&lt;/div>&lt;/div>&lt;div class=&quot;plx-footer-social&quot;>&lt;ul>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot; class=&quot;plx-social-link plx-social-youtube&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;YouTube&quot; aria-label=&quot;YouTube&quot;>&amp;nbsp;&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot; class=&quot;plx-social-link plx-social-facebook&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;Facebook&quot; aria-label=&quot;Facebook&quot;>&amp;nbsp;&lt;/a>&lt;/li>&lt;li>&lt;a x-cq-linkchecker=&quot;skip&quot; href=&quot;#&quot; class=&quot;plx-social-link plx-social-linkedin&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; title=&quot;LinkedIn&quot; aria-label=&quot;LinkedIn&quot;>&amp;nbsp;&lt;/a>&lt;/li>&lt;/ul>&lt;/div>&lt;/div>"
+                textIsRich="true"/>
+            <copyright
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="commerce-store/components/text"
+                text="&lt;p class=&quot;plx-footer-copyright&quot;>© 2026 Proluxe Lighting Inc. All Rights Reserved&lt;/p>"
+                textIsRich="true"/>
         </root>
     </jcr:content>
 </jcr:root>

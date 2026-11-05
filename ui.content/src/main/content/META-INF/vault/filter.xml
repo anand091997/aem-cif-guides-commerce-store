@@ -3,6 +3,6 @@
     <filter root="/conf/commerce-store" mode="update"/>
     <filter root="/content/commerce-store" mode="merge"/>
     <filter root="/content/dam/commerce-store" mode="merge"/>
-    <filter root="/content/experience-fragments/commerce-store" mode="merge"/>
+    <filter root="/content/experience-fragments/commerce-store" mode="replace"/>
     <filter root="/etc/map.publish" mode="merge"/>
 </workspaceFilter>

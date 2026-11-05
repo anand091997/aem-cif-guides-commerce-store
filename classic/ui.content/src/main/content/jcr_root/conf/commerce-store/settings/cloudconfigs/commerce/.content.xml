@@ -11,7 +11,7 @@
         cq:catalogIdentifier="default"
         cq:catalogPath="/var/commerce/products/commerce-store-default"
         cq:graphqlClient="default"
-        magentoRootCategoryId="NDU="
+        magentoRootCategoryId="MTA3"
         magentoStore="default"
         enableUIDSupport="true"/>
 </jcr:root>

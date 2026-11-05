@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import 'variables';
 @import 'base';
@@ -6,4 +5,9 @@
 @import url('~@adobe/aem-core-cif-product-recs-extension/dist/main.css');
 @import '../styles/**/*.scss';
 @import './styles/*.scss';
-
+@import './styles/common.scss';
+@import './styles/container_main.scss';
+@import './styles/header.scss';
+@import './styles/experiencefragment_header.scss';
+@import './styles/footer.scss';
+@import './styles/experiencefragment_footer.scss';

@@ -21,9 +21,13 @@ body {
 }
 
 div.header + div.responsivegrid {
-    margin: 0 auto;
-    max-width: 1500px !important;
+    margin: 0 auto !important;
+    max-width: 1614px !important;
+    width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
     float: none !important;
+    box-sizing: border-box !important;
 }
 
 body,

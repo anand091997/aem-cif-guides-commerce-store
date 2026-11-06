@@ -34,7 +34,8 @@ header.experiencefragment > .cmp-experiencefragment {
 }
 
 header.experiencefragment .cmp-experiencefragment--header > .cmp-container,
-header.experiencefragment .cmp-experiencefragment > .cmp-container {
+header.experiencefragment > .cmp-experiencefragment > .cmp-container,
+header.experiencefragment .cmp-container {
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 1614px;
@@ -852,33 +853,47 @@ header.experiencefragment .minicart svg {
 
 /* Cart Counter Badge - Champagne Gold */
 header.experiencefragment .minicart .cartCounter__root,
-header.experiencefragment .minicart .cartTrigger__counter,
-header.experiencefragment .cartCounter__root {
+header.experiencefragment .minicart [class*="cartTrigger__counter"],
+header.experiencefragment .minicart [class*="counter"],
+header.experiencefragment [class*="cartCounter__root"],
+header.experiencefragment [class*="cartTrigger__counter"],
+header.experiencefragment [class*="counter"] {
     background-color: #c6b682 !important;
     color: #212322 !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
-    font-size: 11px !important;
+    font-size: 10px !important;
     font-weight: 700 !important;
-    min-width: 18px !important;
-    height: 18px !important;
-    line-height: 18px !important;
+    min-width: 17px !important;
+    height: 17px !important;
+    line-height: 17px !important;
     border-radius: 9px !important;
     text-align: center !important;
     padding: 0 4px !important;
-    display: inline-block !important;
-    margin-left: 4px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: -2px !important;
+    right: -2px !important;
+    left: auto !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+    z-index: 2 !important;
 }
 
 /* Mini Cart Dropdown Root */
 header.experiencefragment .minicart aside[class*="root"],
 header.experiencefragment [class*="MiniCart__miniCart__root"],
-header.experiencefragment [class*="miniCart__root"] {
+header.experiencefragment [class*="miniCart__root"],
+.minicart aside[class*="root"],
+.minicart [class*="miniCart__root"] {
     position: absolute !important;
     top: calc(100% + 14px) !important;
     right: 0 !important;
     left: auto !important;
     transform: none !important;
-    width: 400px !important;
+    width: 420px !important;
     max-width: calc(100vw - 24px) !important;
     z-index: 10002 !important;
     height: auto !important;
@@ -891,7 +906,9 @@ header.experiencefragment [class*="miniCart__root"] {
 
 header.experiencefragment .minicart aside[class*="root_open"],
 header.experiencefragment [class*="MiniCart__miniCart__root_open"],
-header.experiencefragment [class*="miniCart__root_open"] {
+header.experiencefragment [class*="miniCart__root_open"],
+.minicart aside[class*="root_open"],
+.minicart [class*="miniCart__root_open"] {
     opacity: 1 !important;
     visibility: visible !important;
     pointer-events: auto !important;
@@ -901,7 +918,8 @@ header.experiencefragment [class*="miniCart__root_open"] {
 
 /* Dropdown Content Card */
 header.experiencefragment [class*="MiniCart__miniCart__contents"],
-header.experiencefragment .minicart [class*="miniCart__contents"] {
+header.experiencefragment .minicart [class*="miniCart__contents"],
+.minicart [class*="miniCart__contents"] {
     position: relative !important;
     background: #1f2120 !important;
     border: 1px solid rgba(198, 182, 130, 0.45) !important;
@@ -921,7 +939,8 @@ header.experiencefragment .minicart [class*="miniCart__contents"] {
 }
 
 /* Little triangle pointer */
-header.experiencefragment [class*="MiniCart__miniCart__root_open"]::before {
+header.experiencefragment [class*="MiniCart__miniCart__root_open"]::before,
+.minicart [class*="miniCart__root_open"]::before {
     content: '';
     position: absolute;
     top: -6px;
@@ -933,39 +952,77 @@ header.experiencefragment [class*="MiniCart__miniCart__root_open"]::before {
     z-index: 1;
 }
 
-/* Header in MiniCart */
+/* Header in MiniCart - Structured Grid to prevent header/alert collisions */
 header.experiencefragment [class*="MiniCart__miniCart__header"],
-header.experiencefragment .minicart [class*="miniCart__header"] {
-    display: flex !important;
+header.experiencefragment .minicart [class*="miniCart__header"],
+.minicart [class*="miniCart__header"] {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    row-gap: 12px !important;
+    column-gap: 16px !important;
     align-items: center !important;
-    justify-content: space-between !important;
     padding: 16px 20px !important;
     border-bottom: 1px solid rgba(198, 182, 130, 0.25) !important;
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+/* Stock Status Alert Banner (Full width on top) */
+header.experiencefragment [class*="stockStatusMessageContainer"],
+.minicart [class*="stockStatusMessageContainer"] {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+}
+
+header.experiencefragment [class*="stockStatusMessageContainer"] [class*="root"],
+.minicart [class*="stockStatusMessageContainer"] [class*="root"] {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px 14px !important;
+    background: rgba(229, 115, 115, 0.15) !important;
+    border: 1px solid rgba(229, 115, 115, 0.45) !important;
+    border-left: 3px solid #e57373 !important;
+    border-radius: 4px !important;
+    color: #ff9999 !important;
+    font-size: 11.5px !important;
+    line-height: 1.45 !important;
+    box-sizing: border-box !important;
 }
 
 header.experiencefragment [class*="MiniCart__miniCart__quantity"],
-header.experiencefragment .minicart [class*="miniCart__quantity"] {
+header.experiencefragment .minicart [class*="miniCart__quantity"],
+.minicart [class*="miniCart__quantity"] {
+    grid-column: 1 !important;
+    justify-self: start !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
-    font-size: 13px !important;
+    font-size: 12.5px !important;
     font-weight: 600 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.8px !important;
     color: #ffffff !important;
+    white-space: nowrap !important;
 }
 
 header.experiencefragment [class*="MiniCart__miniCart__price"],
-header.experiencefragment .minicart [class*="miniCart__price"] {
+header.experiencefragment .minicart [class*="miniCart__price"],
+.minicart [class*="miniCart__price"] {
+    grid-column: 2 !important;
+    justify-self: end !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 15px !important;
     font-weight: 700 !important;
     color: #c6b682 !important;
+    white-space: nowrap !important;
 }
 
 /* Body / Product List */
 header.experiencefragment [class*="MiniCart__miniCart__body"],
-header.experiencefragment .minicart [class*="miniCart__body"] {
-    max-height: 320px !important;
+header.experiencefragment .minicart [class*="miniCart__body"],
+.minicart [class*="miniCart__body"] {
+    max-height: 380px !important;
     overflow-y: auto !important;
     padding: 12px 20px !important;
 }
@@ -1001,8 +1058,8 @@ header.experiencefragment [class*="ProductList__item__thumbnailContainer"],
     height: 80px !important;
     min-height: 80px !important;
     max-height: 80px !important;
-    background-color: #faf9f6 !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background-color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     border-radius: 4px !important;
     position: relative !important;
     overflow: hidden !important;
@@ -1011,7 +1068,7 @@ header.experiencefragment [class*="ProductList__item__thumbnailContainer"],
     justify-content: center !important;
     box-sizing: border-box !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 4px !important;
 }
 
 header.experiencefragment [class*="thumbnailContainer"] > div,

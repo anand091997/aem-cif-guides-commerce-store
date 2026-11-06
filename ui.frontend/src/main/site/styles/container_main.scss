@@ -11,34 +11,50 @@ main.container {
     max-width: 1614px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 24px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 60px;
     width: 100%;
 
-    > .cmp-container:not(.blog-article):not(.blog-index) {
+    @media (max-width: 992px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    > .cmp-container {
         box-sizing: border-box;
         margin: 0;
         max-width: 100%;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+
+        > .aem-Grid > .aem-GridColumn {
+            padding-left: 0;
+            padding-right: 0;
+            float: none;
+        }
     }
 
     // Reset nested container grid column padding
-    .container.responsivegrid.aem-GridColumn:not(.blog-article):not(.blog-index),
-    .container.responsivegrid.aem-GridColumn--default--12:not(.blog-article):not(.blog-index) {
+    .container.responsivegrid.aem-GridColumn,
+    .container.responsivegrid.aem-GridColumn--default--12 {
         box-sizing: border-box;
         padding-left: 0;
         padding-right: 0;
         width: 100%;
         max-width: 100%;
 
-        > .cmp-container:not(.blog-article):not(.blog-index) {
+        > .cmp-container {
             box-sizing: border-box;
             padding-left: 0;
             padding-right: 0;
             width: 100%;
             max-width: 100%;
+
+            > .aem-Grid > .aem-GridColumn {
+                padding-left: 0;
+                padding-right: 0;
+            }
         }
     }
 }

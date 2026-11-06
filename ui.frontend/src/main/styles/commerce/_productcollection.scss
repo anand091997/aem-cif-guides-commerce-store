@@ -702,21 +702,31 @@
     padding: 0 !important;
     margin: 0 !important;
 
+    &::before,
+    &::after {
+        display: none !important;
+        content: none !important;
+    }
+
     .productcollection__pagination-icon {
         display: inline-block !important;
         width: 8px !important;
         height: 8px !important;
         position: relative !important;
         border: none !important;
+        box-sizing: border-box !important;
         transition: border-color 0.25s ease !important;
 
-        &::before {
+        &::before,
+        &::after {
             display: none !important;
             content: none !important;
         }
     }
 
     &--prev .productcollection__pagination-icon {
+        border-top: none !important;
+        border-right: none !important;
         border-left: 2px solid currentColor !important;
         border-bottom: 2px solid currentColor !important;
         transform: rotate(45deg) !important;
@@ -724,6 +734,8 @@
     }
 
     &--next .productcollection__pagination-icon {
+        border-left: none !important;
+        border-bottom: none !important;
         border-right: 2px solid currentColor !important;
         border-top: 2px solid currentColor !important;
         transform: rotate(45deg) !important;

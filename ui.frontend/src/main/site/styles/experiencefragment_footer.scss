@@ -2,12 +2,30 @@
 // Matches https://proluxelighting.com/ across the whole screen
 
 
-.experiencefragment:has(.cmp-experiencefragment--footer) {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #202322;
+.experiencefragment:has(.cmp-experiencefragment--footer),
+div.experiencefragment:has(.cmp-experiencefragment--footer) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #202322 !important;
+}
+
+// Eliminate any trailing authoring/newpar elements after footer
+.experiencefragment:has(.cmp-experiencefragment--footer) ~ *,
+div.experiencefragment:has(.cmp-experiencefragment--footer) ~ *,
+footer.experiencefragment ~ *,
+.cmp-experiencefragment--footer ~ * {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden !important;
 }
 
 footer.experiencefragment,
@@ -17,8 +35,9 @@ footer.experiencefragment,
     clear: both;
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    padding: 56px 0 24px;
+    margin: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 56px 0 24px !important;
     background-color: #202322;
     color: #ffffff;
     font-family: 'miller-display', Georgia, 'Times New Roman', serif;

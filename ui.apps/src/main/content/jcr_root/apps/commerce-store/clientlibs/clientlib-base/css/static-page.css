@@ -34,8 +34,11 @@ body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid > 
 }
 
 body:has(.aem-Grid-newComponent) .root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment,
-body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment {
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment,
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > .experiencefragment:has(.cmp-experiencefragment--footer),
+body:has(.newpar) .root.container.responsivegrid > .cmp-container > footer.experiencefragment {
     margin-top: 0;
+    margin-bottom: 0 !important;
 }
 
 body:has(.aem-Grid-newComponent) main.container,
@@ -54,8 +57,20 @@ body:has(.newpar) .plx-static-page {
 body:has(.aem-Grid-newComponent) .newpar,
 body:has(.newpar) .newpar,
 body:has(.aem-Grid-newComponent) .aem-Grid-newComponent,
-body:has(.newpar) .aem-Grid-newComponent {
-    margin: 0;
+body:has(.newpar) .aem-Grid-newComponent,
+.newpar,
+.new.newpar.section,
+.aem-Grid-newComponent,
+.experiencefragment:has(.cmp-experiencefragment--footer) ~ *,
+footer.experiencefragment ~ * {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden !important;
 }
 
 .plx-static-page .cmp-title {

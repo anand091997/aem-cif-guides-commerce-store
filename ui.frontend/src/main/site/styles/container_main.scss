@@ -62,8 +62,12 @@ main.container {
 // Ensure header and footer experience fragments always stretch across the entire screen
 .aem-Grid.aem-Grid--12 > header.experiencefragment.aem-GridColumn,
 .aem-Grid.aem-Grid--12 > footer.experiencefragment.aem-GridColumn,
+.aem-Grid.aem-Grid--12 > .experiencefragment.aem-GridColumn:has(.cmp-experiencefragment--footer),
 header.experiencefragment,
-footer.experiencefragment {
+footer.experiencefragment,
+.experiencefragment:has(.cmp-experiencefragment--footer),
+div.experiencefragment:has(.cmp-experiencefragment--footer),
+.cmp-experiencefragment--footer {
     float: none !important;
     clear: both !important;
     width: 100% !important;
@@ -76,17 +80,49 @@ footer.experiencefragment {
     box-sizing: border-box !important;
 }
 
+// Push footer flush to the bottom in sticky flex layout with zero gap beneath it
+.root.container.responsivegrid > .cmp-container > footer.experiencefragment,
+.root.container.responsivegrid > .cmp-container > .experiencefragment:has(.cmp-experiencefragment--footer),
+.root.container.responsivegrid > .cmp-container > div.experiencefragment:has(.cmp-experiencefragment--footer),
+.root.container.responsivegrid > .cmp-container > .aem-Grid > footer.experiencefragment,
+.root.container.responsivegrid > .cmp-container > .aem-Grid > .experiencefragment:has(.cmp-experiencefragment--footer) {
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+// Eliminate any trailing whitespace, authoring pars, or empty elements after footer
+.experiencefragment:has(.cmp-experiencefragment--footer) ~ *,
+footer.experiencefragment ~ *,
+.cmp-experiencefragment--footer ~ *,
+.root.container.responsivegrid > .cmp-container > .newpar,
+.root.container.responsivegrid > .cmp-container > .aem-Grid-newComponent,
+.new.newpar.section {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    overflow: hidden !important;
+}
+
 // Root container layout & sticky footer
 html {
     height: 100%;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .root.container.responsivegrid {
@@ -96,8 +132,8 @@ body {
     min-height: 100vh;
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 
     > .cmp-container {
         flex: 1 0 auto;
@@ -105,14 +141,16 @@ body {
         flex-direction: column;
         width: 100%;
         max-width: 100%;
-        padding: 0;
-        margin: 0;
+        padding: 0 !important;
+        margin: 0 !important;
 
         > .aem-Grid {
             flex: 1 0 auto;
             display: flex;
             flex-direction: column;
             width: 100%;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
 
             &::before,
             &::after {

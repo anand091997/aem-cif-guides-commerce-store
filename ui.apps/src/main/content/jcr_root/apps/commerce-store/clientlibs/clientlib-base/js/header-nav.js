@@ -95,21 +95,69 @@
     function hideBlankProductSections() {
         var sections = document.querySelectorAll(".productFullDetail__details, .productFullDetail__section");
         sections.forEach(function (sec) {
-            var hasContentElement = sec.querySelector("dl, h2, h3, h4, p, div, table, ul, ol, span, form, input, button");
-            var text = (sec.textContent || "").trim();
-            if (!hasContentElement && !text) {
+            // 1. Check if section is productFullDetail__details
+            if (sec.classList.contains("productFullDetail__details")) {
+                var contentDl = sec.querySelector("dl");
+                var hasDlContent = contentDl && (contentDl.children.length > 0) && (contentDl.textContent || "").trim().length > 0;
+                var hasOtherContent = sec.querySelector("table, p, ul, ol");
+                if (!hasDlContent && !hasOtherContent) {
+                    sec.style.setProperty("display", "none", "important");
+                    sec.setAttribute("hidden", "");
+                    return;
+                }
+            }
+
+            // 2. General empty check for any section
+            var title = sec.querySelector(".productFullDetail__areaTitle, .productFullDetail__sectionTitle, h1, h2, h3");
+            var titleText = title ? (title.textContent || "").trim() : "";
+            var fullText = (sec.textContent || "").trim();
+            var hasInteractable = sec.querySelector("input, button, select, img, a, table, dl");
+            if (!hasInteractable && (!fullText || fullText === titleText)) {
                 sec.style.setProperty("display", "none", "important");
                 sec.setAttribute("hidden", "");
             }
         });
     }
 
+    function removeTrailingFooterElements() {
+        var footers = document.querySelectorAll(".cmp-experiencefragment--footer, footer.experiencefragment");
+        footers.forEach(function (footer) {
+            var wrapper = footer.closest(".experiencefragment") || footer;
+            var sibling = wrapper.nextElementSibling;
+            while (sibling) {
+                sibling.style.setProperty("display", "none", "important");
+                sibling.style.setProperty("height", "0", "important");
+                sibling.style.setProperty("min-height", "0", "important");
+                sibling.style.setProperty("margin", "0", "important");
+                sibling.style.setProperty("padding", "0", "important");
+                sibling.setAttribute("hidden", "");
+                sibling = sibling.nextElementSibling;
+            }
+        });
+
+        var rootPars = document.querySelectorAll(".root.container.responsivegrid > .cmp-container > .newpar, .new.newpar.section");
+        rootPars.forEach(function (el) {
+            el.style.setProperty("display", "none", "important");
+            el.style.setProperty("height", "0", "important");
+            el.style.setProperty("min-height", "0", "important");
+            el.style.setProperty("margin", "0", "important");
+            el.style.setProperty("padding", "0", "important");
+            el.setAttribute("hidden", "");
+        });
+    }
+
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", initHeader);
         document.addEventListener("DOMContentLoaded", hideBlankProductSections);
+        document.addEventListener("DOMContentLoaded", removeTrailingFooterElements);
     } else {
         initHeader();
         hideBlankProductSections();
+        removeTrailingFooterElements();
     }
+    window.addEventListener("load", function () {
+        hideBlankProductSections();
+        removeTrailingFooterElements();
+    });
 }());
 

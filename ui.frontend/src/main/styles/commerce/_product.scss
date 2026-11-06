@@ -553,7 +553,10 @@ tr:nth-child(even) {
 
     &:empty,
     &:not(:has(*)),
-    &:not(:has(dl, h2, h3, p, div, table, ul, ol, span)) {
+    &:not(:has(dl dt, dl dd, table tr, p:not(:empty), ul li, ol li)),
+    &:has(.productFullDetail__detailsTitle:only-child),
+    &:has(.productFullDetail__sectionTitle:only-child),
+    &:has(h2:only-child) {
         display: none !important;
         margin: 0 !important;
         padding: 0 !important;

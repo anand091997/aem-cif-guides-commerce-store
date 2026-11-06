@@ -1162,6 +1162,30 @@ header.experiencefragment .minicart [class*="miniCart__emptyCart"] {
    4. Mobile Header & Navigation Drawer (<= 992px)
    ========================================================================== */
 @media (max-width: 992px) {
+    .plx-nav-toggle {
+        display: inline-flex !important;
+        order: 0 !important;
+    }
+
+    header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12 {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 12px !important;
+    }
+
+    header.experiencefragment .logo {
+        order: 1 !important;
+        flex: 1 1 auto !important;
+    }
+
+    header.experiencefragment .searchbar,
+    header.experiencefragment .miniaccount,
+    header.experiencefragment .minicart {
+        order: 2 !important;
+    }
+
     header.experiencefragment .navigation {
         display: none !important;
     }
@@ -1214,5 +1238,120 @@ header.experiencefragment .minicart [class*="miniCart__emptyCart"] {
     header.experiencefragment.is-open .cmp-navigation__item-link:hover,
     header.experiencefragment.is-open .cmp-navigation__item.cmp-navigation__item--active > .cmp-navigation__item-link {
         color: #c6b682 !important;
+    }
+}
+
+.plx-nav-toggle {
+    display: none !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    padding: 8px 10px !important;
+    margin: 0 !important;
+    outline: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.plx-nav-toggle-icon {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 22px !important;
+    height: 15px !important;
+}
+
+.plx-nav-toggle-icon span {
+    display: block !important;
+    height: 2px !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    border-radius: 2px !important;
+    transition: all 0.25s ease !important;
+}
+
+.plx-nav-toggle:hover .plx-nav-toggle-icon span {
+    background-color: #c6b682 !important;
+}
+
+.plx-nav-drawer-close {
+    position: absolute !important;
+    top: 22px !important;
+    right: 24px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+    font-size: 32px !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    padding: 4px 8px !important;
+    transition: color 0.2s ease !important;
+    z-index: 10003 !important;
+}
+
+.plx-nav-drawer-close:hover {
+    color: #c6b682 !important;
+}
+
+.plx-submenu-toggle {
+    display: none !important;
+}
+
+@media (max-width: 992px) {
+    .has-submenu {
+        position: relative !important;
+    }
+
+    .has-submenu .plx-submenu-toggle {
+        display: block !important;
+        position: absolute !important;
+        right: 0 !important;
+        top: 10px !important;
+        background: transparent !important;
+        border: none !important;
+        width: 40px !important;
+        height: 40px !important;
+        cursor: pointer !important;
+        outline: none !important;
+    }
+
+    .has-submenu .plx-submenu-toggle span {
+        display: block !important;
+        width: 8px !important;
+        height: 8px !important;
+        border-right: 2px solid #ffffff !important;
+        border-bottom: 2px solid #ffffff !important;
+        transform: rotate(45deg) !important;
+        margin: 12px auto !important;
+        transition: transform 0.25s ease, border-color 0.2s ease !important;
+    }
+
+    .has-submenu.submenu-open .plx-submenu-toggle span {
+        transform: rotate(-135deg) !important;
+        border-color: #c6b682 !important;
+    }
+
+    header.experiencefragment.is-open .has-submenu > .cmp-navigation__group {
+        display: none !important;
+        padding-left: 18px !important;
+        background: rgba(0, 0, 0, 0.25) !important;
+        border-left: 2px solid #c6b682 !important;
+        margin: 4px 0 12px !important;
+    }
+
+    header.experiencefragment.is-open .has-submenu.submenu-open > .cmp-navigation__group {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 993px) {
+    .plx-nav-utility-item,
+    header.experiencefragment .navigation .cmp-navigation__item:has(a[href*="about-us"]),
+    header.experiencefragment .navigation .cmp-navigation__item:has(a[href*="privacy-policy"]),
+    header.experiencefragment .navigation .cmp-navigation__item:has(a[href*="terms-conditions"]),
+    header.experiencefragment .navigation a[href*="about-us"],
+    header.experiencefragment .navigation a[href*="privacy-policy"],
+    header.experiencefragment .navigation a[href*="terms-conditions"] {
+        display: none !important;
     }
 }

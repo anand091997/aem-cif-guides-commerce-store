@@ -952,4 +952,200 @@ header.experiencefragment {
         font-family: 'miller-display', Georgia, serif !important;
         font-size: 15px !important;
     }
+
+    //== 4. Mobile Toggle, Drawer & Responsive Rules
+    .plx-nav-toggle {
+        display: none !important;
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        padding: 8px 10px !important;
+        margin: 0 !important;
+        outline: none !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    @media (max-width: 992px) {
+        .plx-nav-toggle {
+            display: inline-flex !important;
+            order: 0 !important;
+        }
+
+        .cmp-container > .aem-Grid.aem-Grid--12 {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 12px !important;
+        }
+
+        .logo {
+            order: 1 !important;
+            flex: 1 1 auto !important;
+        }
+
+        .searchbar,
+        .miniaccount,
+        .minicart {
+            order: 2 !important;
+        }
+
+        .navigation {
+            display: none !important;
+        }
+
+        &.is-open .navigation,
+        .navigation.is-open {
+            display: block !important;
+            background-color: #212322 !important;
+            border: none !important;
+            bottom: 0 !important;
+            box-shadow: none !important;
+            box-sizing: border-box !important;
+            height: 100vh !important;
+            left: 0 !important;
+            max-height: none !important;
+            min-height: 100vh !important;
+            opacity: 1 !important;
+            overflow-y: auto !important;
+            padding: 74px 28px 28px !important;
+            position: fixed !important;
+            right: 0 !important;
+            top: 0 !important;
+            visibility: visible !important;
+            width: 100% !important;
+            z-index: 10001 !important;
+        }
+
+        &.is-open .cmp-navigation > .cmp-navigation__group {
+            flex-direction: column !important;
+            align-items: stretch !important;
+            width: 100% !important;
+            gap: 0 !important;
+        }
+
+        &.is-open .cmp-navigation__item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+            width: 100% !important;
+            padding: 0 !important;
+        }
+
+        &.is-open .cmp-navigation__item-link {
+            display: flex !important;
+            width: 100% !important;
+            padding: 16px 0 !important;
+            font-size: 15px !important;
+            letter-spacing: 1px !important;
+            color: #ffffff !important;
+        }
+
+        &.is-open .cmp-navigation__item-link:hover,
+        &.is-open .cmp-navigation__item.cmp-navigation__item--active > .cmp-navigation__item-link {
+            color: #c6b682 !important;
+        }
+    }
+
+    .plx-nav-toggle-icon {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        width: 22px !important;
+        height: 15px !important;
+
+        span {
+            display: block !important;
+            height: 2px !important;
+            width: 100% !important;
+            background-color: #ffffff !important;
+            border-radius: 2px !important;
+            transition: all 0.25s ease !important;
+        }
+    }
+
+    .plx-nav-toggle:hover .plx-nav-toggle-icon span {
+        background-color: #c6b682 !important;
+    }
+
+    .plx-nav-drawer-close {
+        position: absolute !important;
+        top: 22px !important;
+        right: 24px !important;
+        background: transparent !important;
+        border: none !important;
+        color: #ffffff !important;
+        font-size: 32px !important;
+        line-height: 1 !important;
+        cursor: pointer !important;
+        padding: 4px 8px !important;
+        transition: color 0.2s ease !important;
+        z-index: 10003 !important;
+
+        &:hover {
+            color: #c6b682 !important;
+        }
+    }
+
+    .plx-submenu-toggle {
+        display: none !important;
+    }
+
+    @media (max-width: 992px) {
+        .has-submenu {
+            position: relative !important;
+
+            .plx-submenu-toggle {
+                display: block !important;
+                position: absolute !important;
+                right: 0 !important;
+                top: 10px !important;
+                background: transparent !important;
+                border: none !important;
+                width: 40px !important;
+                height: 40px !important;
+                cursor: pointer !important;
+                outline: none !important;
+
+                span {
+                    display: block !important;
+                    width: 8px !important;
+                    height: 8px !important;
+                    border-right: 2px solid #ffffff !important;
+                    border-bottom: 2px solid #ffffff !important;
+                    transform: rotate(45deg) !important;
+                    margin: 12px auto !important;
+                    transition: transform 0.25s ease, border-color 0.2s ease !important;
+                }
+            }
+
+            &.submenu-open .plx-submenu-toggle span {
+                transform: rotate(-135deg) !important;
+                border-color: #c6b682 !important;
+            }
+
+            > .cmp-navigation__group {
+                display: none !important;
+                padding-left: 18px !important;
+                background: rgba(0, 0, 0, 0.25) !important;
+                border-left: 2px solid #c6b682 !important;
+                margin: 4px 0 12px !important;
+            }
+
+            &.submenu-open > .cmp-navigation__group {
+                display: flex !important;
+            }
+        }
+    }
+
+    @media (min-width: 993px) {
+        .plx-nav-utility-item,
+        .navigation .cmp-navigation__item:has(a[href*="about-us"]),
+        .navigation .cmp-navigation__item:has(a[href*="privacy-policy"]),
+        .navigation .cmp-navigation__item:has(a[href*="terms-conditions"]),
+        .navigation a[href*="about-us"],
+        .navigation a[href*="privacy-policy"],
+        .navigation a[href*="terms-conditions"] {
+            display: none !important;
+        }
+    }
 }

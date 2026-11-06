@@ -13,4 +13,5 @@
  ******************************************************************************/
 import '../components';
 import './main.scss';
+import './header-nav';
 import './footer-nav';

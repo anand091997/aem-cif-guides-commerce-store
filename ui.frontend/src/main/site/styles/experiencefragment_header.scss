@@ -1481,15 +1481,22 @@ header.experiencefragment {
             border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
             width: 100% !important;
             padding: 0 !important;
+            position: relative !important;
+
+            // Never show submenus on hover inside mobile drawer
+            &:not(.submenu-open):hover > .cmp-navigation__group {
+                display: none !important;
+            }
         }
 
         &.is-open .cmp-navigation__item-link {
             display: flex !important;
             width: 100% !important;
-            padding: 16px 0 !important;
+            padding: 16px 48px 16px 0 !important;
             font-size: 15px !important;
             letter-spacing: 1px ;
             color: #ffffff !important;
+            box-sizing: border-box !important;
         }
 
         &.is-open .cmp-navigation__item-link:hover,
@@ -1557,15 +1564,22 @@ header.experiencefragment {
 
             .plx-submenu-toggle {
                 display: block !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
                 position: absolute !important;
                 right: 0 !important;
-                top: 10px !important;
+                top: 0 !important;
+                bottom: 0 !important;
+                width: 48px !important;
+                height: 100% !important;
                 background: transparent !important;
                 border: none !important;
-                width: 40px !important;
-                height: 40px !important;
-                cursor: pointer ;
-                outline: none ;
+                cursor: pointer !important;
+                outline: none !important;
+                z-index: 2 !important;
+                padding: 0 !important;
+                margin: 0 !important;
 
                 span {
                     display: block !important;
@@ -1574,7 +1588,7 @@ header.experiencefragment {
                     border-right: 2px solid #ffffff !important;
                     border-bottom: 2px solid #ffffff !important;
                     transform: rotate(45deg);
-                    margin: 12px auto !important;
+                    margin: 0 auto !important;
                     transition: transform 0.25s ease, border-color 0.2s ease ;
                 }
             }
@@ -1584,12 +1598,66 @@ header.experiencefragment {
                 border-color: #c6b682 !important;
             }
 
+            // Submenu in mobile drawer: in-flow vertical list, never absolute
             > .cmp-navigation__group {
                 display: none !important;
-                padding-left: 18px !important;
+                position: static !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+                padding: 4px 0 4px 16px !important;
                 background: rgba(0, 0, 0, 0.25) !important;
                 border-left: 2px solid #c6b682 !important;
-                margin: 4px 0 12px !important;
+                border-top: none !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                box-shadow: none !important;
+                margin: 4px 0 12px 0 !important;
+                flex-direction: column !important;
+                align-items: stretch !important;
+                justify-content: flex-start !important;
+                flex-wrap: nowrap !important;
+                list-style: none !important;
+
+                .cmp-navigation__item {
+                    position: static !important;
+                    width: 100% !important;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    background: transparent !important;
+
+                    &:last-child {
+                        border-bottom: none !important;
+                    }
+                }
+
+                .cmp-navigation__item-link {
+                    display: flex !important;
+                    align-items: center !important;
+                    width: 100% !important;
+                    padding: 12px 14px !important;
+                    font-family: 'miller-display', Georgia, serif !important;
+                    font-size: 14px !important;
+                    font-weight: 500 !important;
+                    color: rgba(255, 255, 255, 0.85) !important;
+                    text-transform: uppercase !important;
+                    letter-spacing: 0.8px !important;
+                    text-decoration: none !important;
+                    background: transparent !important;
+                    box-sizing: border-box !important;
+                    transition: color 0.2s ease, padding-left 0.2s ease !important;
+
+                    &:hover,
+                    &.cmp-navigation__item--active {
+                        color: #c6b682 !important;
+                        padding-left: 20px !important;
+                    }
+                }
             }
 
             &.submenu-open > .cmp-navigation__group {

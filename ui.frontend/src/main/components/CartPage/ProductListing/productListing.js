@@ -50,8 +50,9 @@ const ProductListing = props => {
     const { activeEditItem, isLoading, items, setActiveEditItem, wishlistConfig } = talonProps;
 
     const classes = useStyle(defaultClasses, props.classes);
+    const effectiveItems = items && items.length ? items : props.items || [];
 
-    if (isLoading) {
+    if (isLoading && !effectiveItems.length) {
         return (
             <LoadingIndicator>
                 <FormattedMessage id={'productListing.loading'} defaultMessage={'Fetching Cart...'} />
@@ -59,8 +60,8 @@ const ProductListing = props => {
         );
     }
 
-    if (items.length) {
-        const productComponents = items.map(product => (
+    if (effectiveItems.length) {
+        const productComponents = effectiveItems.map(product => (
             <Product
                 item={product}
                 key={product.id}

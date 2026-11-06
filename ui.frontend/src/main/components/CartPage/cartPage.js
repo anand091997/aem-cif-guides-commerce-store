@@ -79,6 +79,7 @@ const CartPage = props => {
 
     const productListing = hasItems ? (
         <ProductListing
+            items={cartItems}
             onAddToWishlistSuccess={onAddToWishlistSuccess}
             setIsCartUpdating={setIsCartUpdating}
             fetchCartDetails={fetchCartDetails}

@@ -1267,34 +1267,184 @@ textarea:focus,
 }
 
 /* -----------------------------------------------------------------------------
-   7. CIF Commerce: Product Detail Page (PDP)
+   7. CIF Commerce: Product Detail Page (PDP) (ProLuxe Luxury Theme)
    ----------------------------------------------------------------------------- */
+.productFullDetail__root {
+    max-width: 1360px !important;
+    margin: 0 auto 60px !important;
+    padding: 30px 24px 60px !important;
+    box-sizing: border-box !important;
+}
+
+@media (min-width: 1024px) {
+    .productFullDetail__root {
+        display: grid !important;
+        grid-template-columns: 1.15fr 1fr !important;
+        grid-template-areas:
+            'images title'
+            'images price'
+            'images sku'
+            'images options'
+            'images quantity'
+            'images actions'
+            'description description'
+            'details details' !important;
+        column-gap: 56px !important;
+        row-gap: 16px !important;
+        align-items: start !important;
+    }
+}
+
+/* Product Title */
+.productFullDetail__title {
+    grid-area: title !important;
+    padding: 0 !important;
+    margin: 0 0 12px 0 !important;
+    border: none !important;
+}
+
 .productFullDetail__productName {
+    font-family: var(--plx-font-serif) !important;
     font-size: 32px !important;
-    line-height: 1.2 !important;
-    margin-bottom: 12px !important;
+    font-weight: 300 !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.25 !important;
+    color: var(--plx-dark) !important;
+    margin: 0 !important;
 }
 
 @media (min-width: 992px) {
     .productFullDetail__productName {
-        font-size: 40px !important;
+        font-size: 38px !important;
     }
 }
 
-.productFullDetail__price {
+/* Price */
+.productFullDetail__price,
+.productFullDetail__root .productFullDetail__price {
+    grid-area: price !important;
+    padding: 0 !important;
+    margin: 0 0 14px 0 !important;
+    border: none !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 26px !important;
-    margin-bottom: 20px !important;
+    font-weight: 700 !important;
     color: var(--plx-dark) !important;
 }
 
-/* Swatches */
+.productFullDetail__root .productFullDetail__price .regularPrice {
+    text-decoration: line-through !important;
+    font-size: 16px !important;
+    color: #888888 !important;
+    margin-right: 10px !important;
+}
+
+.productFullDetail__root .productFullDetail__price .discountedPrice {
+    font-weight: 700 !important;
+    color: var(--plx-dark) !important;
+}
+
+/* =============================================================================
+   PDP Section: SKU (Refined ProLuxe Meta Tag)
+   ============================================================================= */
+.productFullDetail__sku,
+.productFullDetail__root .productFullDetail__sku,
+.productFullDetail__sku.productFullDetail__section {
+    grid-area: sku !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background: transparent !important;
+    width: auto !important;
+    align-self: flex-start !important;
+}
+
+.productFullDetail__skuTitle,
+.productFullDetail__sku .productFullDetail__skuTitle,
+.productFullDetail__sku .productFullDetail__sectionTitle {
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    color: #888888 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    border: none !important;
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
+
+.productFullDetail__sku strong,
+.productFullDetail__sku strong[role="sku"],
+.productFullDetail__sku [role="sku"] {
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+    color: #1a1c1b !important;
+    background-color: #faf9f6 !important;
+    border: 1px solid #e5e3dc !important;
+    padding: 4px 10px !important;
+    border-radius: 2px !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+}
+
+/* Gallery Carousel */
+.productFullDetail__imageCarousel {
+    grid-area: images !important;
+    grid-column: 1 / 2 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    max-width: 680px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+@media (min-width: 1024px) {
+    .productFullDetail__imageCarousel {
+        position: sticky !important;
+        top: 24px !important;
+    }
+}
+
+/* Options / Swatches */
+.productFullDetail__options,
+.productFullDetail__root .productFullDetail__options {
+    grid-area: options !important;
+    padding: 18px 0 !important;
+    margin: 0 !important;
+    border-top: 1px solid var(--plx-border-light) !important;
+    border-bottom: 1px solid var(--plx-border-light) !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
 .swatch__root_selected,
 .tileList__root_selected {
     border-color: var(--plx-gold) !important;
     box-shadow: 0 0 0 1px var(--plx-gold) !important;
 }
 
-/* Quantity Field */
+/* Quantity */
+.productFullDetail__quantity,
+.productFullDetail__root .productFullDetail__quantity {
+    grid-area: quantity !important;
+    padding: 16px 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
 .quantity__input {
     border: 1px solid #dcdcdc !important;
     border-radius: 2px !important;
@@ -1302,13 +1452,326 @@ textarea:focus,
     text-align: center !important;
 }
 
-/* Full Width Add to Cart Button */
+/* Actions: Add to Cart & Wishlist */
+.productFullDetail__actions,
+.productFullDetail__root .productFullDetail__actions {
+    grid-area: actions !important;
+    padding: 16px 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+}
+
+.productFullDetail__actions button,
 .productFullDetail__cartActions .button__filled,
-.productFullDetail__actions button {
+.productFullDetail__actions .button__root_highPriority,
+.productFullDetail__actions [data-cmp-is="add-to-cart"] {
     width: 100% !important;
-    height: 50px !important;
+    height: 52px !important;
+    line-height: 50px !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 13.5px !important;
+    font-weight: 700 !important;
     letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    background: #c6b682 !important;
+    background-color: #c6b682 !important;
+    border: 1px solid #c6b682 !important;
+    border-radius: 3px !important;
+    color: #1a1c1b !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.25s ease !important;
+    outline: none !important;
+}
+
+.productFullDetail__actions button:hover,
+.productFullDetail__cartActions .button__filled:hover,
+.productFullDetail__actions .button__root_highPriority:hover,
+.productFullDetail__actions [data-cmp-is="add-to-cart"]:hover {
+    background: #d8ca99 !important;
+    background-color: #d8ca99 !important;
+    border-color: #d8ca99 !important;
+    color: #1a1c1b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 22px rgba(198, 182, 130, 0.45) !important;
+}
+
+.productFullDetail__actions [data-cmp-is="add-to-wish-list"] {
+    background: transparent !important;
+    border: 1px solid var(--plx-gold) !important;
+    color: var(--plx-dark) !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.2px !important;
+    text-transform: uppercase !important;
+    height: 48px !important;
+    line-height: 46px !important;
+    border-radius: 3px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+}
+
+.productFullDetail__actions [data-cmp-is="add-to-wish-list"]:hover {
+    background-color: #faf9f6 !important;
+    border-color: var(--plx-dark) !important;
+    color: var(--plx-dark) !important;
+}
+
+/* =============================================================================
+   PDP Section: Product Description (ProLuxe Editorial Card)
+   ============================================================================= */
+.productFullDetail__description,
+.productFullDetail__root .productFullDetail__description,
+.productFullDetail__description.productFullDetail__section {
+    grid-area: description !important;
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 48px 0 0 0 !important;
+    padding: 40px 36px !important;
+    background-color: #ffffff !important;
+    border: 1px solid var(--plx-border-light) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03) !important;
+    border-top: 1px solid var(--plx-border-light) !important;
+    border-bottom: 1px solid var(--plx-border-light) !important;
+}
+
+.productFullDetail__descriptionTitle,
+.productFullDetail__description .productFullDetail__descriptionTitle,
+.productFullDetail__description .productFullDetail__sectionTitle {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    color: var(--plx-dark) !important;
+    text-align: left !important;
+    display: block !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 0 14px 0 !important;
+    position: relative !important;
+    border-bottom: 1px solid #f0eee6 !important;
+    line-height: 1.25 !important;
+    justify-content: flex-start !important;
+}
+
+.productFullDetail__descriptionTitle::after,
+.productFullDetail__description .productFullDetail__descriptionTitle::after,
+.productFullDetail__description .productFullDetail__sectionTitle::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -1px !important;
+    left: 0 !important;
+    width: 44px !important;
+    height: 2px !important;
+    background-color: var(--plx-gold) !important;
+}
+
+@media (min-width: 768px) {
+    .productFullDetail__descriptionTitle,
+    .productFullDetail__description .productFullDetail__descriptionTitle {
+        font-size: 28px !important;
+    }
+}
+
+/* Rich Text Inside Description */
+.productFullDetail__description .richText__root,
+.richText__root[role="description"] {
+    font-family: var(--plx-font-sans) !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    color: #3a3d3c !important;
+    font-weight: 300 !important;
+    padding: 0 !important;
+}
+
+.productFullDetail__description .richText__root p {
+    margin: 0 0 16px 0 !important;
+    line-height: 1.75 !important;
+}
+
+.productFullDetail__description .richText__root h1,
+.productFullDetail__description .richText__root h2,
+.productFullDetail__description .richText__root h3,
+.productFullDetail__description .richText__root h4,
+.productFullDetail__description .richText__root h5,
+.productFullDetail__description .richText__root h6 {
+    font-family: var(--plx-font-serif) !important;
+    font-weight: 500 !important;
+    color: var(--plx-dark) !important;
+    margin: 24px 0 12px 0 !important;
+    line-height: 1.3 !important;
+}
+
+.productFullDetail__description .richText__root ul,
+.productFullDetail__description .richText__root ol {
+    margin: 12px 0 20px 24px !important;
+    padding: 0 !important;
+    line-height: 1.7 !important;
+    color: #3a3d3c !important;
+}
+
+.productFullDetail__description .richText__root li {
+    margin-bottom: 8px !important;
+}
+
+/* Specification Tables Inside Rich Text */
+.productFullDetail__description .richText__root table,
+.productFullDetail__description .richText__root .MsoTableGrid {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    border: 1px solid var(--plx-border-light) !important;
+    margin: 24px 0 !important;
+    border-radius: 2px !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+    display: table !important;
+}
+
+.productFullDetail__description .richText__root th,
+.productFullDetail__description .richText__root td,
+.productFullDetail__description .richText__root .MsoTableGrid td {
+    padding: 14px 18px !important;
+    border: 1px solid var(--plx-border-light) !important;
+    font-family: 'acumin-pro', sans-serif !important;
+    font-size: 14px !important;
+    color: #2b2d2c !important;
+    line-height: 1.5 !important;
+    vertical-align: top !important;
+}
+
+.productFullDetail__description .richText__root tr:nth-child(even),
+.productFullDetail__description .richText__root .MsoTableGrid tr:nth-child(even) {
+    background-color: #faf9f6 !important;
+}
+
+.productFullDetail__description .richText__root strong,
+.productFullDetail__description .richText__root th {
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    color: var(--plx-dark) !important;
+}
+
+.productFullDetail__description [data-url*="demandware"],
+.productFullDetail__description img[src*="demandware"] {
+    display: none !important;
+}
+
+/* =============================================================================
+   PDP Section: Product Details / Specifications (ProLuxe Editorial Card)
+   ============================================================================= */
+.productFullDetail__details,
+.productFullDetail__root .productFullDetail__details,
+.productFullDetail__details.productFullDetail__section {
+    grid-area: details !important;
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 28px 0 0 0 !important;
+    padding: 40px 36px !important;
+    background-color: #ffffff !important;
+    border: 1px solid var(--plx-border-light) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03) !important;
+}
+
+.productFullDetail__details:empty,
+.productFullDetail__root .productFullDetail__details:empty {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.productFullDetail__detailsTitle,
+.productFullDetail__details .productFullDetail__detailsTitle,
+.productFullDetail__details .productFullDetail__sectionTitle {
+    font-family: var(--plx-font-serif) !important;
+    font-size: 26px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    color: var(--plx-dark) !important;
+    text-align: left !important;
+    display: block !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 0 14px 0 !important;
+    position: relative !important;
+    border-bottom: 1px solid #f0eee6 !important;
+    line-height: 1.25 !important;
+    justify-content: flex-start !important;
+}
+
+.productFullDetail__detailsTitle::after,
+.productFullDetail__details .productFullDetail__detailsTitle::after,
+.productFullDetail__details .productFullDetail__sectionTitle::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -1px !important;
+    left: 0 !important;
+    width: 44px !important;
+    height: 2px !important;
+    background-color: var(--plx-gold) !important;
+}
+
+@media (min-width: 768px) {
+    .productFullDetail__detailsTitle,
+    .productFullDetail__details .productFullDetail__detailsTitle {
+        font-size: 28px !important;
+    }
+}
+
+.productFullDetail__details dl {
+    display: grid !important;
+    grid-template-columns: 220px 1fr !important;
+    gap: 14px 20px !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .productFullDetail__details dl {
+        grid-template-columns: 1fr !important;
+        gap: 6px !important;
+    }
+}
+
+.productFullDetail__details dt {
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.9px !important;
+    color: #777777 !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid #f0eee6 !important;
+}
+
+.productFullDetail__details dd {
+    font-family: 'acumin-pro', sans-serif !important;
+    font-size: 14.5px !important;
+    color: var(--plx-dark) !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #f0eee6 !important;
+    font-weight: 400 !important;
 }
 
 /* -----------------------------------------------------------------------------

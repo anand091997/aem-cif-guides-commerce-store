@@ -591,8 +591,8 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 8px !important;
-    margin: 40px 0 20px !important;
+    gap: 10px !important;
+    margin: 48px 0 24px !important;
     padding: 24px 0 0 !important;
     border-top: 1px solid #ebe9e3 !important;
     background: transparent !important;
@@ -605,13 +605,14 @@
 }
 
 .productcollection__pagination-button {
-    width: 38px !important;
-    height: 38px !important;
-    display: flex !important;
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     border: 1px solid #d5d5d5 !important;
-    border-radius: 2px !important;
+    border-radius: 3px !important;
     background-color: #ffffff !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 13px !important;
@@ -619,43 +620,102 @@
     color: #212322 !important;
     text-decoration: none !important;
     cursor: pointer !important;
-    transition: all 0.2s ease !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    box-sizing: border-box !important;
 
-    &:hover {
-        border-color: #c6b682 !important;
+    .productcollection__pagination-button-title {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 100% !important;
+        color: inherit !important;
+    }
+
+    &:not(.productcollection__pagination-button--current):hover {
+        background-color: #212322 !important;
+        border-color: #212322 !important;
         color: #c6b682 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+
+        .productcollection__pagination-button-title {
+            color: #c6b682 !important;
+        }
     }
 }
 
-.productcollection__pagination-button--current {
+.productcollection__pagination-button--current,
+.productcollection__pagination-button--current:hover,
+.productcollection__pagination-button--current:focus {
     background-color: #c6b682 !important;
     border-color: #c6b682 !important;
     color: #1a1c1b !important;
     font-weight: 700 !important;
-    box-shadow: 0 2px 8px rgba(198, 182, 130, 0.35) !important;
-}
+    cursor: default !important;
+    transform: none !important;
+    box-shadow: 0 2px 8px rgba(198, 182, 130, 0.4) !important;
 
-.productcollection__pagination-arrow {
-    width: 38px !important;
-    height: 38px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border: 1px solid #d5d5d5 !important;
-    border-radius: 2px !important;
-    background-color: #ffffff !important;
-    color: #212322 !important;
-    cursor: pointer !important;
-    transition: all 0.2s ease !important;
-
-    &:hover {
-        border-color: #c6b682 !important;
-        color: #c6b682 !important;
+    .productcollection__pagination-button-title {
+        color: #1a1c1b !important;
     }
 }
 
-.productcollection__pagination-arrow--inactive {
+.productcollection__pagination-arrow {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid #d5d5d5 !important;
+    border-radius: 3px !important;
+    background-color: #ffffff !important;
+    color: #212322 !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+
+    .productcollection__pagination-icon {
+        display: inline-block !important;
+        width: 8px !important;
+        height: 8px !important;
+        transition: border-color 0.25s ease !important;
+    }
+
+    &--prev .productcollection__pagination-icon {
+        border-left: 2px solid currentColor !important;
+        border-bottom: 2px solid currentColor !important;
+        transform: rotate(45deg) !important;
+        margin-left: 3px !important;
+    }
+
+    &--next .productcollection__pagination-icon {
+        border-right: 2px solid currentColor !important;
+        border-top: 2px solid currentColor !important;
+        transform: rotate(45deg) !important;
+        margin-right: 3px !important;
+    }
+
+    &:not(.productcollection__pagination-arrow--inactive):hover {
+        background-color: #212322 !important;
+        border-color: #212322 !important;
+        color: #c6b682 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    }
+}
+
+.productcollection__pagination-arrow--inactive,
+.productcollection__pagination-arrow--inactive:hover {
     opacity: 0.35 !important;
     cursor: not-allowed !important;
     pointer-events: none !important;
+    background-color: #f7f7f7 !important;
+    border-color: #e5e5e5 !important;
+    color: #999999 !important;
+    transform: none !important;
+    box-shadow: none !important;
 }

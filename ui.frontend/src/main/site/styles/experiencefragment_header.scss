@@ -710,12 +710,13 @@ header.experiencefragment {
     .minicart aside[class*="root"],
     [class*="MiniCart__miniCart__root"],
     [class*="miniCart__root"] {
+        --content-width: 440px !important;
         position: absolute !important;
         top: calc(100% + 14px) !important;
         right: 0 !important;
         left: auto !important;
         transform: none !important;
-        width: 420px !important;
+        width: 440px !important;
         max-width: calc(100vw - 24px) !important;
         z-index: 10002 !important;
         height: auto !important;
@@ -742,15 +743,16 @@ header.experiencefragment {
         border: 1px solid rgba(198, 182, 130, 0.45) !important;
         border-top: 3px solid #c6b682 !important;
         border-radius: 6px !important;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), 0 4px 16px rgba(0, 0, 0, 0.4) !important;
         color: #ffffff !important;
-        width: 100% !important;
+        width: 440px !important;
+        max-width: calc(100vw - 24px) !important;
         box-sizing: border-box !important;
         top: auto !important;
         right: auto !important;
         transform: none !important;
         overflow: hidden !important;
-        max-height: 80vh !important;
+        max-height: 82vh !important;
         display: flex !important;
         flex-direction: column !important;
     }
@@ -776,29 +778,36 @@ header.experiencefragment {
         align-items: center !important;
         padding: 16px 20px !important;
         border-bottom: 1px solid rgba(198, 182, 130, 0.25) !important;
-        background: rgba(0, 0, 0, 0.25) !important;
+        background: rgba(0, 0, 0, 0.3) !important;
         box-sizing: border-box !important;
         width: 100% !important;
     }
 
     // Stock Status Alert Banner (Full width on top)
     [class*="stockStatusMessageContainer"],
-    .minicart [class*="stockStatusMessageContainer"] {
+    .minicart [class*="stockStatusMessageContainer"],
+    [class*="MiniCart__miniCart__stockStatusMessageContainer"] {
         grid-column: 1 / -1 !important;
         width: 100% !important;
         box-sizing: border-box !important;
         margin: 0 !important;
 
+        &:empty {
+            display: none !important;
+        }
+
         [class*="root"] {
             display: block !important;
             width: 100% !important;
             padding: 10px 14px !important;
-            background: rgba(229, 115, 115, 0.15) !important;
-            border: 1px solid rgba(229, 115, 115, 0.45) !important;
-            border-left: 3px solid #e57373 !important;
+            background: rgba(229, 115, 115, 0.12) !important;
+            border: 1px solid rgba(229, 115, 115, 0.4) !important;
+            border-left: 4px solid #e57373 !important;
             border-radius: 4px !important;
-            color: #ff9999 !important;
+            color: #ffb4b4 !important;
+            font-family: 'acumin-pro-wide', sans-serif !important;
             font-size: 11.5px !important;
+            font-weight: 500 !important;
             line-height: 1.45 !important;
             box-sizing: border-box !important;
         }
@@ -809,7 +818,7 @@ header.experiencefragment {
         grid-column: 1 !important;
         justify-self: start !important;
         font-family: 'acumin-pro-wide', sans-serif !important;
-        font-size: 12.5px !important;
+        font-size: 12px !important;
         font-weight: 600 !important;
         text-transform: uppercase !important;
         letter-spacing: 0.8px !important;
@@ -833,6 +842,23 @@ header.experiencefragment {
         max-height: 380px !important;
         overflow-y: auto !important;
         padding: 12px 20px !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(198, 182, 130, 0.4) rgba(0, 0, 0, 0.2) !important;
+
+        &::-webkit-scrollbar {
+            width: 6px !important;
+        }
+        &::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2) !important;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(198, 182, 130, 0.4) !important;
+            border-radius: 3px !important;
+
+            &:hover {
+                background-color: #c6b682 !important;
+            }
+        }
     }
 
     // Minicart Item Card: Strict 3-column layout (Image 80px | Info 1fr | Delete 32px)

@@ -551,12 +551,17 @@ tr:nth-child(even) {
     border-radius: 3px;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.03);
 
-    &:empty {
+    &:empty,
+    &:not(:has(*)),
+    &:not(:has(dl, h2, h3, p, div, table, ul, ol, span)) {
         display: none !important;
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        box-shadow: none;
+        box-shadow: none !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        overflow: hidden !important;
     }
 
     dl {

@@ -92,10 +92,24 @@
         }
     }
 
+    function hideBlankProductSections() {
+        var sections = document.querySelectorAll(".productFullDetail__details, .productFullDetail__section");
+        sections.forEach(function (sec) {
+            var hasContentElement = sec.querySelector("dl, h2, h3, h4, p, div, table, ul, ol, span, form, input, button");
+            var text = (sec.textContent || "").trim();
+            if (!hasContentElement && !text) {
+                sec.style.setProperty("display", "none", "important");
+                sec.setAttribute("hidden", "");
+            }
+        });
+    }
+
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", initHeader);
+        document.addEventListener("DOMContentLoaded", hideBlankProductSections);
     } else {
         initHeader();
+        hideBlankProductSections();
     }
 }());
 

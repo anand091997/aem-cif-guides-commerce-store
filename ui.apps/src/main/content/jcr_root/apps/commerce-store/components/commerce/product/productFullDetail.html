@@ -83,9 +83,12 @@
             <section data-sly-test="${'DESCRIPTION' in visibleSections}" class="productFullDetail__description productFullDetail__section">
                 <sly data-sly-call="${descriptionTpl.product @ product=product}"></sly>
             </section>
-            <section data-sly-test="${'DETAILS' in visibleSections}" class="productFullDetail__details productFullDetail__section">
-                <sly data-sly-call="${detailsTpl.product @ product=product}"></sly>
-            </section>
+            <!--/* Product Details Section: CIF details template is empty; only render if custom details are provided */-->
+            <sly data-sly-test="${'DETAILS' in visibleSections && product.details != null}">
+                <section class="productFullDetail__details productFullDetail__section">
+                    <sly data-sly-call="${detailsTpl.product @ product=product}"></sly>
+                </section>
+            </sly>
             <sly data-sly-test="${product.getJsonLd != null}">
                 <sly data-sly-call="${productJsonLdTpl.productJsonLd @ product=product}"></sly>
             </sly>

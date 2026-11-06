@@ -1854,12 +1854,19 @@ textarea:focus,
 }
 
 .productFullDetail__details:empty,
-.productFullDetail__root .productFullDetail__details:empty {
+.productFullDetail__root .productFullDetail__details:empty,
+.productFullDetail__details:not(:has(*)),
+.productFullDetail__root .productFullDetail__details:not(:has(*)),
+.productFullDetail__details:not(:has(dl, h2, h3, p, div, table, ul, ol, span)),
+.productFullDetail__root .productFullDetail__details:not(:has(dl, h2, h3, p, div, table, ul, ol, span)) {
     display: none !important;
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
-    box-shadow: none;
+    box-shadow: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
 }
 
 .productFullDetail__detailsTitle,

@@ -2266,6 +2266,173 @@ button[class*="button__root_highPriority"]:disabled {
     background-color: #fafafa !important;
 }
 
+/* Minicart Item List & Card: Strict 3-column layout (Image 80px | Info 1fr | Delete 32px) */
+[class*="ProductList__item__root"],
+[class*="item__root"] {
+    display: grid !important;
+    grid-template-columns: 80px 1fr 32px !important;
+    grid-template-rows: auto auto auto auto !important;
+    column-gap: 16px !important;
+    row-gap: 4px !important;
+    align-items: start !important;
+    padding: 16px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    position: relative !important;
+}
+
+/* 1. Thumbnail Container: Col 1, strictly 80x80 box, prevents any image overlap */
+[class*="thumbnailContainer"],
+[class*="ProductList__item__thumbnailContainer"] {
+    grid-column: 1 !important;
+    grid-row: 1 / -1 !important;
+    width: 80px !important;
+    min-width: 80px !important;
+    max-width: 80px !important;
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    background-color: #faf9f6 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[class*="thumbnailContainer"] > div,
+[class*="thumbnailContainer"] [class*="thumbnail"],
+[class*="item__thumbnail"] {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[class*="thumbnailContainer"] img,
+[class*="item__thumbnail"] img {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    top: auto !important;
+    left: auto !important;
+    margin: auto !important;
+}
+
+/* 2. Info elements constrained to Column 2, never overlapping */
+[class*="ProductList__item__name"],
+[class*="item__name"] {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    font-family: 'miller-display', Georgia, serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    line-height: 1.3 !important;
+    margin: 0 0 4px 0 !important;
+    word-break: break-word !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    min-width: 0 !important;
+}
+
+[class*="ProductList__item__options"],
+[class*="item__options"] {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    font-size: 12px !important;
+    color: #a0a0a0 !important;
+    margin: 0 0 4px 0 !important;
+    min-width: 0 !important;
+}
+
+[class*="ProductList__item__quantity"],
+[class*="item__quantity"] {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 12px !important;
+    color: #cccccc !important;
+    margin: 0 0 2px 0 !important;
+    min-width: 0 !important;
+}
+
+[class*="ProductList__item__price"],
+[class*="item__price"] {
+    grid-column: 2 !important;
+    grid-row: 4 !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    color: #c6b682 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
+}
+
+[class*="ProductList__item__stockStatus"],
+[class*="item__stockStatus"] {
+    grid-column: 2 !important;
+    font-size: 11px !important;
+    color: #e57373 !important;
+    min-width: 0 !important;
+}
+
+/* 3. Delete / Remove Trash Button (CLEARLY VISIBLE, Column 3, Row 1) */
+[class*="ProductList__item__deleteButton"],
+[class*="item__deleteButton"] {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    align-self: start !important;
+    justify-self: end !important;
+    background: transparent !important;
+    border: none !important;
+    color: #888888 !important;
+    padding: 4px !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: color 0.2s ease, transform 0.2s ease !important;
+    outline: none !important;
+    margin: 0 !important;
+}
+
+[class*="ProductList__item__deleteButton"] svg,
+[class*="item__deleteButton"] svg {
+    stroke: currentColor !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+[class*="ProductList__item__deleteButton"]:hover,
+[class*="item__deleteButton"]:hover {
+    color: #e57373 !important;
+    transform: scale(1.15) !important;
+}
+
 /* -----------------------------------------------------------------------------
    9. Checkout & My Account Pages
    ----------------------------------------------------------------------------- */

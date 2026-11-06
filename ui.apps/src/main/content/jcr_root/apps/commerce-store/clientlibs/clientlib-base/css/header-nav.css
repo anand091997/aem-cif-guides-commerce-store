@@ -970,81 +970,194 @@ header.experiencefragment .minicart [class*="miniCart__body"] {
     padding: 12px 20px !important;
 }
 
-/* Cart Item */
+/* Cart Item: Strict 3-column layout (Image 80px | Info 1fr | Delete 32px) */
 header.experiencefragment [class*="ProductList__item__root"],
-header.experiencefragment [class*="item__root"] {
+header.experiencefragment [class*="item__root"],
+.minicart [class*="ProductList__item__root"],
+.minicart [class*="item__root"] {
     display: grid !important;
-    grid-template-columns: 60px 1fr auto !important;
-    gap: 12px !important;
-    align-items: center !important;
-    padding: 12px 0 !important;
+    grid-template-columns: 80px 1fr 32px !important;
+    grid-template-rows: auto auto auto auto !important;
+    column-gap: 16px !important;
+    row-gap: 4px !important;
+    align-items: start !important;
+    padding: 16px 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    position: relative !important;
 }
 
-header.experiencefragment [class*="ProductList__item__thumbnail"],
-header.experiencefragment [class*="item__thumbnail"] {
-    width: 60px !important;
-    height: 60px !important;
-    object-fit: cover !important;
-    border-radius: 4px !important;
+/* 1. Thumbnail Container: Col 1, strictly 80x80 box, prevents any image overlap */
+header.experiencefragment [class*="thumbnailContainer"],
+header.experiencefragment [class*="ProductList__item__thumbnailContainer"],
+.minicart [class*="thumbnailContainer"],
+.minicart [class*="ProductList__item__thumbnailContainer"] {
+    grid-column: 1 !important;
+    grid-row: 1 / -1 !important;
+    width: 80px !important;
+    min-width: 80px !important;
+    max-width: 80px !important;
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    background-color: #faf9f6 !important;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 4px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
+header.experiencefragment [class*="thumbnailContainer"] > div,
+header.experiencefragment [class*="thumbnailContainer"] [class*="thumbnail"],
+header.experiencefragment [class*="item__thumbnail"],
+.minicart [class*="thumbnailContainer"] > div,
+.minicart [class*="thumbnailContainer"] [class*="thumbnail"],
+.minicart [class*="item__thumbnail"] {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+header.experiencefragment [class*="thumbnailContainer"] img,
+header.experiencefragment [class*="item__thumbnail"] img,
+.minicart [class*="thumbnailContainer"] img,
+.minicart [class*="item__thumbnail"] img {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+    top: auto !important;
+    left: auto !important;
+    margin: auto !important;
+}
+
+/* 2. Info elements constrained to Column 2, never overlapping */
 header.experiencefragment [class*="ProductList__item__name"],
-header.experiencefragment [class*="item__name"] {
+header.experiencefragment [class*="item__name"],
+.minicart [class*="ProductList__item__name"],
+.minicart [class*="item__name"] {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
     font-family: 'miller-display', Georgia, serif !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     color: #ffffff !important;
     line-height: 1.3 !important;
-    margin-bottom: 4px !important;
+    margin: 0 0 4px 0 !important;
+    word-break: break-word !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    min-width: 0 !important;
 }
 
 header.experiencefragment [class*="ProductList__item__options"],
-header.experiencefragment [class*="item__options"] {
+header.experiencefragment [class*="item__options"],
+.minicart [class*="ProductList__item__options"],
+.minicart [class*="item__options"] {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
     font-size: 12px !important;
     color: #a0a0a0 !important;
-    margin-bottom: 4px !important;
+    margin: 0 0 4px 0 !important;
+    min-width: 0 !important;
 }
 
 header.experiencefragment [class*="ProductList__item__quantity"],
-header.experiencefragment [class*="item__quantity"] {
+header.experiencefragment [class*="item__quantity"],
+.minicart [class*="ProductList__item__quantity"],
+.minicart [class*="item__quantity"] {
+    grid-column: 2 !important;
+    grid-row: 3 !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 12px !important;
     color: #cccccc !important;
+    margin: 0 0 2px 0 !important;
+    min-width: 0 !important;
 }
 
 header.experiencefragment [class*="ProductList__item__price"],
-header.experiencefragment [class*="item__price"] {
+header.experiencefragment [class*="item__price"],
+.minicart [class*="ProductList__item__price"],
+.minicart [class*="item__price"] {
+    grid-column: 2 !important;
+    grid-row: 4 !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
-    font-size: 13px !important;
+    font-size: 13.5px !important;
     font-weight: 700 !important;
     color: #c6b682 !important;
+    margin: 0 !important;
+    min-width: 0 !important;
 }
 
-/* Delete / Remove Trash Button (CLEARLY VISIBLE) */
+header.experiencefragment [class*="ProductList__item__stockStatus"],
+header.experiencefragment [class*="item__stockStatus"],
+.minicart [class*="ProductList__item__stockStatus"],
+.minicart [class*="item__stockStatus"] {
+    grid-column: 2 !important;
+    font-size: 11px !important;
+    color: #e57373 !important;
+    min-width: 0 !important;
+}
+
+/* 3. Delete / Remove Trash Button (CLEARLY VISIBLE, Column 3, Row 1) */
 header.experiencefragment [class*="ProductList__item__deleteButton"],
-header.experiencefragment [class*="item__deleteButton"] {
+header.experiencefragment [class*="item__deleteButton"],
+.minicart [class*="ProductList__item__deleteButton"],
+.minicart [class*="item__deleteButton"] {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    align-self: start !important;
+    justify-self: end !important;
     background: transparent !important;
     border: none !important;
     color: #888888 !important;
-    padding: 8px !important;
+    padding: 4px !important;
     cursor: pointer !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     transition: color 0.2s ease, transform 0.2s ease !important;
+    outline: none !important;
+    margin: 0 !important;
 }
 
 header.experiencefragment [class*="ProductList__item__deleteButton"] svg,
-header.experiencefragment [class*="item__deleteButton"] svg {
+header.experiencefragment [class*="item__deleteButton"] svg,
+.minicart [class*="ProductList__item__deleteButton"] svg,
+.minicart [class*="item__deleteButton"] svg {
     stroke: currentColor !important;
     width: 16px !important;
     height: 16px !important;
 }
 
 header.experiencefragment [class*="ProductList__item__deleteButton"]:hover,
-header.experiencefragment [class*="item__deleteButton"]:hover {
+header.experiencefragment [class*="item__deleteButton"]:hover,
+.minicart [class*="ProductList__item__deleteButton"]:hover,
+.minicart [class*="item__deleteButton"]:hover {
     color: #e57373 !important;
     transform: scale(1.15) !important;
 }

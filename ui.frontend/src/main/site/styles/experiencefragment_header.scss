@@ -1021,6 +1021,32 @@ header.experiencefragment {
             top: auto !important;
             left: auto !important;
             margin: auto !important;
+
+            &.cmp-VeniaImage__image__placeholder,
+            &.cmp-VeniaImage__image__placeholder_layoutOnly,
+            &[class*="placeholder"] {
+                display: none !important;
+                visibility: hidden !important;
+                width: 0 !important;
+                height: 0 !important;
+                position: absolute !important;
+                pointer-events: none !important;
+            }
+        }
+
+        // Explicitly remove placeholder image in minicart thumbnail
+        img.cmp-VeniaImage__image__placeholder,
+        img.cmp-VeniaImage__image__placeholder_layoutOnly,
+        img[class*="placeholder_layoutOnly"],
+        img[class*="Image__image__placeholder"],
+        .cmp-VeniaImage__image__placeholder,
+        .cmp-VeniaImage__image__placeholder_layoutOnly {
+            display: none !important;
+            visibility: hidden !important;
+            width: 0 !important;
+            height: 0 !important;
+            position: absolute !important;
+            pointer-events: none !important;
         }
     }
 

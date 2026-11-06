@@ -1394,6 +1394,33 @@ header.experiencefragment [class*="item__thumbnail"] img,
     margin: auto !important;
 }
 
+/* Remove placeholder images in minicart */
+header.experiencefragment .minicart img.cmp-VeniaImage__image__placeholder_layoutOnly,
+header.experiencefragment .minicart img.cmp-VeniaImage__image__placeholder,
+header.experiencefragment .minicart img[class*="placeholder_layoutOnly"],
+header.experiencefragment .minicart img[class*="Image__image__placeholder"],
+.minicart img.cmp-VeniaImage__image__placeholder_layoutOnly,
+.minicart img.cmp-VeniaImage__image__placeholder,
+.minicart img[class*="placeholder_layoutOnly"],
+.minicart img[class*="Image__image__placeholder"],
+[class*="miniCart"] img.cmp-VeniaImage__image__placeholder_layoutOnly,
+[class*="miniCart"] img.cmp-VeniaImage__image__placeholder,
+[class*="miniCart"] img[class*="placeholder_layoutOnly"],
+[class*="miniCart"] img[class*="Image__image__placeholder"],
+[class*="thumbnailContainer"] img.cmp-VeniaImage__image__placeholder_layoutOnly,
+[class*="thumbnailContainer"] img.cmp-VeniaImage__image__placeholder,
+[class*="thumbnailContainer"] img[class*="placeholder_layoutOnly"],
+[class*="thumbnailContainer"] img[class*="Image__image__placeholder"],
+.cmp-VeniaImage__image__placeholder_layoutOnly,
+.cmp-VeniaImage__image__placeholder {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+}
+
 /* 2. Info elements constrained to Column 2, never overlapping */
 header.experiencefragment [class*="ProductList__item__name"],
 header.experiencefragment [class*="item__name"],

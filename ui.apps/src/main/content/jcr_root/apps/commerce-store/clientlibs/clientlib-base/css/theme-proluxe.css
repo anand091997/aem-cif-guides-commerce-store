@@ -3137,28 +3137,192 @@ body[class*="landing-page"] .breadcrumb,
 }
 
 @media (max-width: 992px) {
-    .plx-nav-toggle {
-        display: inline-flex !important;
-        order: 0 !important;
-    }
-
     header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12 {
         display: flex !important;
         flex-direction: row !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
         justify-content: space-between !important;
-        gap: 12px !important;
+        gap: 6px !important;
+        padding: 0 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+    }
+
+    .plx-nav-toggle {
+        display: inline-flex !important;
+        order: 0 !important;
+        flex: 0 0 auto !important;
+        padding: 8px 6px !important;
+        margin: 0 !important;
     }
 
     header.experiencefragment .logo {
         order: 1 !important;
         flex: 1 1 auto !important;
+        min-width: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
-    header.experiencefragment .searchbar,
-    header.experiencefragment .miniaccount,
-    header.experiencefragment .minicart {
+    header.experiencefragment .logo .cmp-image,
+    header.experiencefragment .logo .cmp-image__image,
+    header.experiencefragment .logo img {
+        max-width: 105px !important;
+        height: auto !important;
+        display: block !important;
+    }
+
+    /* Actions: Search, Account, Cart in exact order, static so dropdowns position to header */
+    header.experiencefragment .searchbar {
         order: 2 !important;
+        flex: 0 0 auto !important;
+        position: static !important;
+        margin: 0 !important;
+    }
+
+    header.experiencefragment .miniaccount {
+        order: 3 !important;
+        flex: 0 0 auto !important;
+        position: static !important;
+        margin: 0 !important;
+    }
+
+    header.experiencefragment .minicart {
+        order: 4 !important;
+        flex: 0 0 auto !important;
+        position: static !important;
+        margin: 0 !important;
+    }
+
+    /* Action trigger buttons on mobile: compact, touch-friendly 36x36 */
+    header.experiencefragment .searchbar__trigger,
+    header.experiencefragment .miniaccount button,
+    header.experiencefragment .miniaccount .accountTrigger__root > button,
+    header.experiencefragment .miniaccount [class*="accountTrigger__trigger"],
+    header.experiencefragment .miniaccount .miniaccount__trigger,
+    header.experiencefragment .minicart .cartTrigger__root > button,
+    header.experiencefragment .minicart .cartTrigger__root,
+    header.experiencefragment .minicart .minicart__trigger button,
+    header.experiencefragment .minicart [class*="cartTrigger__trigger"],
+    header.experiencefragment .minicart button[aria-label*="cart" i] {
+        padding: 6px !important;
+        min-width: 34px !important;
+        height: 36px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0 !important;
+    }
+
+    /* Hide user text ("HI, ANAND" or "SIGN IN") on mobile so only icon displays */
+    header.experiencefragment .miniaccount button > span:not([class*="icon"]):not([class*="Icon"]),
+    header.experiencefragment .miniaccount [class*="accountTrigger"] > span:not([class*="icon"]):not([class*="Icon"]),
+    header.experiencefragment .miniaccount .accountTrigger__root > button > span:not([class*="icon"]):not([class*="Icon"]),
+    header.experiencefragment .miniaccount [class*="accountTrigger__trigger"] > span:not([class*="icon"]):not([class*="Icon"]),
+    header.experiencefragment .miniaccount [class*="accountChip__text"],
+    header.experiencefragment .miniaccount [class*="AccountChip__text"],
+    header.experiencefragment .miniaccount .miniaccount__trigger > span:not([class*="icon"]):not([class*="Icon"]) {
+        display: none !important;
+    }
+
+    /* Search Dropdown on Mobile: Full-width clean bar directly below header */
+    header.experiencefragment .searchbar__body.searchbar__body--open,
+    header.experiencefragment .searchbar__body--open {
+        position: absolute !important;
+        top: calc(100% + 8px) !important;
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: calc(100vw - 20px) !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        z-index: 10002 !important;
+    }
+
+    header.experiencefragment .searchbar__body--open::before {
+        display: none !important;
+    }
+
+    header.experiencefragment .searchbar__form-container {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 12px 14px !important;
+    }
+
+    header.experiencefragment .searchbar__input {
+        height: 42px !important;
+        line-height: 42px !important;
+        font-size: 14px !important;
+        padding: 0 38px !important;
+    }
+
+    /* User Account Dropdown on Mobile: Clean centered card directly below header */
+    header.experiencefragment .miniaccount aside[class*="root"],
+    header.experiencefragment [class*="AccountMenu__accountMenu__root"],
+    header.experiencefragment [class*="accountMenu__root"] {
+        position: absolute !important;
+        top: calc(100% + 8px) !important;
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: calc(100vw - 20px) !important;
+        max-height: calc(100vh - 80px) !important;
+        overflow-y: auto !important;
+        margin: 0 !important;
+        transform: none !important;
+        z-index: 10002 !important;
+    }
+
+    header.experiencefragment [class*="AccountMenu__accountMenu__root_open"]::before {
+        display: none !important;
+    }
+
+    header.experiencefragment [class*="AccountMenu__accountMenu__contents"],
+    header.experiencefragment .miniaccount [class*="accountMenu__contents"] {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 20px 16px !important;
+    }
+
+    /* MiniCart Dropdown on Mobile: Clean responsive card directly below header */
+    header.experiencefragment .minicart [class*="miniCart__root"],
+    header.experiencefragment [class*="MiniCart__miniCart__root"],
+    header.experiencefragment .miniCart__root {
+        position: absolute !important;
+        top: calc(100% + 8px) !important;
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: calc(100vw - 20px) !important;
+        max-height: calc(100vh - 80px) !important;
+        overflow-y: auto !important;
+        margin: 0 !important;
+        transform: none !important;
+        z-index: 10002 !important;
+    }
+
+    header.experiencefragment .minicart [class*="miniCart__root"]::before,
+    header.experiencefragment [class*="MiniCart__miniCart__root"]::before,
+    header.experiencefragment .miniCart__root::before {
+        display: none !important;
+    }
+
+    header.experiencefragment [class*="MiniCart__miniCart__body"],
+    header.experiencefragment .minicart [class*="miniCart__body"] {
+        max-height: calc(100vh - 280px) !important;
+        overflow-y: auto !important;
+        padding: 10px 14px !important;
+    }
+
+    header.experiencefragment .miniCart__footer,
+    header.experiencefragment [class*="MiniCart__miniCart__footer"],
+    header.experiencefragment [class*="miniCart__footer"] {
+        padding: 12px 14px 16px !important;
     }
 }
 
@@ -3488,6 +3652,10 @@ body[class*="landing-page"] .breadcrumb,
     footer.experiencefragment .plx-footer-social {
         justify-content: flex-start !important;
     }
+}
+
+body.plx-nav-drawer-open {
+    overflow: hidden !important;
 }
 
 

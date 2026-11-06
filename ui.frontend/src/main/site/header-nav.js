@@ -90,6 +90,21 @@
                 });
             });
         }
+
+        // 6. Mutual close between mobile drawer, search, and other header overlays
+        var searchTrigger = header.querySelector(".searchbar__trigger");
+        var searchBody = header.querySelector(".searchbar__body");
+        if (searchTrigger) {
+            searchTrigger.addEventListener("click", function () {
+                header.classList.remove("is-open");
+                document.body.classList.remove("plx-nav-drawer-open");
+            });
+        }
+        if (toggleBtn && searchBody) {
+            toggleBtn.addEventListener("click", function () {
+                searchBody.classList.remove("searchbar__body--open");
+            });
+        }
     }
 
     function hideBlankProductSections() {

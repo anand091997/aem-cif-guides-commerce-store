@@ -2668,7 +2668,7 @@ button[class*="button__root_highPriority"]:disabled {
     position: relative !important;
 }
 
-/* 1. Thumbnail Container: Col 1, strictly 80x80 box, luxury ProLuxe framing, no blank padding */
+/* 1. Thumbnail Container: Col 1, strictly 80x80 box, luxury ProLuxe framing, full image visibility */
 [class*="thumbnailContainer"],
 [class*="ProductList__item__thumbnailContainer"] {
     grid-column: 1 !important;
@@ -2689,7 +2689,7 @@ button[class*="button__root_highPriority"]:disabled {
     justify-content: center !important;
     box-sizing: border-box !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 4px !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
 }
 
@@ -2718,9 +2718,9 @@ button[class*="button__root_highPriority"]:disabled {
     height: 100% !important;
     max-width: 100% !important;
     max-height: 100% !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     object-position: center !important;
-    transform: scale(1.15) !important;
+    transform: none !important;
     display: block !important;
     top: auto !important;
     left: auto !important;

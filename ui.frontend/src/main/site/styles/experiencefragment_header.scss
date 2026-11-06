@@ -63,6 +63,15 @@ header.experiencefragment {
         gap: 24px !important;
         margin: 0 !important;
 
+        &:before {
+            content: none !important;
+        }
+
+        &:after {
+            content: none !important;
+            display: none !important;
+        }
+
         @media (max-width: 992px) {
             gap: 12px !important;
         }

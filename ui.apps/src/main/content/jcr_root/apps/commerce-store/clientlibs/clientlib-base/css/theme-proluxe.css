@@ -253,6 +253,15 @@ header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12 {
     margin: 0 !important;
 }
 
+header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12:before {
+    content: none !important;
+}
+
+header.experiencefragment .cmp-container > .aem-Grid.aem-Grid--12:after {
+    content: none !important;
+    display: none !important;
+}
+
 header.experiencefragment .aem-GridColumn {
     float: none !important;
     width: auto !important;

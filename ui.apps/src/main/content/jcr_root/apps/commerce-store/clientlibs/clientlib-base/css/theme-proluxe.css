@@ -2668,7 +2668,7 @@ button[class*="button__root_highPriority"]:disabled {
     position: relative !important;
 }
 
-/* 1. Thumbnail Container: Col 1, strictly 80x80 box, prevents any image overlap */
+/* 1. Thumbnail Container: Col 1, strictly 80x80 box, luxury ProLuxe framing, no blank padding */
 [class*="thumbnailContainer"],
 [class*="ProductList__item__thumbnailContainer"] {
     grid-column: 1 !important;
@@ -2680,8 +2680,8 @@ button[class*="button__root_highPriority"]:disabled {
     min-height: 80px !important;
     max-height: 80px !important;
     background-color: #ffffff !important;
-    border: 1px solid rgba(198, 182, 130, 0.25) !important;
-    border-radius: 4px ;
+    border: 1px solid rgba(198, 182, 130, 0.35) !important;
+    border-radius: 4px !important;
     position: relative !important;
     overflow: hidden !important;
     display: flex !important;
@@ -2689,7 +2689,8 @@ button[class*="button__root_highPriority"]:disabled {
     justify-content: center !important;
     box-sizing: border-box !important;
     margin: 0 !important;
-    padding: 4px !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
 }
 
 [class*="thumbnailContainer"] > div,
@@ -2705,7 +2706,7 @@ button[class*="button__root_highPriority"]:disabled {
     align-items: center !important;
     justify-content: center !important;
     border: none !important;
-    border-radius: 0 ;
+    border-radius: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -2713,12 +2714,13 @@ button[class*="button__root_highPriority"]:disabled {
 [class*="thumbnailContainer"] img,
 [class*="item__thumbnail"] img {
     position: static !important;
-    width: auto !important;
-    height: auto !important;
+    width: 100% !important;
+    height: 100% !important;
     max-width: 100% !important;
     max-height: 100% !important;
-    object-fit: contain ;
-    object-position: center ;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: scale(1.15) !important;
     display: block !important;
     top: auto !important;
     left: auto !important;
@@ -3181,8 +3183,9 @@ body[class*="landing-page"] .breadcrumb,
     background-color: #c6b682 !important;
 }
 
-/* Close button inside mobile drawer */
+/* Close button inside mobile drawer (hidden on desktop, visible only inside open mobile drawer) */
 .plx-nav-drawer-close {
+    display: none !important;
     position: absolute !important;
     top: 22px !important;
     right: 24px !important;
@@ -3207,6 +3210,14 @@ body[class*="landing-page"] .breadcrumb,
 }
 
 @media (max-width: 992px) {
+    header.experiencefragment.is-open .plx-nav-drawer-close,
+    header.is-open .plx-nav-drawer-close,
+    body.plx-nav-drawer-open .plx-nav-drawer-close {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
     .has-submenu {
         position: relative !important;
     }

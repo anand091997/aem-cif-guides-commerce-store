@@ -92,9 +92,9 @@ $venia-warning-light: rgb(254, 229, 232);
     --venia-global-color-red-600: 215 55 63;
     --venia-global-color-red-700: 201 37 45;
     --venia-global-color-red-800: 161 30 36;
-    --venia-global-color-teal: var(--venia-global-color-blue-400);
-    --venia-global-color-teal-dark: var(--venia-global-color-blue-600);
-    --venia-global-color-teal-light: var(--venia-global-color-gray-100);
+    --venia-global-color-teal: 198 182 130;
+    --venia-global-color-teal-dark: 33 35 34;
+    --venia-global-color-teal-light: 247 245 237;
 
     /* color by semantics */
     --venia-global-color-background: var(--venia-global-color-gray-50);
@@ -106,13 +106,13 @@ $venia-warning-light: rgb(254, 229, 232);
     --venia-global-color-warning-dark: var(--venia-global-color-red-700);
     --venia-global-color-warning-light: var(--venia-global-color-gray-100);
 
-    /* color brand */
-    --venia-brand-color-1-100: var(--venia-global-color-blue-100);
-    --venia-brand-color-1-400: var(--venia-global-color-blue-400);
-    --venia-brand-color-1-500: var(--venia-global-color-blue-500);
-    --venia-brand-color-1-600: var(--venia-global-color-blue-600);
-    --venia-brand-color-1-700: var(--venia-global-color-blue-700);
-    --venia-brand-color-1-800: var(--venia-global-color-blue-800);
+    /* color brand - ProLuxe Champagne Gold & Dark Palette */
+    --venia-brand-color-1-100: 247 245 237;
+    --venia-brand-color-1-400: 216 202 153;
+    --venia-brand-color-1-500: 198 182 130;
+    --venia-brand-color-1-600: 184 167 114;
+    --venia-brand-color-1-700: 198 182 130;
+    --venia-brand-color-1-800: 33 35 34;
 
     /* font family */
     --venia-global-fontFamily-sansSerif: 'acumin-pro-wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;

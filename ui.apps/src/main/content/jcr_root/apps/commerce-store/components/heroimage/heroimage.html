@@ -12,15 +12,15 @@
   ~ 
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
 <sly data-sly-use.heroImage="com.adobe.cq.commerce.core.components.models.HeroImage">
-    <div class="${heroImage.classList} jumbotron"
+    <div class="${heroImage.classList} commerce-store-HeroImage venia-HeroImage heroimage__root jumbotron"
          style="background-image: url('${(properties.fileReference || properties.fileName) ? heroImage.imageSrc : '' @ context='uri'}');">
-        <div class="container cq-dd-image">
-            <div class="commerce-store-HeroImage-wrapper">
-                <p class="h3">${properties.heading}</p>
-                <strong class="commerce-store-HeroImage-title h1">${properties.title || currentPage.title}</strong>
+        <div class="container cq-dd-image heroimage__container">
+            <div class="commerce-store-HeroImage-wrapper venia-HeroImage-wrapper heroimage__wrapper">
+                <p class="h3 heroimage__heading">${properties.heading}</p>
+                <strong class="commerce-store-HeroImage-title venia-HeroImage-title heroimage__title h1">${properties.title || currentPage.title}</strong>
 
-                <p data-sly-test="${properties.buttonLabel && properties.buttonLinkTo}">
-                    <a class="btn btn-primary btn-action" href="${properties.buttonLinkTo @ extension = 'html'}" role="button">${properties.buttonLabel}</a>
+                <p data-sly-test="${properties.buttonLabel && properties.buttonLinkTo}" class="heroimage__action">
+                    <a class="btn btn-primary btn-action heroimage__button" href="${properties.buttonLinkTo @ extension = 'html'}" role="button">${properties.buttonLabel}</a>
                 </p>
             </div>
         </div>

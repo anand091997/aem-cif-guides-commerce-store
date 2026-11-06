@@ -355,7 +355,10 @@ header.experiencefragment .minicart {
 }
 
 header.experiencefragment .searchbar__trigger,
-header.experiencefragment .miniaccount button,
+header.experiencefragment .miniaccount .accountTrigger__root > button,
+header.experiencefragment .miniaccount [class*="accountTrigger__trigger"],
+header.experiencefragment .miniaccount .miniaccount__trigger,
+header.experiencefragment .miniaccount button[aria-label*="Account" i],
 header.experiencefragment .miniaccount [class*="accountTrigger"],
 header.experiencefragment .minicart [class*="cartTrigger"] {
     background: transparent !important;
@@ -377,7 +380,10 @@ header.experiencefragment .minicart [class*="cartTrigger"] {
 }
 
 header.experiencefragment .searchbar__trigger:hover,
-header.experiencefragment .miniaccount button:hover,
+header.experiencefragment .miniaccount .accountTrigger__root > button:hover,
+header.experiencefragment .miniaccount [class*="accountTrigger__trigger"]:hover,
+header.experiencefragment .miniaccount .miniaccount__trigger:hover,
+header.experiencefragment .miniaccount button[aria-label*="Account" i]:hover,
 header.experiencefragment .miniaccount [class*="accountTrigger"]:hover,
 header.experiencefragment .minicart [class*="cartTrigger"]:hover {
     color: #c6b682 !important;
@@ -418,6 +424,286 @@ header.experiencefragment [class*="counter"] {
     box-sizing: border-box !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     z-index: 2 !important;
+}
+
+/* Miniaccount Dropdown (Luxury ProLuxe Theme) */
+header.experiencefragment [class*="AccountMenu__accountMenu__root"],
+header.experiencefragment .miniaccount aside[class*="root"] {
+    position: absolute !important;
+    top: calc(100% + 12px) !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 380px !important;
+    max-width: 90vw !important;
+    z-index: 10001 !important;
+}
+
+header.experiencefragment [class*="AccountMenu__accountMenu__contents"],
+header.experiencefragment .miniaccount [class*="accountMenu__contents"] {
+    background: #1f2120 !important;
+    background-color: #1f2120 !important;
+    border: 1px solid rgba(198, 182, 130, 0.35) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6) !important;
+    padding: 24px !important;
+    box-sizing: border-box !important;
+    color: #ffffff !important;
+}
+
+header.experiencefragment [class*="SignIn__signIn__title"],
+header.experiencefragment [class*="CreateAccount__createAccount__title"],
+header.experiencefragment [class*="ForgotPassword__forgotPassword__title"],
+header.experiencefragment [class*="signIn__title"],
+header.experiencefragment [class*="createAccount__title"],
+header.experiencefragment [class*="forgotPassword__title"],
+header.experiencefragment .miniaccount h2 {
+    font-family: 'miller-display', Georgia, serif !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    text-align: center !important;
+    margin: 0 0 20px 0 !important;
+    padding-bottom: 14px !important;
+    border-bottom: 1px solid rgba(198, 182, 130, 0.25) !important;
+}
+
+header.experiencefragment .miniaccount [class*="Field__field__label"],
+header.experiencefragment .miniaccount label {
+    font-family: 'miller-display', Georgia, serif !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    color: #c6b682 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.2px !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+header.experiencefragment .miniaccount input[type="text"],
+header.experiencefragment .miniaccount input[type="email"],
+header.experiencefragment .miniaccount input[type="password"],
+header.experiencefragment .miniaccount [class*="TextInput__textInput__input"],
+header.experiencefragment .miniaccount [class*="Password__password__input"] {
+    background: #141515 !important;
+    background-color: #141515 !important;
+    border: 1px solid rgba(198, 182, 130, 0.35) !important;
+    color: #ffffff !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 14px !important;
+    height: 46px !important;
+    line-height: 46px !important;
+    padding: 0 14px !important;
+    border-radius: 3px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    outline: none !important;
+    transition: all 0.25s ease !important;
+}
+
+header.experiencefragment .miniaccount input:focus {
+    border-color: #c6b682 !important;
+    box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25) !important;
+    background-color: #141515 !important;
+    color: #ffffff !important;
+}
+
+header.experiencefragment .miniaccount input:-webkit-autofill,
+header.experiencefragment .miniaccount input:-webkit-autofill:hover,
+header.experiencefragment .miniaccount input:-webkit-autofill:focus,
+header.experiencefragment .miniaccount input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 50px #141515 inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff !important;
+    border-color: rgba(198, 182, 130, 0.35) !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+header.experiencefragment .miniaccount [class*="passwordButton"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #c6b682 !important;
+    padding: 0 12px !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: none !important;
+    transition: color 0.2s ease !important;
+}
+
+header.experiencefragment .miniaccount [class*="passwordButton"] svg {
+    stroke: currentColor !important;
+    fill: none !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+header.experiencefragment .miniaccount [class*="passwordButton"]:hover {
+    color: #ffffff !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+header.experiencefragment .miniaccount [class*="forgotPasswordButton"],
+header.experiencefragment .miniaccount [class*="LinkButton__linkButton__root"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #c6b682 !important;
+    font-family: 'miller-display', Georgia, serif !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    padding: 4px 0 !important;
+    margin: 8px 0 16px 0 !important;
+    display: inline-block !important;
+    transition: all 0.25s ease !important;
+}
+
+header.experiencefragment .miniaccount [class*="forgotPasswordButton"]:hover,
+header.experiencefragment .miniaccount [class*="LinkButton__linkButton__root"]:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+header.experiencefragment .miniaccount [class*="buttonsContainer"],
+header.experiencefragment .miniaccount [class*="createAccount__actions"],
+header.experiencefragment .miniaccount [class*="actions"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 18px !important;
+    width: 100% !important;
+}
+
+/* Primary Button: Solid Champagne Gold */
+header.experiencefragment .miniaccount button[type="submit"],
+header.experiencefragment .miniaccount [class*="button__root_highPriority"],
+header.experiencefragment .miniaccount [class*="createAccount__submitButton"],
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__submitButton"] {
+    background: #c6b682 !important;
+    background-color: #c6b682 !important;
+    color: #1a1c1b !important;
+    border: 1px solid #c6b682 !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    height: 48px !important;
+    line-height: 48px !important;
+    padding: 0 24px !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+header.experiencefragment .miniaccount button[type="submit"] span,
+header.experiencefragment .miniaccount [class*="button__root_highPriority"] span,
+header.experiencefragment .miniaccount [class*="createAccount__submitButton"] span,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__submitButton"] span {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    letter-spacing: inherit !important;
+    text-transform: inherit !important;
+    display: inline-block !important;
+}
+
+header.experiencefragment .miniaccount button[type="submit"]:hover,
+header.experiencefragment .miniaccount [class*="button__root_highPriority"]:hover,
+header.experiencefragment .miniaccount [class*="createAccount__submitButton"]:hover,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__submitButton"]:hover {
+    background: #d8ca99 !important;
+    background-color: #d8ca99 !important;
+    border-color: #d8ca99 !important;
+    color: #1a1c1b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(198, 182, 130, 0.45) !important;
+}
+
+header.experiencefragment .miniaccount button[type="submit"]:active,
+header.experiencefragment .miniaccount [class*="button__root_highPriority"]:active,
+header.experiencefragment .miniaccount [class*="createAccount__submitButton"]:active,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__submitButton"]:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 8px rgba(198, 182, 130, 0.3) !important;
+}
+
+/* Secondary Button: Elegant Gold Outline -> Fills solid gold on hover */
+header.experiencefragment .miniaccount button[type="button"]:not([class*="accountTrigger"]):not([class*="passwordButton"]),
+header.experiencefragment .miniaccount [class*="button__root_normalPriority"],
+header.experiencefragment .miniaccount [class*="button__root_lowPriority"],
+header.experiencefragment .miniaccount [class*="createAccount__cancelButton"],
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__cancelButton"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #c6b682 !important;
+    border: 1px solid rgba(198, 182, 130, 0.7) !important;
+    font-family: 'acumin-pro-wide', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    height: 48px !important;
+    line-height: 48px !important;
+    padding: 0 24px !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+header.experiencefragment .miniaccount button[type="button"]:not([class*="accountTrigger"]):not([class*="passwordButton"]) span,
+header.experiencefragment .miniaccount [class*="button__root_normalPriority"] span,
+header.experiencefragment .miniaccount [class*="button__root_lowPriority"] span,
+header.experiencefragment .miniaccount [class*="createAccount__cancelButton"] span,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__cancelButton"] span {
+    color: inherit !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    letter-spacing: inherit !important;
+    text-transform: inherit !important;
+    display: inline-block !important;
+}
+
+header.experiencefragment .miniaccount button[type="button"]:not([class*="accountTrigger"]):not([class*="passwordButton"]):hover,
+header.experiencefragment .miniaccount [class*="button__root_normalPriority"]:hover,
+header.experiencefragment .miniaccount [class*="button__root_lowPriority"]:hover,
+header.experiencefragment .miniaccount [class*="createAccount__cancelButton"]:hover,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__cancelButton"]:hover {
+    background: #c6b682 !important;
+    background-color: #c6b682 !important;
+    border-color: #c6b682 !important;
+    color: #1a1c1b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(198, 182, 130, 0.35) !important;
+}
+
+header.experiencefragment .miniaccount button[type="button"]:not([class*="accountTrigger"]):not([class*="passwordButton"]):active,
+header.experiencefragment .miniaccount [class*="button__root_normalPriority"]:active,
+header.experiencefragment .miniaccount [class*="button__root_lowPriority"]:active,
+header.experiencefragment .miniaccount [class*="createAccount__cancelButton"]:active,
+header.experiencefragment .miniaccount [class*="forgotPasswordForm__cancelButton"]:active {
+    transform: translateY(0) !important;
+    box-shadow: 0 2px 8px rgba(198, 182, 130, 0.2) !important;
 }
 
 /* Sticky footer layout */
@@ -3201,7 +3487,6 @@ body[class*="landing-page"] .breadcrumb,
 
     /* Action trigger buttons on mobile: compact, touch-friendly 36x36 */
     header.experiencefragment .searchbar__trigger,
-    header.experiencefragment .miniaccount button,
     header.experiencefragment .miniaccount .accountTrigger__root > button,
     header.experiencefragment .miniaccount [class*="accountTrigger__trigger"],
     header.experiencefragment .miniaccount .miniaccount__trigger,
@@ -3220,8 +3505,6 @@ body[class*="landing-page"] .breadcrumb,
     }
 
     /* Hide user text ("HI, ANAND" or "SIGN IN") on mobile so only icon displays */
-    header.experiencefragment .miniaccount button > span:not([class*="icon"]):not([class*="Icon"]),
-    header.experiencefragment .miniaccount [class*="accountTrigger"] > span:not([class*="icon"]):not([class*="Icon"]),
     header.experiencefragment .miniaccount .accountTrigger__root > button > span:not([class*="icon"]):not([class*="Icon"]),
     header.experiencefragment .miniaccount [class*="accountTrigger__trigger"] > span:not([class*="icon"]):not([class*="Icon"]),
     header.experiencefragment .miniaccount [class*="accountChip__text"],

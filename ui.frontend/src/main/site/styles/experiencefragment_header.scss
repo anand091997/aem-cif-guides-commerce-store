@@ -493,29 +493,32 @@ header.experiencefragment {
     [class*="SignIn__signIn__title"],
     [class*="CreateAccount__createAccount__title"],
     [class*="ForgotPassword__forgotPassword__title"],
+    [class*="signIn__title"],
+    [class*="createAccount__title"],
+    [class*="forgotPassword__title"],
     .miniaccount h2 {
-        font-family: 'miller-display', Georgia, serif;
-        font-size: 20px;
-        font-weight: 600;
-        color: #ffffff;
-        text-transform: uppercase;
-        letter-spacing: 0.8px;
-        text-align: center;
-        margin: 0 0 20px 0;
-        padding-bottom: 12px;
-        border-bottom: 1px solid rgba(198, 182, 130, 0.25);
+        font-family: 'miller-display', Georgia, serif !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.2px !important;
+        text-align: center !important;
+        margin: 0 0 20px 0 !important;
+        padding-bottom: 14px !important;
+        border-bottom: 1px solid rgba(198, 182, 130, 0.25) !important;
     }
 
     .miniaccount [class*="Field__field__label"],
     .miniaccount label {
-        font-family: 'miller-display', Georgia, serif;
-        font-size: 12px;
-        font-weight: 600;
-        color: #c6b682;
-        text-transform: uppercase;
-        letter-spacing: 0.8px;
-        margin-bottom: 6px;
-        display: block;
+        font-family: 'miller-display', Georgia, serif !important;
+        font-size: 11.5px !important;
+        font-weight: 600 !important;
+        color: #c6b682 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.2px !important;
+        margin-bottom: 8px !important;
+        display: block !important;
     }
 
     .miniaccount input[type="text"],
@@ -523,61 +526,99 @@ header.experiencefragment {
     .miniaccount input[type="password"],
     .miniaccount [class*="TextInput__textInput__input"],
     .miniaccount [class*="Password__password__input"] {
-        background: #141515;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        color: #ffffff;
-        font-family: 'acumin-pro-wide', sans-serif;
-        font-size: 14px;
-        height: 44px;
-        line-height: 44px;
-        padding: 0 14px;
-        border-radius: 3px;
-        box-sizing: border-box;
+        background: #141515 !important;
+        background-color: #141515 !important;
+        border: 1px solid rgba(198, 182, 130, 0.35) !important;
+        color: #ffffff !important;
+        font-family: 'acumin-pro-wide', sans-serif !important;
+        font-size: 14px !important;
+        height: 46px !important;
+        line-height: 46px !important;
+        padding: 0 14px !important;
+        border-radius: 3px !important;
+        box-sizing: border-box !important;
         width: 100% !important;
-        outline: none;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        outline: none !important;
+        transition: all 0.25s ease !important;
 
         &:focus {
             border-color: #c6b682 !important;
-            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25);
+            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25) !important;
+            background-color: #141515 !important;
+            color: #ffffff !important;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 50px #141515 inset !important;
+            -webkit-text-fill-color: #ffffff !important;
+            caret-color: #ffffff !important;
+            border-color: rgba(198, 182, 130, 0.35) !important;
+            transition: background-color 5000s ease-in-out 0s !important;
         }
     }
 
     .miniaccount [class*="passwordButton"] {
-        background: transparent;
-        border: none;
-        color: #c6b682;
-        padding: 8px;
-        cursor: pointer;
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        color: #c6b682 !important;
+        padding: 0 12px !important;
+        height: 100% !important;
+        min-height: 0 !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: none !important;
+        transition: color 0.2s ease !important;
+
+        svg {
+            stroke: currentColor !important;
+            fill: none !important;
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        &:hover {
+            color: #ffffff !important;
+            background: transparent !important;
+            background-color: transparent !important;
+            border: none !important;
+        }
     }
 
     .miniaccount [class*="forgotPasswordButton"],
     .miniaccount [class*="LinkButton__linkButton__root"] {
-        background: transparent;
-        border: none;
-        color: #c6b682;
-        font-family: 'miller-display', Georgia, serif;
-        font-size: 13px;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 4px 0;
-        margin: 8px 0 16px 0;
-        display: inline-block;
-        transition: color 0.2s ease;
+        background: transparent !important;
+        background-color: transparent !important;
+        border: none !important;
+        color: #c6b682 !important;
+        font-family: 'miller-display', Georgia, serif !important;
+        font-size: 13px !important;
+        letter-spacing: 0.5px !important;
+        cursor: pointer !important;
+        text-decoration: none !important;
+        padding: 4px 0 !important;
+        margin: 8px 0 16px 0 !important;
+        display: inline-block !important;
+        transition: all 0.25s ease !important;
 
         &:hover {
-            color: #e5d8ac !important;
-            text-decoration: underline ;
+            color: #ffffff !important;
+            text-decoration: underline !important;
         }
     }
 
     .miniaccount [class*="buttonsContainer"],
     .miniaccount [class*="createAccount__actions"],
     .miniaccount [class*="actions"] {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 18px;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        margin-top: 18px !important;
         width: 100% !important;
     }
 
@@ -586,64 +627,100 @@ header.experiencefragment {
     .miniaccount [class*="button__root_highPriority"],
     .miniaccount [class*="createAccount__submitButton"],
     .miniaccount [class*="forgotPasswordForm__submitButton"] {
-        background: #c6b682;
-        color: #1a1c1b;
-        border: 1px solid #c6b682;
-        font-family: 'acumin-pro-wide', sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        height: 44px;
-        line-height: 44px;
-        padding: 0 20px;
-        border-radius: 3px;
-        cursor: pointer;
+        background: #c6b682 !important;
+        background-color: #c6b682 !important;
+        color: #1a1c1b !important;
+        border: 1px solid #c6b682 !important;
+        font-family: 'acumin-pro-wide', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        height: 48px !important;
+        line-height: 48px !important;
+        padding: 0 24px !important;
+        border-radius: 3px !important;
+        cursor: pointer !important;
         width: 100% !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-        transition: all 0.25s ease;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+
+        span {
+            color: inherit !important;
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            letter-spacing: inherit !important;
+            text-transform: inherit !important;
+            display: inline-block !important;
+        }
 
         &:hover {
             background: #d8ca99 !important;
+            background-color: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4);
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 24px rgba(198, 182, 130, 0.45) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+            box-shadow: 0 2px 8px rgba(198, 182, 130, 0.3) !important;
         }
     }
 
-    // Secondary Button: Gold Outline
+    // Secondary Button: Gold Outline -> Fills solid gold on hover
     .miniaccount button[type="button"]:not([class*="accountTrigger"]):not([class*="passwordButton"]),
     .miniaccount [class*="button__root_normalPriority"],
     .miniaccount [class*="button__root_lowPriority"],
     .miniaccount [class*="createAccount__cancelButton"],
     .miniaccount [class*="forgotPasswordForm__cancelButton"] {
-        background: transparent;
-        color: #c6b682;
-        border: 1px solid rgba(198, 182, 130, 0.6);
-        font-family: 'acumin-pro-wide', sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        height: 44px;
-        line-height: 44px;
-        padding: 0 20px;
-        border-radius: 3px;
-        cursor: pointer;
+        background: transparent !important;
+        background-color: transparent !important;
+        color: #c6b682 !important;
+        border: 1px solid rgba(198, 182, 130, 0.7) !important;
+        font-family: 'acumin-pro-wide', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1.5px !important;
+        height: 48px !important;
+        line-height: 48px !important;
+        padding: 0 24px !important;
+        border-radius: 3px !important;
+        cursor: pointer !important;
         width: 100% !important;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.25s ease;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+
+        span {
+            color: inherit !important;
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            letter-spacing: inherit !important;
+            text-transform: inherit !important;
+            display: inline-block !important;
+        }
 
         &:hover {
-            background: rgba(198, 182, 130, 0.15) !important;
+            background: #c6b682 !important;
+            background-color: #c6b682 !important;
             border-color: #c6b682 !important;
-            color: #ffffff !important;
+            color: #1a1c1b !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(198, 182, 130, 0.35) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+            box-shadow: 0 2px 8px rgba(198, 182, 130, 0.2) !important;
         }
     }
 
@@ -1084,41 +1161,66 @@ header.experiencefragment {
 
         &:hover {
             background: #d8ca99 !important;
+            background-color: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4);
+            transform: translateY(-2px) !important;
+            box-shadow: 0 8px 24px rgba(198, 182, 130, 0.45) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+            box-shadow: 0 2px 8px rgba(198, 182, 130, 0.3) !important;
         }
     }
 
-    // Edit Cart Button: Outline Gold
+    // Edit Cart Button: Outline Gold -> Fills solid gold on hover
     .minicart [class*="miniCart__editCartButton"],
     .minicart button[class*="editCartButton"],
     .minicart [class*="footer"] button:last-child {
         background: transparent !important;
+        background-color: transparent !important;
         color: #c6b682 !important;
-        border: 1px solid rgba(198, 182, 130, 0.6) !important;
+        border: 1px solid rgba(198, 182, 130, 0.7) !important;
         font-family: 'acumin-pro-wide', sans-serif !important;
         font-size: 13px !important;
         font-weight: 600 !important;
-        text-transform: uppercase ;
-        letter-spacing: 1.2px ;
+        text-transform: uppercase !important;
+        letter-spacing: 1.2px !important;
         height: 44px !important;
-        line-height: 44px ;
+        line-height: 44px !important;
         padding: 0 20px !important;
-        border-radius: 3px ;
-        cursor: pointer ;
+        border-radius: 3px !important;
+        cursor: pointer !important;
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        text-decoration: none ;
-        transition: all 0.25s ease ;
+        text-decoration: none !important;
+        transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+
+        span {
+            color: inherit !important;
+            font-family: inherit !important;
+            font-size: inherit !important;
+            font-weight: inherit !important;
+            letter-spacing: inherit !important;
+            text-transform: inherit !important;
+            display: inline-block !important;
+        }
 
         &:hover {
-            background: rgba(198, 182, 130, 0.15) !important;
+            background: #c6b682 !important;
+            background-color: #c6b682 !important;
             border-color: #c6b682 !important;
-            color: #ffffff !important;
+            color: #1a1c1b !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(198, 182, 130, 0.35) !important;
+        }
+
+        &:active {
+            transform: translateY(0) !important;
+            box-shadow: 0 2px 8px rgba(198, 182, 130, 0.2) !important;
         }
     }
 
@@ -1209,7 +1311,6 @@ header.experiencefragment {
 
         // Action trigger buttons on mobile: compact, touch-friendly 36x36
         .searchbar__trigger,
-        .miniaccount button,
         .miniaccount .accountTrigger__root > button,
         .miniaccount [class*="accountTrigger__trigger"],
         .miniaccount .miniaccount__trigger,
@@ -1228,8 +1329,6 @@ header.experiencefragment {
         }
 
         // Hide user text ("HI, ANAND" or "SIGN IN") on mobile so only icon displays
-        .miniaccount button > span:not([class*="icon"]):not([class*="Icon"]),
-        .miniaccount [class*="accountTrigger"] > span:not([class*="icon"]):not([class*="Icon"]),
         .miniaccount .accountTrigger__root > button > span:not([class*="icon"]):not([class*="Icon"]),
         .miniaccount [class*="accountTrigger__trigger"] > span:not([class*="icon"]):not([class*="Icon"]),
         .miniaccount [class*="accountChip__text"],

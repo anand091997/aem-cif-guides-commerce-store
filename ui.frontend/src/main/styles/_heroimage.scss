@@ -21,25 +21,25 @@
 .venia-HeroImage,
 .heroimage__root,
 .heroimage .jumbotron {
-    min-height: 540px !important;
-    position: relative !important;
+    min-height: 540px;
+    position: relative;
     width: 100% !important;
-    margin: 0 0 40px 0 !important;
-    padding: 0 !important;
-    background-color: #212322 !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    overflow: hidden !important;
-    border-radius: 4px !important;
-    box-sizing: border-box !important;
+    margin: 0 0 40px 0;
+    padding: 0;
+    background-color: #212322;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 4px;
+    box-sizing: border-box;
 
     // Elegant dark gradient overlay for effortless typography legibility
     &::before {
-        content: '' !important;
+        content: '' ;
         position: absolute !important;
         top: 0 !important;
         left: 0 !important;
@@ -53,18 +53,18 @@
     // Inner container
     .container,
     .heroimage__container {
-        position: relative !important;
-        z-index: 2 !important;
+        position: relative;
+        z-index: 2;
         width: 100% !important;
         max-width: 1614px !important;
         margin: 0 auto !important;
-        padding: 60px 15px !important;
-        transform: none !important;
-        top: auto !important;
-        bottom: auto !important;
-        left: auto !important;
-        right: auto !important;
-        box-sizing: border-box !important;
+        padding: 60px 15px;
+        transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        box-sizing: border-box;
 
         @media (max-width: 768px) {
             padding: 40px 15px !important;
@@ -76,28 +76,28 @@
     .commerce-store-HeroImage-wrapper,
     .venia-HeroImage-wrapper,
     .heroimage__wrapper {
-        position: relative !important;
-        z-index: 2 !important;
-        max-width: 680px !important;
-        transform: none !important;
-        top: auto !important;
-        left: auto !important;
-        margin: 0 !important;
-        text-align: left !important;
+        position: relative;
+        z-index: 2;
+        max-width: 680px;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin: 0;
+        text-align: left;
     }
 
     // Subtitle / Heading
     p.h3,
     .heroimage__heading {
-        font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
-        color: #c6b682 !important;
-        font-size: 15px !important;
-        font-weight: 500 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 2.5px !important;
-        margin: 0 0 14px 0 !important;
-        line-height: 1.4 !important;
-        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6) !important;
+        font-family: 'miller-display', Georgia, 'Times New Roman', serif;
+        color: #c6b682;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        margin: 0 0 14px 0;
+        line-height: 1.4;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
     }
 
     // Main Title
@@ -111,10 +111,10 @@
         color: #ffffff !important;
         font-size: 52px !important;
         font-weight: 700 !important;
-        line-height: 1.15 !important;
+        line-height: 1.15 ;
         display: block !important;
-        letter-spacing: -0.5px !important;
-        text-transform: none !important;
+        letter-spacing: -0.5px ;
+        text-transform: none ;
         margin: 0 0 28px 0 !important;
         text-shadow: 0 2px 14px rgba(0, 0, 0, 0.7) !important;
 
@@ -130,48 +130,48 @@
     // Action Button / CTA
     .btn.btn-primary.btn-action,
     .heroimage__button {
-        background: #c6b682 !important;
-        color: #1a1c1b !important;
-        border: 1px solid #c6b682 !important;
-        font-family: 'acumin-pro-wide', sans-serif !important;
-        font-size: 13px !important;
-        font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.5px !important;
-        padding: 14px 32px !important;
-        border-radius: 3px !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45) !important;
-        text-decoration: none !important;
-        text-shadow: none !important;
-        transition: all 0.25s ease !important;
+        background: #c6b682;
+        color: #1a1c1b;
+        border: 1px solid #c6b682;
+        font-family: 'acumin-pro-wide', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 14px 32px;
+        border-radius: 3px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+        text-decoration: none;
+        text-shadow: none;
+        transition: all 0.25s ease;
 
         &:hover,
         &:focus {
             background: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-2px) !important;
-            box-shadow: 0 8px 24px rgba(198, 182, 130, 0.45) !important;
-            text-decoration: none !important;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(198, 182, 130, 0.45);
+            text-decoration: none ;
         }
     }
 
     @media (max-width: 768px) {
         min-height: 400px !important;
-        text-align: left !important;
+        text-align: left ;
     }
 }
 
 // Reset any legacy header offsets
 .header ~ .heroimage,
 .header ~ .target .heroimage {
-    position: relative !important;
-    top: 0 !important;
-    margin-bottom: 40px !important;
-    overflow: visible !important;
+    position: relative;
+    top: 0;
+    margin-bottom: 40px;
+    overflow: visible;
 }
 
 // Hide redundant breadcrumb on the landing / home page

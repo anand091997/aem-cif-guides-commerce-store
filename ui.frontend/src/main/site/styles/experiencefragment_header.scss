@@ -90,7 +90,7 @@ header.experiencefragment {
         .cmp-image__link {
             display: inline-flex !important;
             align-items: center !important;
-            outline: none !important;
+            outline: none ;
             width: 175px !important;
             height: 35px !important;
             background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWoAAAA3AQMAAAAfcZI9AAAAAXNSR0IArs4c6QAAAAZQTFRFR3BM////n5SiQwAAAAF0Uk5TAEDm2GYAAAIdSURBVEiJ5dXLkeMgEAbgVunAbRWCMhmltBEsCo0qJ8JkwJGDCrb/buThZW/tcWpUHnnAX0uoBQ3Rjz3WHN/+bnLOgejgr5Pkm8+7RHo+/aGDu00g/h1XAk/KOQq9ruPc3hqelXNr0aia7/y1+YY74UlbseUbwl3DvXC+yZY/EVVzw4jHP+X7xREtXy8i+8XxZIE+8JgnHYGH3/KFOXeV/IIb5ZwD6ySq4Qmfmq9ROD8Q3xVRNedLYzwVX5RvjrJGNdyefLk5TyRJbvjheLA1p0u48Xisge9+e8f5Wg3fAl7slKNz7bgJmDYzvk55RL6mPEz4eiFfs8wI51bDl5T+h1O+aP5W59wKt7LOKn44EQM/Ysu3e0a+4KHl3P7YMd/nHG/pyR+yPN7x5uoPWavg6RWPHT+FR3qXmZLIhyxS8NDxcOc9tfxSfs750nNODifSFvGcM+HFnCHlJ7UzsvBxRgrnWd3OdzQuvMR+vgvntyH8Xk3LzX2/moTzGtXF5784Osa1qpw760oAipCxEghH7azrDGIxfnuaOOGldj6rGGL1El0VU46bo0baUiPxDw9wrJHKcXOpwE/uJFtDBS5c67u5CzZirS/Dn3DcPDuL3UNq/54Mz49q97gazs9otFP5JlMb+T3chHMG17LzCTe6/3j5Gzm/H5KVWPgqoNpXO66793lzkPs2vHm3WHqvj27AXTHr7rx+1/6Ox1/AYeILywTe073AAAAAElFTkSuQmCC") !important;
@@ -136,7 +136,7 @@ header.experiencefragment {
                 align-items: center !important;
                 justify-content: center !important;
                 gap: 32px !important;
-                list-style: none !important;
+                list-style: none ;
                 margin: 0 !important;
                 padding: 0 !important;
                 flex-wrap: nowrap !important;
@@ -148,24 +148,24 @@ header.experiencefragment {
 
             .cmp-navigation__item {
                 position: relative !important;
-                list-style: none !important;
+                list-style: none ;
                 margin: 0 !important;
                 padding: 8px 0 !important;
 
                 .cmp-navigation__item-link,
                 .cmp-navigation__item-title {
-                    display: inline-flex !important;
-                    align-items: center !important;
-                    font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
-                    color: #ffffff !important;
-                    font-size: 14px !important;
-                    font-weight: 500 !important;
-                    letter-spacing: 0.85px !important;
-                    text-transform: uppercase !important;
-                    white-space: nowrap !important;
-                    text-decoration: none !important;
-                    padding: 4px 2px !important;
-                    transition: color 0.25s ease !important;
+                    display: inline-flex;
+                    align-items: center;
+                    font-family: 'miller-display', Georgia, 'Times New Roman', serif;
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.85px;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    text-decoration: none;
+                    padding: 4px 2px;
+                    transition: color 0.25s ease;
 
                     &:hover {
                         color: #c6b682 !important;
@@ -185,14 +185,14 @@ header.experiencefragment {
                         left: 0 !important;
                         background-color: #ffffff !important;
                         border: none !important;
-                        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+                        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
                         padding: 12px 0 !important;
                         z-index: 1001 !important;
                         min-width: 220px !important;
                         flex-direction: column !important;
                         gap: 0 !important;
                         margin: 0 !important;
-                        list-style: none !important;
+                        list-style: none ;
                     }
 
                     &:hover > .cmp-navigation__group {
@@ -210,8 +210,8 @@ header.experiencefragment {
                             font-size: 14px !important;
                             font-weight: 700 !important;
                             color: #1a1c1b !important;
-                            text-transform: none !important;
-                            letter-spacing: 0.2px !important;
+                            text-transform: none ;
+                            letter-spacing: 0.2px ;
 
                             &:hover {
                                 color: #c6b682 !important;
@@ -239,23 +239,23 @@ header.experiencefragment {
 
     // A. Searchbar Trigger
     .searchbar__trigger {
-        background: transparent !important;
-        border: none !important;
-        color: #ffffff !important;
-        cursor: pointer !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 6px 8px !important;
-        transition: color 0.2s ease !important;
-        outline: none !important;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 8px;
+        transition: color 0.2s ease;
+        outline: none;
 
         &:hover {
             color: #c6b682 !important;
         }
 
         svg {
-            stroke: currentColor !important;
+            stroke: currentColor ;
         }
     }
 
@@ -279,14 +279,14 @@ header.experiencefragment {
     }
 
     .searchbar__form-container {
-        position: relative !important;
-        background: #1f2120 !important;
-        border: 1px solid rgba(198, 182, 130, 0.45) !important;
-        border-top: 3px solid #c6b682 !important;
-        border-radius: 6px !important;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.35) !important;
-        padding: 18px !important;
-        box-sizing: border-box !important;
+        position: relative;
+        background: #1f2120;
+        border: 1px solid rgba(198, 182, 130, 0.45);
+        border-top: 3px solid #c6b682;
+        border-radius: 6px;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.35);
+        padding: 18px;
+        box-sizing: border-box;
         width: 100% !important;
     }
 
@@ -303,98 +303,98 @@ header.experiencefragment {
     }
 
     .searchbar__form {
-        display: block !important;
-        margin: 0 !important;
+        display: block;
+        margin: 0;
         width: 100% !important;
     }
 
     .searchbar__fields {
-        position: relative !important;
-        display: flex !important;
-        align-items: center !important;
+        position: relative;
+        display: flex;
+        align-items: center;
         width: 100% !important;
     }
 
     .searchbar__input-container {
         width: 100% !important;
-        display: block !important;
+        display: block;
     }
 
     .searchbar__input {
-        background: #141515 !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        color: #ffffff !important;
-        font-family: 'miller-display', Georgia, serif !important;
-        font-size: 15px !important;
-        height: 46px !important;
-        line-height: 46px !important;
-        padding: 0 42px 0 42px !important;
-        border-radius: 3px !important;
+        background: #141515;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        font-family: 'miller-display', Georgia, serif;
+        font-size: 15px;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 42px 0 42px;
+        border-radius: 3px;
         width: 100% !important;
-        box-sizing: border-box !important;
-        outline: none !important;
-        letter-spacing: 0.5px !important;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        box-sizing: border-box;
+        outline: none;
+        letter-spacing: 0.5px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
         &::placeholder {
             color: #888888 !important;
-            font-style: italic !important;
+            font-style: italic ;
         }
 
         &:focus {
             border-color: #c6b682 !important;
-            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25) !important;
+            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25);
         }
     }
 
     .searchbar__input-before {
         position: absolute !important;
-        left: 12px !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
         pointer-events: none !important;
-        width: auto !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        z-index: 2 !important;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
     }
 
     .searchbar__search-icon svg {
-        stroke: #c6b682 !important;
-        width: 18px !important;
-        height: 18px !important;
+        stroke: #c6b682;
+        width: 18px;
+        height: 18px;
     }
 
     .searchbar__input-after {
         position: absolute !important;
-        right: 10px !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        width: auto !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        z-index: 2 !important;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
     }
 
     .searchbar__reset-button {
-        background: transparent !important;
-        border: none !important;
-        color: #888888 !important;
-        cursor: pointer !important;
-        padding: 4px !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        transition: color 0.2s ease !important;
+        background: transparent;
+        border: none;
+        color: #888888;
+        cursor: pointer;
+        padding: 4px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.2s ease;
 
         &:hover {
             color: #c6b682 !important;
         }
 
         svg {
-            stroke: currentColor !important;
+            stroke: currentColor ;
             width: 18px !important;
             height: 18px !important;
         }
@@ -406,22 +406,22 @@ header.experiencefragment {
     .miniaccount [class*="accountTrigger__trigger"],
     .miniaccount button[aria-label*="Account" i],
     .miniaccount__trigger {
-        background: transparent !important;
-        border: none !important;
-        color: #ffffff !important;
-        font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
-        font-size: 13px !important;
-        font-weight: 500 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.85px !important;
-        cursor: pointer !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        gap: 6px !important;
-        padding: 6px 8px !important;
-        transition: color 0.2s ease !important;
-        outline: none !important;
-        text-decoration: none !important;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-family: 'miller-display', Georgia, 'Times New Roman', serif;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.85px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 8px;
+        transition: color 0.2s ease;
+        outline: none;
+        text-decoration: none;
 
         &:hover {
             color: #c6b682 !important;
@@ -429,7 +429,7 @@ header.experiencefragment {
     }
 
     .miniaccount svg {
-        stroke: currentColor !important;
+        stroke: currentColor;
     }
 
     // Account Dropdown
@@ -440,7 +440,7 @@ header.experiencefragment {
         top: calc(100% + 14px) !important;
         right: 0 !important;
         left: auto !important;
-        transform: none !important;
+        transform: none;
         width: 380px !important;
         max-width: calc(100vw - 24px) !important;
         z-index: 10002 !important;
@@ -449,33 +449,33 @@ header.experiencefragment {
         opacity: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s !important;
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ;
 
         &[class*="root_open"],
         &.root_open {
             opacity: 1 !important;
             visibility: visible !important;
             pointer-events: auto !important;
-            transform: translateY(0) !important;
+            transform: translateY(0);
             display: block !important;
         }
     }
 
     [class*="AccountMenu__accountMenu__contents"],
     .miniaccount [class*="accountMenu__contents"] {
-        position: relative !important;
-        background: #1f2120 !important;
-        border: 1px solid rgba(198, 182, 130, 0.45) !important;
-        border-top: 3px solid #c6b682 !important;
-        border-radius: 6px !important;
-        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.35) !important;
-        padding: 28px 24px !important;
-        color: #ffffff !important;
+        position: relative;
+        background: #1f2120;
+        border: 1px solid rgba(198, 182, 130, 0.45);
+        border-top: 3px solid #c6b682;
+        border-radius: 6px;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 4px 12px rgba(0, 0, 0, 0.35);
+        padding: 28px 24px;
+        color: #ffffff;
         width: 100% !important;
-        box-sizing: border-box !important;
-        top: auto !important;
-        right: auto !important;
-        transform: none !important;
+        box-sizing: border-box;
+        top: auto;
+        right: auto;
+        transform: none;
     }
 
     [class*="AccountMenu__accountMenu__root_open"]::before {
@@ -494,28 +494,28 @@ header.experiencefragment {
     [class*="CreateAccount__createAccount__title"],
     [class*="ForgotPassword__forgotPassword__title"],
     .miniaccount h2 {
-        font-family: 'miller-display', Georgia, serif !important;
-        font-size: 20px !important;
-        font-weight: 600 !important;
-        color: #ffffff !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.8px !important;
-        text-align: center !important;
-        margin: 0 0 20px 0 !important;
-        padding-bottom: 12px !important;
-        border-bottom: 1px solid rgba(198, 182, 130, 0.25) !important;
+        font-family: 'miller-display', Georgia, serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        text-align: center;
+        margin: 0 0 20px 0;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(198, 182, 130, 0.25);
     }
 
     .miniaccount [class*="Field__field__label"],
     .miniaccount label {
-        font-family: 'miller-display', Georgia, serif !important;
-        font-size: 12px !important;
-        font-weight: 600 !important;
-        color: #c6b682 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.8px !important;
-        margin-bottom: 6px !important;
-        display: block !important;
+        font-family: 'miller-display', Georgia, serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: #c6b682;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        margin-bottom: 6px;
+        display: block;
     }
 
     .miniaccount input[type="text"],
@@ -523,61 +523,61 @@ header.experiencefragment {
     .miniaccount input[type="password"],
     .miniaccount [class*="TextInput__textInput__input"],
     .miniaccount [class*="Password__password__input"] {
-        background: #141515 !important;
-        border: 1px solid rgba(255, 255, 255, 0.2) !important;
-        color: #ffffff !important;
-        font-family: 'acumin-pro-wide', sans-serif !important;
-        font-size: 14px !important;
-        height: 44px !important;
-        line-height: 44px !important;
-        padding: 0 14px !important;
-        border-radius: 3px !important;
-        box-sizing: border-box !important;
+        background: #141515;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        font-family: 'acumin-pro-wide', sans-serif;
+        font-size: 14px;
+        height: 44px;
+        line-height: 44px;
+        padding: 0 14px;
+        border-radius: 3px;
+        box-sizing: border-box;
         width: 100% !important;
-        outline: none !important;
-        transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        outline: none;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
         &:focus {
             border-color: #c6b682 !important;
-            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25) !important;
+            box-shadow: 0 0 0 2px rgba(198, 182, 130, 0.25);
         }
     }
 
     .miniaccount [class*="passwordButton"] {
-        background: transparent !important;
-        border: none !important;
-        color: #c6b682 !important;
-        padding: 8px !important;
-        cursor: pointer !important;
+        background: transparent;
+        border: none;
+        color: #c6b682;
+        padding: 8px;
+        cursor: pointer;
     }
 
     .miniaccount [class*="forgotPasswordButton"],
     .miniaccount [class*="LinkButton__linkButton__root"] {
-        background: transparent !important;
-        border: none !important;
-        color: #c6b682 !important;
-        font-family: 'miller-display', Georgia, serif !important;
-        font-size: 13px !important;
-        cursor: pointer !important;
-        text-decoration: none !important;
-        padding: 4px 0 !important;
-        margin: 8px 0 16px 0 !important;
-        display: inline-block !important;
-        transition: color 0.2s ease !important;
+        background: transparent;
+        border: none;
+        color: #c6b682;
+        font-family: 'miller-display', Georgia, serif;
+        font-size: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 4px 0;
+        margin: 8px 0 16px 0;
+        display: inline-block;
+        transition: color 0.2s ease;
 
         &:hover {
             color: #e5d8ac !important;
-            text-decoration: underline !important;
+            text-decoration: underline ;
         }
     }
 
     .miniaccount [class*="buttonsContainer"],
     .miniaccount [class*="createAccount__actions"],
     .miniaccount [class*="actions"] {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 12px !important;
-        margin-top: 18px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 18px;
         width: 100% !important;
     }
 
@@ -586,32 +586,32 @@ header.experiencefragment {
     .miniaccount [class*="button__root_highPriority"],
     .miniaccount [class*="createAccount__submitButton"],
     .miniaccount [class*="forgotPasswordForm__submitButton"] {
-        background: #c6b682 !important;
-        color: #1a1c1b !important;
-        border: 1px solid #c6b682 !important;
-        font-family: 'acumin-pro-wide', sans-serif !important;
-        font-size: 13px !important;
-        font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.2px !important;
-        height: 44px !important;
-        line-height: 44px !important;
-        padding: 0 20px !important;
-        border-radius: 3px !important;
-        cursor: pointer !important;
+        background: #c6b682;
+        color: #1a1c1b;
+        border: 1px solid #c6b682;
+        font-family: 'acumin-pro-wide', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        height: 44px;
+        line-height: 44px;
+        padding: 0 20px;
+        border-radius: 3px;
+        cursor: pointer;
         width: 100% !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
-        transition: all 0.25s ease !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+        transition: all 0.25s ease;
 
         &:hover {
             background: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-1px) !important;
-            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4);
         }
     }
 
@@ -621,24 +621,24 @@ header.experiencefragment {
     .miniaccount [class*="button__root_lowPriority"],
     .miniaccount [class*="createAccount__cancelButton"],
     .miniaccount [class*="forgotPasswordForm__cancelButton"] {
-        background: transparent !important;
-        color: #c6b682 !important;
-        border: 1px solid rgba(198, 182, 130, 0.6) !important;
-        font-family: 'acumin-pro-wide', sans-serif !important;
-        font-size: 13px !important;
-        font-weight: 600 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.2px !important;
-        height: 44px !important;
-        line-height: 44px !important;
-        padding: 0 20px !important;
-        border-radius: 3px !important;
-        cursor: pointer !important;
+        background: transparent;
+        color: #c6b682;
+        border: 1px solid rgba(198, 182, 130, 0.6);
+        font-family: 'acumin-pro-wide', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        height: 44px;
+        line-height: 44px;
+        padding: 0 20px;
+        border-radius: 3px;
+        cursor: pointer;
         width: 100% !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        transition: all 0.25s ease !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
 
         &:hover {
             background: rgba(198, 182, 130, 0.15) !important;
@@ -656,13 +656,13 @@ header.experiencefragment {
         background: transparent !important;
         border: none !important;
         color: #ffffff !important;
-        cursor: pointer !important;
+        cursor: pointer ;
         display: inline-flex !important;
         align-items: center !important;
         padding: 6px 8px !important;
         position: relative !important;
-        transition: color 0.2s ease !important;
-        outline: none !important;
+        transition: color 0.2s ease ;
+        outline: none ;
 
         &:hover {
             color: #c6b682 !important;
@@ -670,7 +670,7 @@ header.experiencefragment {
     }
 
     .minicart svg {
-        stroke: currentColor !important;
+        stroke: currentColor ;
     }
 
     // Cart Counter Badge
@@ -689,9 +689,9 @@ header.experiencefragment {
         font-weight: 700 !important;
         min-width: 17px !important;
         height: 17px !important;
-        line-height: 17px !important;
-        border-radius: 9px !important;
-        text-align: center !important;
+        line-height: 17px ;
+        border-radius: 9px ;
+        text-align: center ;
         padding: 0 4px !important;
         display: inline-flex !important;
         align-items: center !important;
@@ -702,7 +702,7 @@ header.experiencefragment {
         left: auto !important;
         margin: 0 !important;
         box-sizing: border-box !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         z-index: 2 !important;
     }
 
@@ -710,12 +710,12 @@ header.experiencefragment {
     .minicart aside[class*="root"],
     [class*="MiniCart__miniCart__root"],
     [class*="miniCart__root"] {
-        --content-width: 440px !important;
+        --content-width: 440px ;
         position: absolute !important;
         top: calc(100% + 14px) !important;
         right: 0 !important;
         left: auto !important;
-        transform: none !important;
+        transform: none;
         width: 440px !important;
         max-width: calc(100vw - 24px) !important;
         z-index: 10002 !important;
@@ -724,14 +724,14 @@ header.experiencefragment {
         opacity: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
-        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s !important;
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ;
 
         &[class*="root_open"],
         &.root_open {
             opacity: 1 !important;
             visibility: visible !important;
             pointer-events: auto !important;
-            transform: translateY(0) !important;
+            transform: translateY(0);
             display: block !important;
         }
     }
@@ -742,7 +742,7 @@ header.experiencefragment {
         background: #1f2120 !important;
         border: 1px solid rgba(198, 182, 130, 0.45) !important;
         border-top: 3px solid #c6b682 !important;
-        border-radius: 6px !important;
+        border-radius: 6px ;
         box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), 0 4px 16px rgba(0, 0, 0, 0.4) !important;
         color: #ffffff !important;
         width: 440px !important;
@@ -750,7 +750,7 @@ header.experiencefragment {
         box-sizing: border-box !important;
         top: auto !important;
         right: auto !important;
-        transform: none !important;
+        transform: none;
         overflow: hidden !important;
         max-height: 82vh !important;
         display: flex !important;
@@ -803,12 +803,12 @@ header.experiencefragment {
             background: rgba(229, 115, 115, 0.12) !important;
             border: 1px solid rgba(229, 115, 115, 0.4) !important;
             border-left: 4px solid #e57373 !important;
-            border-radius: 4px !important;
+            border-radius: 4px ;
             color: #ffb4b4 !important;
             font-family: 'acumin-pro-wide', sans-serif !important;
             font-size: 11.5px !important;
             font-weight: 500 !important;
-            line-height: 1.45 !important;
+            line-height: 1.45 ;
             box-sizing: border-box !important;
         }
     }
@@ -820,10 +820,10 @@ header.experiencefragment {
         font-family: 'acumin-pro-wide', sans-serif !important;
         font-size: 12px !important;
         font-weight: 600 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 0.8px !important;
+        text-transform: uppercase ;
+        letter-spacing: 0.8px ;
         color: #ffffff !important;
-        white-space: nowrap !important;
+        white-space: nowrap ;
     }
 
     [class*="MiniCart__miniCart__price"],
@@ -834,7 +834,7 @@ header.experiencefragment {
         font-size: 15px !important;
         font-weight: 700 !important;
         color: #c6b682 !important;
-        white-space: nowrap !important;
+        white-space: nowrap ;
     }
 
     [class*="MiniCart__miniCart__body"],
@@ -842,8 +842,8 @@ header.experiencefragment {
         max-height: 380px !important;
         overflow-y: auto !important;
         padding: 12px 20px !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: rgba(198, 182, 130, 0.4) rgba(0, 0, 0, 0.2) !important;
+        scrollbar-width: thin ;
+        scrollbar-color: rgba(198, 182, 130, 0.4) rgba(0, 0, 0, 0.2) ;
 
         &::-webkit-scrollbar {
             width: 6px !important;
@@ -853,7 +853,7 @@ header.experiencefragment {
         }
         &::-webkit-scrollbar-thumb {
             background-color: rgba(198, 182, 130, 0.4) !important;
-            border-radius: 3px !important;
+            border-radius: 3px ;
 
             &:hover {
                 background-color: #c6b682 !important;
@@ -890,7 +890,7 @@ header.experiencefragment {
         max-height: 80px !important;
         background-color: #ffffff !important;
         border: 1px solid rgba(255, 255, 255, 0.15) !important;
-        border-radius: 4px !important;
+        border-radius: 4px ;
         position: relative !important;
         overflow: hidden !important;
         display: flex !important;
@@ -912,7 +912,7 @@ header.experiencefragment {
             align-items: center !important;
             justify-content: center !important;
             border: none !important;
-            border-radius: 0 !important;
+            border-radius: 0 ;
             margin: 0 !important;
             padding: 0 !important;
         }
@@ -923,8 +923,8 @@ header.experiencefragment {
             height: 100% !important;
             max-width: 100% !important;
             max-height: 100% !important;
-            object-fit: contain !important;
-            object-position: center !important;
+            object-fit: contain ;
+            object-position: center ;
             display: block !important;
             top: auto !important;
             left: auto !important;
@@ -938,8 +938,8 @@ header.experiencefragment {
         height: 100% !important;
         max-width: 100% !important;
         max-height: 100% !important;
-        object-fit: contain !important;
-        border-radius: 4px !important;
+        object-fit: contain ;
+        border-radius: 4px ;
         border: none !important;
     }
 
@@ -952,14 +952,14 @@ header.experiencefragment {
         font-size: 14px !important;
         font-weight: 600 !important;
         color: #ffffff !important;
-        line-height: 1.3 !important;
+        line-height: 1.3 ;
         margin: 0 0 4px 0 !important;
-        word-break: break-word !important;
+        word-break: break-word ;
         overflow: hidden !important;
-        text-overflow: ellipsis !important;
+        text-overflow: ellipsis ;
         display: -webkit-box !important;
-        -webkit-line-clamp: 2 !important;
-        -webkit-box-orient: vertical !important;
+        -webkit-line-clamp: 2 ;
+        -webkit-box-orient: vertical ;
         min-width: 0 !important;
     }
 
@@ -1015,23 +1015,23 @@ header.experiencefragment {
         border: none !important;
         color: #888888 !important;
         padding: 4px !important;
-        cursor: pointer !important;
+        cursor: pointer ;
         display: inline-flex !important;
         align-items: center !important;
         justify-content: center !important;
-        transition: color 0.2s ease, transform 0.2s ease !important;
-        outline: none !important;
+        transition: color 0.2s ease, transform 0.2s ease ;
+        outline: none ;
         margin: 0 !important;
 
         svg {
-            stroke: currentColor !important;
+            stroke: currentColor ;
             width: 16px !important;
             height: 16px !important;
         }
 
         &:hover {
             color: #e57373 !important;
-            transform: scale(1.15) !important;
+            transform: scale(1.15);
         }
     }
 
@@ -1055,23 +1055,23 @@ header.experiencefragment {
         font-family: 'acumin-pro-wide', sans-serif !important;
         font-size: 13px !important;
         font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.2px !important;
+        text-transform: uppercase ;
+        letter-spacing: 1.2px ;
         height: 44px !important;
-        line-height: 44px !important;
+        line-height: 44px ;
         padding: 0 20px !important;
-        border-radius: 3px !important;
-        cursor: pointer !important;
+        border-radius: 3px ;
+        cursor: pointer ;
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
         gap: 8px !important;
-        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
-        transition: all 0.25s ease !important;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+        transition: all 0.25s ease ;
 
         svg {
-            stroke: #1a1c1b !important;
+            stroke: #1a1c1b ;
             width: 16px !important;
             height: 16px !important;
         }
@@ -1080,8 +1080,8 @@ header.experiencefragment {
             background: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-1px) !important;
-            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4) !important;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(198, 182, 130, 0.4);
         }
     }
 
@@ -1095,19 +1095,19 @@ header.experiencefragment {
         font-family: 'acumin-pro-wide', sans-serif !important;
         font-size: 13px !important;
         font-weight: 600 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.2px !important;
+        text-transform: uppercase ;
+        letter-spacing: 1.2px ;
         height: 44px !important;
-        line-height: 44px !important;
+        line-height: 44px ;
         padding: 0 20px !important;
-        border-radius: 3px !important;
-        cursor: pointer !important;
+        border-radius: 3px ;
+        cursor: pointer ;
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        text-decoration: none !important;
-        transition: all 0.25s ease !important;
+        text-decoration: none ;
+        transition: all 0.25s ease ;
 
         &:hover {
             background: rgba(198, 182, 130, 0.15) !important;
@@ -1119,7 +1119,7 @@ header.experiencefragment {
     [class*="MiniCart__miniCart__emptyCart"],
     .minicart [class*="miniCart__emptyCart"] {
         padding: 40px 20px !important;
-        text-align: center !important;
+        text-align: center ;
         color: #cccccc !important;
         font-family: 'miller-display', Georgia, serif !important;
         font-size: 15px !important;
@@ -1130,10 +1130,10 @@ header.experiencefragment {
         display: none !important;
         background: transparent !important;
         border: none !important;
-        cursor: pointer !important;
+        cursor: pointer ;
         padding: 8px 10px !important;
         margin: 0 !important;
-        outline: none !important;
+        outline: none ;
         align-items: center !important;
         justify-content: center !important;
     }
@@ -1173,7 +1173,7 @@ header.experiencefragment {
             background-color: #212322 !important;
             border: none !important;
             bottom: 0 !important;
-            box-shadow: none !important;
+            box-shadow: none;
             box-sizing: border-box !important;
             height: 100vh !important;
             left: 0 !important;
@@ -1208,7 +1208,7 @@ header.experiencefragment {
             width: 100% !important;
             padding: 16px 0 !important;
             font-size: 15px !important;
-            letter-spacing: 1px !important;
+            letter-spacing: 1px ;
             color: #ffffff !important;
         }
 
@@ -1230,8 +1230,8 @@ header.experiencefragment {
             height: 2px !important;
             width: 100% !important;
             background-color: #ffffff !important;
-            border-radius: 2px !important;
-            transition: all 0.25s ease !important;
+            border-radius: 2px ;
+            transition: all 0.25s ease ;
         }
     }
 
@@ -1247,10 +1247,10 @@ header.experiencefragment {
         border: none !important;
         color: #ffffff !important;
         font-size: 32px !important;
-        line-height: 1 !important;
-        cursor: pointer !important;
+        line-height: 1 ;
+        cursor: pointer ;
         padding: 4px 8px !important;
-        transition: color 0.2s ease !important;
+        transition: color 0.2s ease ;
         z-index: 10003 !important;
 
         &:hover {
@@ -1275,8 +1275,8 @@ header.experiencefragment {
                 border: none !important;
                 width: 40px !important;
                 height: 40px !important;
-                cursor: pointer !important;
-                outline: none !important;
+                cursor: pointer ;
+                outline: none ;
 
                 span {
                     display: block !important;
@@ -1284,14 +1284,14 @@ header.experiencefragment {
                     height: 8px !important;
                     border-right: 2px solid #ffffff !important;
                     border-bottom: 2px solid #ffffff !important;
-                    transform: rotate(45deg) !important;
+                    transform: rotate(45deg);
                     margin: 12px auto !important;
-                    transition: transform 0.25s ease, border-color 0.2s ease !important;
+                    transition: transform 0.25s ease, border-color 0.2s ease ;
                 }
             }
 
             &.submenu-open .plx-submenu-toggle span {
-                transform: rotate(-135deg) !important;
+                transform: rotate(-135deg);
                 border-color: #c6b682 !important;
             }
 

@@ -420,9 +420,9 @@ tr:nth-child(even) {
     table,
     .MsoTableGrid {
         width: 100% !important;
-        border-collapse: collapse !important;
-        margin: 20px 0 !important;
-        border: 1px solid #ebe9e3 !important;
+        border-collapse: collapse;
+        margin: 20px 0;
+        border: 1px solid #ebe9e3;
 
         td, th {
             padding: 12px 16px !important;
@@ -556,7 +556,7 @@ tr:nth-child(even) {
         margin: 0 !important;
         padding: 0 !important;
         border: none !important;
-        box-shadow: none !important;
+        box-shadow: none;
     }
 
     dl {

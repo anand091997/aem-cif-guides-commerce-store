@@ -22,8 +22,8 @@
     font-family: 'miller-display', Georgia, 'Times New Roman', serif !important;
     font-size: 36px !important;
     font-weight: 300 !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.5px !important;
+    line-height: 1.2 ;
+    letter-spacing: -0.5px ;
     color: #212322;
     margin-bottom: 12px;
 
@@ -59,26 +59,26 @@
     background-color: #212322 !important;
     color: #ffffff !important;
     border: 1px solid #212322 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 12.5px !important;
     font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.2px !important;
+    text-transform: uppercase ;
+    letter-spacing: 1.2px ;
     padding: 12px 28px !important;
     height: auto !important;
     min-height: 44px !important;
-    cursor: pointer !important;
-    transition: all 0.25s ease !important;
+    cursor: pointer ;
+    transition: all 0.25s ease ;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    text-decoration: none !important;
+    text-decoration: none ;
 
     &:hover {
         background-color: #c6b682 !important;
         border-color: #c6b682 !important;
         color: #212322 !important;
-        box-shadow: 0 4px 12px rgba(198, 182, 130, 0.3) !important;
+        box-shadow: 0 4px 12px rgba(198, 182, 130, 0.3);
     }
 }

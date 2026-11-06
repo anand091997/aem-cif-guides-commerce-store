@@ -33,11 +33,11 @@
     font-family: 'miller-display', Georgia, serif !important;
     font-size: 36px !important;
     font-weight: 300 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
+    text-transform: uppercase ;
+    letter-spacing: 1px ;
     color: #212322 !important;
     margin: 0 !important;
-    line-height: 1.2 !important;
+    line-height: 1.2 ;
 }
 
 // Cart Layout Grid
@@ -75,7 +75,7 @@
 [class*="ProductListing__productListing__root"],
 [class*="productListing__root"],
 ul[class*="productListing"] {
-    list-style: none !important;
+    list-style: none ;
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
@@ -91,7 +91,7 @@ ul[class*="productListing"] {
 [class*="product__item"] {
     background-color: #ffffff !important;
     border: 1px solid #ebe9e3 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     padding: 24px !important;
     display: grid !important;
     grid-template-columns: 110px 1fr auto !important;
@@ -99,11 +99,11 @@ ul[class*="productListing"] {
     gap: 24px !important;
     align-items: center !important;
     box-sizing: border-box !important;
-    transition: box-shadow 0.25s ease, border-color 0.25s ease !important;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease ;
 
     &:hover {
         border-color: #cecbbe !important;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
     }
 }
 
@@ -116,7 +116,7 @@ ul[class*="productListing"] {
     height: 110px !important;
     background-color: #faf9f6 !important;
     border: 1px solid #ebe9e3 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -128,7 +128,7 @@ ul[class*="productListing"] {
 [class*="product__image"] {
     max-width: 100% !important;
     max-height: 100% !important;
-    object-fit: contain !important;
+    object-fit: contain ;
 }
 
 // Product Details
@@ -151,9 +151,9 @@ ul[class*="productListing"] {
     font-size: 18px !important;
     font-weight: 500 !important;
     color: #212322 !important;
-    line-height: 1.35 !important;
+    line-height: 1.35 ;
     margin: 0 !important;
-    text-decoration: none !important;
+    text-decoration: none ;
 }
 
 .cmp-VeniaProductListing__product__options,
@@ -161,7 +161,7 @@ ul[class*="productListing"] {
 [class*="product__options"] {
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 12px !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.5px ;
     color: #707070 !important;
     margin: 0 !important;
 }
@@ -182,7 +182,7 @@ ul[class*="productListing"] {
     display: inline-flex !important;
     align-items: center !important;
     border: 1px solid #ebe9e3 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     background: #ffffff !important;
     overflow: hidden !important;
     margin-top: 4px !important;
@@ -199,9 +199,9 @@ ul[class*="productListing"] {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    cursor: pointer !important;
+    cursor: pointer ;
     font-size: 16px !important;
-    transition: background 0.2s ease !important;
+    transition: background 0.2s ease ;
 
     &:hover {
         background: #f0eee6 !important;
@@ -218,7 +218,7 @@ ul[class*="productListing"] {
     font-weight: 600 !important;
     color: #212322 !important;
     padding: 0 12px !important;
-    text-align: center !important;
+    text-align: center ;
     min-width: 32px !important;
 }
 
@@ -239,7 +239,7 @@ ul[class*="productListing"] {
 [class*="giftOptions__root"] {
     background: #ffffff !important;
     border: 1px solid #ebe9e3 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     overflow: hidden !important;
     margin-bottom: 16px !important;
 }
@@ -250,21 +250,21 @@ ul[class*="productListing"] {
 [class*="priceAdjustments"] [class*="section"] button,
 [class*="sectionTitle"],
 [class*="accordion__trigger"] {
-    font-family: 'acumin-pro-wide', sans-serif !important;
-    font-size: 12.5px !important;
-    font-weight: 600 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1px !important;
-    color: #212322 !important;
-    padding: 16px 20px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    font-family: 'acumin-pro-wide', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #212322;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100% !important;
-    border: none !important;
-    background: transparent !important;
-    cursor: pointer !important;
-    transition: background-color 0.2s ease, color 0.2s ease !important;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 
     &:hover {
         background-color: #faf9f6 !important;
@@ -289,19 +289,19 @@ ul[class*="productListing"] {
 .orderSummary__root {
     background-color: #ffffff !important;
     border: 1px solid #ebe9e3 !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
     padding: 32px 28px !important;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
     box-sizing: border-box !important;
 
     &::before {
-        content: "ORDER SUMMARY" !important;
+        content: "ORDER SUMMARY" ;
         display: block !important;
         font-family: 'miller-display', Georgia, serif !important;
         font-size: 20px !important;
         font-weight: 400 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1px !important;
+        text-transform: uppercase ;
+        letter-spacing: 1px ;
         color: #212322 !important;
         border-bottom: 1px solid #ebe9e3 !important;
         padding-bottom: 16px !important;
@@ -316,7 +316,7 @@ ul[class*="productListing"] {
     display: grid !important;
     grid-template-columns: 1fr auto !important;
     gap: 14px !important;
-    line-height: 1.6 !important;
+    line-height: 1.6 ;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 13.5px !important;
     color: #555555 !important;
@@ -346,8 +346,8 @@ ul[class*="productListing"] {
     font-family: 'miller-display', Georgia, serif !important;
     font-size: 18px !important;
     font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
+    text-transform: uppercase ;
+    letter-spacing: 0.5px ;
     color: #212322 !important;
     border-top: 1px solid #ebe9e3 !important;
     padding-top: 18px !important;
@@ -385,33 +385,33 @@ ul[class*="productListing"] {
         background-color: #c6b682 !important;
         background-image: none !important;
         border: 1px solid #c6b682 !important;
-        border-radius: 3px !important;
+        border-radius: 3px ;
         color: #1a1c1b !important;
         font-family: 'acumin-pro-wide', sans-serif !important;
         font-size: 13px !important;
         font-weight: 700 !important;
-        text-transform: uppercase !important;
-        letter-spacing: 1.5px !important;
+        text-transform: uppercase ;
+        letter-spacing: 1.5px ;
         height: 52px !important;
-        line-height: 50px !important;
+        line-height: 50px ;
         width: 100% !important;
         padding: 0 24px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-        cursor: pointer !important;
-        transition: all 0.25s ease !important;
-        outline: none !important;
-        text-decoration: none !important;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        cursor: pointer ;
+        transition: all 0.25s ease ;
+        outline: none ;
+        text-decoration: none ;
 
         &:hover {
             background: #d8ca99 !important;
             background-color: #d8ca99 !important;
             border-color: #d8ca99 !important;
             color: #1a1c1b !important;
-            transform: translateY(-2px) !important;
-            box-shadow: 0 6px 22px rgba(198, 182, 130, 0.45) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 22px rgba(198, 182, 130, 0.45);
         }
 
         &:disabled {
@@ -419,9 +419,9 @@ ul[class*="productListing"] {
             background-color: #e2e0d8 !important;
             border-color: #e2e0d8 !important;
             color: #888888 !important;
-            box-shadow: none !important;
-            cursor: not-allowed !important;
-            transform: none !important;
+            box-shadow: none;
+            cursor: not-allowed ;
+            transform: none;
         }
     }
 }
@@ -434,23 +434,23 @@ button[class*="button__root_highPriority"] {
     background-color: #c6b682 !important;
     background-image: none !important;
     border: 1px solid #c6b682 !important;
-    border-radius: 3px !important;
+    border-radius: 3px ;
     color: #1a1c1b !important;
     font-family: 'acumin-pro-wide', sans-serif !important;
     font-size: 13px !important;
     font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
-    transition: all 0.25s ease !important;
+    text-transform: uppercase ;
+    letter-spacing: 1.5px ;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease ;
 
     &:hover {
         background: #d8ca99 !important;
         background-color: #d8ca99 !important;
         border-color: #d8ca99 !important;
         color: #1a1c1b !important;
-        transform: translateY(-2px) !important;
-        box-shadow: 0 6px 22px rgba(198, 182, 130, 0.45) !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 22px rgba(198, 182, 130, 0.45);
     }
 }
 
@@ -460,9 +460,9 @@ button[class*="button__root_highPriority"] {
     font-family: 'miller-display', Georgia, serif !important;
     font-size: 24px !important;
     font-weight: 300 !important;
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.5px ;
     color: #212322 !important;
-    text-align: center !important;
+    text-align: center ;
     margin: 60px 0 20px !important;
 }
 
